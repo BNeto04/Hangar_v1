@@ -42,25 +42,40 @@ def get_git_executable() -> str:
 
 
 def get_github_token(repo_dir: Optional[str] = None) -> Optional[str]:
-    """Obtém o token do GitHub com segurança através do git credential helper."""
+    """Obtém o token do GitHub com segurança."""
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if token:
         return token
 
-    target_cwd = repo_dir if (repo_dir and Path(repo_dir).exists()) else r"C:\Users\PICHAU\syntheon_adk"
+    # 1. Tentar ler do .git/config do Hangar_v1
+    git_config = Path(r"C:\Users\PICHAU\Hangar_v1\.git\config")
+    if git_config.exists():
+        try:
+            content = git_config.read_text(encoding="utf-8")
+            import re
+            m = re.search(r"x-access-token:([a-zA-Z0-9_]+)@github\.com", content)
+            if m:
+                return m.group(1)
+        except Exception:
+            pass
+
+    target_cwd = repo_dir if (repo_dir and Path(repo_dir).exists()) else r"C:\Users\PICHAU\Hangar_v1"
     git_bin = get_git_executable()
 
     try:
-        p = subprocess.Popen(
+        env = os.environ.copy()
+        env["GCM_INTERACTIVE"] = "never"
+        env["GIT_TERMINAL_PROMPT"] = "0"
+        res = subprocess.run(
             [git_bin, "credential", "fill"],
-            stdin=subprocess.PIPE,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
+            input="protocol=https\nhost=github.com\n\n",
+            capture_output=True,
             text=True,
+            timeout=3,
             cwd=target_cwd,
+            env=env
         )
-        stdout, stderr = p.communicate("protocol=https\nhost=github.com\n\n")
-        for line in stdout.splitlines():
+        for line in res.stdout.splitlines():
             if line.startswith("password="):
                 pwd = line.split("=", 1)[1].strip()
                 if pwd:

@@ -94,3 +94,7 @@ Para que a Governança do Hangar V1 seja promovida do estado atual para **GOVERN
 4. **Zero Intervenção Manual Operacional:** A esteira opera de ponta a ponta desde a intenção bruta até a entrega em T4 sem necessidade de comandos manuais do Proprietário.
 5. **Rastreabilidade Factual 100% Auditável:** Grafo de conhecimento, Planta territorial, código executável e espelho Kanban mantêm sincronização matemática exata com zero discrepâncias.
 6. **Homologação Soberana Final:** Veredito explícito do Proprietário conferindo o selo de `GOVERNANÇA_PLENA`.
+
+
+## 6. Invariante Soberano de Propósito (Purpose-First)
+Consulte [`10_PURPOSE_FIRST_INVARIANT.md`](10_PURPOSE_FIRST_INVARIANT.md) para a codificação das 8 dimensões obrigatórias em toda ação material e políticas fail-closed contra mutações puramente estéticas ou duplicadas.

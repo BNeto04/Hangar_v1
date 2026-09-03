@@ -145,8 +145,8 @@ def format_envelope(
 class GitHubPRRelay:
     def __init__(
         self,
-        repo: str = "BNeto04/syntheon_adk",
-        pr_number: int = 2,
+        repo: str = "BNeto04/Hangar_v1",
+        pr_number: int = 1,
         root_dir: str = r"C:\Users\PICHAU\Downloads\circuito",
         poll_interval: int = 10,
     ):

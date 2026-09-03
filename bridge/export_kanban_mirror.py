@@ -16,7 +16,7 @@ from typing import Any, Dict, List
 
 def export_kanban_to_git(
     db_path: str = r"C:\Users\PICHAU\AppData\Local\hermes\kanban.db",
-    repo_path: str = r"C:\Users\PICHAU\syntheon_adk",
+    repo_path: str = r"C:\Users\PICHAU\Hangar_v1",
     push: bool = True,
 ) -> Dict[str, Any]:
     conn = sqlite3.connect(db_path)
@@ -99,7 +99,7 @@ def export_kanban_to_git(
         try:
             subprocess.run([git_bin, "add", "kanban"], cwd=str(repo), check=True, capture_output=True)
             subprocess.run([git_bin, "commit", "-m", f"chore(kanban): atualizar espelho git ({counts['done']} done, {counts['review']} review)"], cwd=str(repo), check=True, capture_output=True)
-            subprocess.run([git_bin, "push", "origin", "bridge/chatgpt-antigravity"], cwd=str(repo), check=True, capture_output=True)
+            subprocess.run([git_bin, "push", "origin", "main"], cwd=str(repo), check=True, capture_output=True)
             print("KANBAN_MIRROR_PUSHED_OK")
         except Exception as e:
             print(f"KANBAN_MIRROR_PUSH_ERROR: {e}")

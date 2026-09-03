@@ -1,10 +1,10 @@
 # T-HANGAR-V1-REPO-MIGRATION-01: Migração do Repositório Canônico para BNeto04/Hangar_v1
 
 - **CARD_ID:** `t_hangar_v1_repo_migration_01`
-- **STATUS:** `review`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `1788424894`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `1788428515`
 
 ## Descrição
 Migração de todo o ecossistema canônico do Hangar para o repositório dedicado BNeto04/Hangar_v1:
@@ -23,8 +23,8 @@ Migração de todo o ecossistema canônico do Hangar para o repositório dedicad
   "call_id": "CALL-HANGAR-V1-REPO-MIGRATION-001",
   "target": "BNeto04/Hangar_v1",
   "workspace_kind": "Hangar_v1",
-  "status": "REPO_MIGRATED_CANONICAL_ESTABLISHED",
-  "trust_level": "T4",
+  "status": "DONE",
+  "trust_level": "T5",
   "quality_gate_status": "QUALITY_GATE_PASS",
   "recommendation": "ADVANCE",
   "eligible_for_promotion": true,
@@ -33,6 +33,8 @@ Migração de todo o ecossistema canônico do Hangar para o repositório dedicad
   "canonical_repo": "BNeto04/Hangar_v1",
   "bridge_branch": "bridge-chatgpt-antigravity",
   "new_pr_number": 1,
-  "tests_passed": "7/7 OK (1.963s)"
+  "tests_passed": "7/7 OK (1.963s)",
+  "promoted_at": 1788428515,
+  "homologation_call": "CALL-HANGAR-V1-REPO-MIGRATION-T5-001"
 }
 ```

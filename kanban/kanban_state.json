@@ -1,6 +1,6 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-03T05:44:03.612138-03:00",
+  "generated_at": "2026-09-03T06:41:55.333022-03:00",
   "total_cards": 125,
   "counts": {
     "triage": 0,
@@ -8,8 +8,8 @@
     "todo": 0,
     "in_progress": 0,
     "blocked": 0,
-    "review": 1,
-    "done": 15,
+    "review": 0,
+    "done": 16,
     "archived": 109
   },
   "cards": [
@@ -2414,18 +2414,18 @@
       "card_id": "t_hangar_v1_repo_migration_01",
       "title": "T-HANGAR-V1-REPO-MIGRATION-01: Migra\u00e7\u00e3o do Reposit\u00f3rio Can\u00f4nico para BNeto04/Hangar_v1",
       "body": "Migra\u00e7\u00e3o de todo o ecossistema can\u00f4nico do Hangar para o reposit\u00f3rio dedicado BNeto04/Hangar_v1:\n- Cria\u00e7\u00e3o e inicializa\u00e7\u00e3o do repo BNeto04/Hangar_v1.\n- Migra\u00e7\u00e3o de DOCS/, vault/, az000_governance/, envelopes/, test_hangar_v1_sprint_01.py.\n- Migra\u00e7\u00e3o do espelho Kanban (kanban/kanban_state.json).\n- Cria\u00e7\u00e3o de CUTOVER_MANIFEST.md referenciando syntheon_adk PR #2 como hist\u00f3rico read-only.\n- Cria\u00e7\u00e3o da branch permanente bridge-chatgpt-antigravity e da nova PR de mensagens.\n- Atualiza\u00e7\u00e3o do relay local para operar sobre o novo reposit\u00f3rio.\n- Rota: N01 > N02 > Hermes > N03 > N09 > N08 > N07.",
-      "status": "review",
+      "status": "done",
       "priority": 1,
       "created_at": 1788424894,
       "started_at": 1788424894,
-      "completed_at": null,
+      "completed_at": 1788428515,
       "metadata": {
         "card_id": "t_hangar_v1_repo_migration_01",
         "call_id": "CALL-HANGAR-V1-REPO-MIGRATION-001",
         "target": "BNeto04/Hangar_v1",
         "workspace_kind": "Hangar_v1",
-        "status": "REPO_MIGRATED_CANONICAL_ESTABLISHED",
-        "trust_level": "T4",
+        "status": "DONE",
+        "trust_level": "T5",
         "quality_gate_status": "QUALITY_GATE_PASS",
         "recommendation": "ADVANCE",
         "eligible_for_promotion": true,
@@ -2434,7 +2434,9 @@
         "canonical_repo": "BNeto04/Hangar_v1",
         "bridge_branch": "bridge-chatgpt-antigravity",
         "new_pr_number": 1,
-        "tests_passed": "7/7 OK (1.963s)"
+        "tests_passed": "7/7 OK (1.963s)",
+        "promoted_at": 1788428515,
+        "homologation_call": "CALL-HANGAR-V1-REPO-MIGRATION-T5-001"
       }
     }
   ]

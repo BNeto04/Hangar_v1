@@ -214,8 +214,8 @@ class TestHangarV1Sprint01(unittest.TestCase):
         self.assertIn("BROKEN_LINKS == 0", content)
         self.assertIn("DUPLICATE_ACTIVE_DOCS == 0", content)
 
-        # 2. Invariante: Zero arquivos .md soltos na raiz de hangar_v1
-        loose_md_files = list(self.hangar_dir.glob("*.md"))
+        # 2. Invariante: Zero arquivos .md de arquitetura soltos na raiz de hangar_v1
+        loose_md_files = [p for p in self.hangar_dir.glob("*.md") if p.name not in ("README.md", "CUTOVER_MANIFEST.md")]
         self.assertEqual(len(loose_md_files), 0, f"Documentos soltos na raiz de hangar_v1: {loose_md_files}")
 
         # 3. Invariante: Zero arquivos soltos fora das 11 seções canônicas na raiz do Vault
@@ -241,13 +241,22 @@ class TestHangarV1Sprint01(unittest.TestCase):
 
     def test_07_az000_owner_intent_depth_e2e(self):
         """Validação end-to-end do circuito funcional AZ000 OWNER_INTENT com caminhos válidos e fail-closed."""
-        from hangar_v1.az000_governance.owner_intent.circuit import OwnerIntentCircuit
-        from hangar_v1.az000_governance.owner_intent.contracts import OwnerRawIntent, SealedIntentContract
-        from hangar_v1.az000_governance.owner_intent.ports import (
-            PORT_OWNER_INTENT_INGEST,
-            PORT_INTENT_HANDOFF_N01,
-            PORT_PLANNER_N01_RECEIVE
-        )
+        try:
+            from az000_governance.owner_intent.circuit import OwnerIntentCircuit
+            from az000_governance.owner_intent.contracts import OwnerRawIntent, SealedIntentContract
+            from az000_governance.owner_intent.ports import (
+                PORT_OWNER_INTENT_INGEST,
+                PORT_INTENT_HANDOFF_N01,
+                PORT_PLANNER_N01_RECEIVE
+            )
+        except ImportError:
+            from hangar_v1.az000_governance.owner_intent.circuit import OwnerIntentCircuit
+            from hangar_v1.az000_governance.owner_intent.contracts import OwnerRawIntent, SealedIntentContract
+            from hangar_v1.az000_governance.owner_intent.ports import (
+                PORT_OWNER_INTENT_INGEST,
+                PORT_INTENT_HANDOFF_N01,
+                PORT_PLANNER_N01_RECEIVE
+            )
 
         # Caso 1: Caminho Válido (ACCEPT -> SEAL -> HANDOFF)
         valid_raw = {

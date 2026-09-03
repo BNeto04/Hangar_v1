@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "test-curate-1-pipe-canvas-persist-v",
+  "target_path": "curator_downplant.canvas",
+  "expected_sha256": "5891ea66cfad1cea2206ac3ecd140ef10b75aa54ce0f465c4d4c664693d3530a"
+}

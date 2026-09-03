@@ -1,0 +1,5 @@
+{
+  "schema": "NM-OBS-READ-1",
+  "operation_id": "op-1-r-gn-1",
+  "target_path": "Gates/QualityGateCriteria.md"
+}

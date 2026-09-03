@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-MASTER-WORLD-P3-curate-pipe-canvas-persist-v",
+  "target_path": "curator_downplant.canvas",
+  "expected_sha256": "18b375f238f599a58db8fe13c7d3886a1b59c2284670f240e6febbfd1aa9427d"
+}

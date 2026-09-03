@@ -1,0 +1,5 @@
+{
+  "schema": "NM-OBS-READ-1",
+  "operation_id": "verif-test-1-curate-pipe-r-gn-0",
+  "target_path": "Architecture/Topology.md"
+}

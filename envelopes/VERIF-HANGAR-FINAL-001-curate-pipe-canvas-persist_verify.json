@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-HANGAR-FINAL-001-curate-pipe-canvas-persist-v",
+  "target_path": "curator_downplant.canvas",
+  "expected_sha256": "668072087788fb8dd03e5cdde9e1a5a70b71ce56f0257c4831d9532156b3cabe"
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-MASTER-WORLD-P1-curate-map-persist-dpjson-v",
+  "target_path": "curator_downplant_graph.json",
+  "expected_sha256": "19ea2dc036126de9328be8e453f5fde798947d891de3f179e2c457714f4b0e00"
+}

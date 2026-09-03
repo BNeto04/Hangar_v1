@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "test-curate-1-map-persist-dpjson-v",
+  "target_path": "curator_downplant_graph.json",
+  "expected_sha256": "e7a64837efdeb0835fda8339e2b0faebf75c3341fb53829264ddd259e1b56644"
+}

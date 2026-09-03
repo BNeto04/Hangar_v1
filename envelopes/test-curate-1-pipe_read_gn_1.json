@@ -1,0 +1,5 @@
+{
+  "schema": "NM-OBS-READ-1",
+  "operation_id": "test-curate-1-pipe-r-gn-1",
+  "target_path": "02_EXECUTION_ALGORITHM.md"
+}

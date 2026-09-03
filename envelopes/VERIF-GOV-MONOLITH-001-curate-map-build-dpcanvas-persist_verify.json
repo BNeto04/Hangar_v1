@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-GOV-MONOLITH-001-curate-map-build-dpcanvas-persist-v",
+  "target_path": "curator_downplant.canvas",
+  "expected_sha256": "860e2c0f15a24c75e21b08d9e38d14b81b169fdeb261f82b140968c83ffea11b"
+}

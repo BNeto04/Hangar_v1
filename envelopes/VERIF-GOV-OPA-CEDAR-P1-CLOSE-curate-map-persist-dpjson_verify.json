@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-GOV-OPA-CEDAR-P1-CLOSE-curate-map-persist-dpjson-v",
+  "target_path": "curator_downplant_graph.json",
+  "expected_sha256": "adc349b87529e6fd3159d51041557548164c7dea0cfaacacb6df60fd88e93938"
+}

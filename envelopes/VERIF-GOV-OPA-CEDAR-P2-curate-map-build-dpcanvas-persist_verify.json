@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-GOV-OPA-CEDAR-P2-curate-map-build-dpcanvas-persist-v",
+  "target_path": "curator_downplant.canvas",
+  "expected_sha256": "7720f84e7d372a0d7418eaa80079aa9c99ca18cbadaf82161a6d961b6e088e95"
+}

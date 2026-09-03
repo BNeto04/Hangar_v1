@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "verif-test-1-curate-map-build-dpcanvas-persist-v",
+  "target_path": "curator_downplant.canvas",
+  "expected_sha256": "00c746f6aa8b4041420190057ee60984fa517ed2599b60d60e6a32ae5ebeedac"
+}

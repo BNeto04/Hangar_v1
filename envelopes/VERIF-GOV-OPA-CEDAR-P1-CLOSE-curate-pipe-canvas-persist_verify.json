@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-GOV-OPA-CEDAR-P1-CLOSE-curate-pipe-canvas-persist-v",
+  "target_path": "curator_downplant.canvas",
+  "expected_sha256": "56e82b61b65df502f026b00888e48247bdfa4b06c51f303d74dc6ad641684538"
+}

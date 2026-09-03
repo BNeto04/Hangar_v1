@@ -1,0 +1,2424 @@
+{
+  "artifacts": [
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_9b614210",
+      "dp_type": "ARTIFACT",
+      "file_path": "CAPABILITIES/INDEX.md",
+      "graph_node_id": "node_9eba37a2b772",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\CAPABILITIES\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 103,
+        "relative_path": "CAPABILITIES/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_fe7431db",
+      "dp_type": "ARTIFACT",
+      "file_path": "COCKPITS/INDEX.md",
+      "graph_node_id": "node_9e60c996f255",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\COCKPITS\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 106,
+        "relative_path": "COCKPITS/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_aa335b26",
+      "dp_type": "ARTIFACT",
+      "file_path": "EXTERNAL/INDEX.md",
+      "graph_node_id": "node_0e32a8926ce9",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\EXTERNAL\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 94,
+        "relative_path": "EXTERNAL/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_ecd23f78",
+      "dp_type": "ARTIFACT",
+      "file_path": "GOVERNANCE/GOVERNANCE.md",
+      "graph_node_id": "node_b5ecc52ba56e",
+      "name": "GOVERNANCE.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\GOVERNANCE\\GOVERNANCE.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 15753,
+        "relative_path": "GOVERNANCE/GOVERNANCE.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_2a0e1505",
+      "dp_type": "ARTIFACT",
+      "file_path": "GOVERNANCE/INDEX.md",
+      "graph_node_id": "node_119c70942d3b",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\GOVERNANCE\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 300,
+        "relative_path": "GOVERNANCE/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_6a9f30c8",
+      "dp_type": "ARTIFACT",
+      "file_path": "INDEX.md",
+      "graph_node_id": "node_a48746cae70c",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 930,
+        "relative_path": "INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_9acaa2e3",
+      "dp_type": "ARTIFACT",
+      "file_path": "INTELLIGENCE/INDEX.md",
+      "graph_node_id": "node_f145f956f40f",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\INTELLIGENCE\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 116,
+        "relative_path": "INTELLIGENCE/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_8977123a",
+      "dp_type": "ARTIFACT",
+      "file_path": "MACHINES/INDEX.md",
+      "graph_node_id": "node_d681635298c1",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\MACHINES\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 110,
+        "relative_path": "MACHINES/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_94253892",
+      "dp_type": "ARTIFACT",
+      "file_path": "PLANT/INDEX.md",
+      "graph_node_id": "node_a06ea6120ba4",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PLANT\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 103,
+        "relative_path": "PLANT/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_194181f6",
+      "dp_type": "ARTIFACT",
+      "file_path": "PORTS/INDEX.md",
+      "graph_node_id": "node_e07829c4a5ff",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PORTS\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 106,
+        "relative_path": "PORTS/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_2181476b",
+      "dp_type": "ARTIFACT",
+      "file_path": "PRODUCTS/INDEX.md",
+      "graph_node_id": "node_8d7011ac7467",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PRODUCTS\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 99,
+        "relative_path": "PRODUCTS/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_daa5fe57",
+      "dp_type": "ARTIFACT",
+      "file_path": "TRACE/INDEX.md",
+      "graph_node_id": "node_6b392e7b1dd4",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\TRACE\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 105,
+        "relative_path": "TRACE/INDEX.md"
+      }
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 1.0,
+      "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+      "dp_id": "art_c248bb39",
+      "dp_type": "ARTIFACT",
+      "file_path": "WORLD/INDEX.md",
+      "graph_node_id": "node_9a2ce141c446",
+      "name": "INDEX.md",
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\WORLD\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 100,
+        "relative_path": "WORLD/INDEX.md"
+      }
+    }
+  ],
+  "circuits": [
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'COCKPITS'.",
+      "dp_id": "circ_CAPABILITIES_COCKPITS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> COCKPITS",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "COCKPITS/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "COCKPITS",
+      "target_room_id": "room_9d9f2a8c"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'EXTERNAL'.",
+      "dp_id": "circ_CAPABILITIES_EXTERNAL",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> EXTERNAL",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "EXTERNAL/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "EXTERNAL",
+      "target_room_id": "room_943435e3"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'GOVERNANCE'.",
+      "dp_id": "circ_CAPABILITIES_GOVERNANCE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> GOVERNANCE",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "GOVERNANCE/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "GOVERNANCE",
+      "target_room_id": "room_c9766ca4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'INTELLIGENCE'.",
+      "dp_id": "circ_CAPABILITIES_INTELLIGENCE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> INTELLIGENCE",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "INTELLIGENCE/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "INTELLIGENCE",
+      "target_room_id": "room_4a3fa3f8"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'MACHINES'.",
+      "dp_id": "circ_CAPABILITIES_MACHINES",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> MACHINES",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "MACHINES/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "MACHINES",
+      "target_room_id": "room_6cc52edd"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'PLANT'.",
+      "dp_id": "circ_CAPABILITIES_PLANT",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> PLANT",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "PLANT/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "PLANT",
+      "target_room_id": "room_8084dc38"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'PORTS'.",
+      "dp_id": "circ_CAPABILITIES_PORTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> PORTS",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "PORTS/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "PORTS",
+      "target_room_id": "room_815390b4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'PRODUCTS'.",
+      "dp_id": "circ_CAPABILITIES_PRODUCTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> PRODUCTS",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "PRODUCTS/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "PRODUCTS",
+      "target_room_id": "room_3370c7a7"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'Root_Domain'.",
+      "dp_id": "circ_CAPABILITIES_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'TRACE'.",
+      "dp_id": "circ_CAPABILITIES_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'CAPABILITIES' a 'WORLD'.",
+      "dp_id": "circ_CAPABILITIES_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: CAPABILITIES -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "CAPABILITIES/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "CAPABILITIES",
+      "source_room_id": "room_bb02bd34",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'EXTERNAL'.",
+      "dp_id": "circ_COCKPITS_EXTERNAL",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> EXTERNAL",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "EXTERNAL/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "EXTERNAL",
+      "target_room_id": "room_943435e3"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'GOVERNANCE'.",
+      "dp_id": "circ_COCKPITS_GOVERNANCE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> GOVERNANCE",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "GOVERNANCE/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "GOVERNANCE",
+      "target_room_id": "room_c9766ca4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'INTELLIGENCE'.",
+      "dp_id": "circ_COCKPITS_INTELLIGENCE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> INTELLIGENCE",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "INTELLIGENCE/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "INTELLIGENCE",
+      "target_room_id": "room_4a3fa3f8"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'MACHINES'.",
+      "dp_id": "circ_COCKPITS_MACHINES",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> MACHINES",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "MACHINES/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "MACHINES",
+      "target_room_id": "room_6cc52edd"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'PLANT'.",
+      "dp_id": "circ_COCKPITS_PLANT",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> PLANT",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "PLANT/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "PLANT",
+      "target_room_id": "room_8084dc38"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'PORTS'.",
+      "dp_id": "circ_COCKPITS_PORTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> PORTS",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "PORTS/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "PORTS",
+      "target_room_id": "room_815390b4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'PRODUCTS'.",
+      "dp_id": "circ_COCKPITS_PRODUCTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> PRODUCTS",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "PRODUCTS/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "PRODUCTS",
+      "target_room_id": "room_3370c7a7"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'Root_Domain'.",
+      "dp_id": "circ_COCKPITS_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'TRACE'.",
+      "dp_id": "circ_COCKPITS_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'COCKPITS' a 'WORLD'.",
+      "dp_id": "circ_COCKPITS_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: COCKPITS -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "COCKPITS/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "COCKPITS",
+      "source_room_id": "room_9d9f2a8c",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'GOVERNANCE'.",
+      "dp_id": "circ_EXTERNAL_GOVERNANCE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> GOVERNANCE",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "GOVERNANCE/INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "GOVERNANCE",
+      "target_room_id": "room_c9766ca4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'INTELLIGENCE'.",
+      "dp_id": "circ_EXTERNAL_INTELLIGENCE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> INTELLIGENCE",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "INTELLIGENCE/INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "INTELLIGENCE",
+      "target_room_id": "room_4a3fa3f8"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'MACHINES'.",
+      "dp_id": "circ_EXTERNAL_MACHINES",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> MACHINES",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "MACHINES/INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "MACHINES",
+      "target_room_id": "room_6cc52edd"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'PLANT'.",
+      "dp_id": "circ_EXTERNAL_PLANT",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> PLANT",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "PLANT/INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "PLANT",
+      "target_room_id": "room_8084dc38"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'PORTS'.",
+      "dp_id": "circ_EXTERNAL_PORTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> PORTS",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "PORTS/INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "PORTS",
+      "target_room_id": "room_815390b4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'PRODUCTS'.",
+      "dp_id": "circ_EXTERNAL_PRODUCTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> PRODUCTS",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "PRODUCTS/INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "PRODUCTS",
+      "target_room_id": "room_3370c7a7"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'Root_Domain'.",
+      "dp_id": "circ_EXTERNAL_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'TRACE'.",
+      "dp_id": "circ_EXTERNAL_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'EXTERNAL' a 'WORLD'.",
+      "dp_id": "circ_EXTERNAL_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: EXTERNAL -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "EXTERNAL/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "EXTERNAL",
+      "source_room_id": "room_943435e3",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'GOVERNANCE' a 'INTELLIGENCE'.",
+      "dp_id": "circ_GOVERNANCE_INTELLIGENCE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: GOVERNANCE -> INTELLIGENCE",
+      "path_length": 1,
+      "path_nodes": [
+        "GOVERNANCE/INDEX.md",
+        "INTELLIGENCE/INDEX.md"
+      ],
+      "source_room": "GOVERNANCE",
+      "source_room_id": "room_c9766ca4",
+      "target_room": "INTELLIGENCE",
+      "target_room_id": "room_4a3fa3f8"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'GOVERNANCE' a 'MACHINES'.",
+      "dp_id": "circ_GOVERNANCE_MACHINES",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: GOVERNANCE -> MACHINES",
+      "path_length": 1,
+      "path_nodes": [
+        "GOVERNANCE/INDEX.md",
+        "MACHINES/INDEX.md"
+      ],
+      "source_room": "GOVERNANCE",
+      "source_room_id": "room_c9766ca4",
+      "target_room": "MACHINES",
+      "target_room_id": "room_6cc52edd"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'GOVERNANCE' a 'PLANT'.",
+      "dp_id": "circ_GOVERNANCE_PLANT",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: GOVERNANCE -> PLANT",
+      "path_length": 1,
+      "path_nodes": [
+        "GOVERNANCE/INDEX.md",
+        "PLANT/INDEX.md"
+      ],
+      "source_room": "GOVERNANCE",
+      "source_room_id": "room_c9766ca4",
+      "target_room": "PLANT",
+      "target_room_id": "room_8084dc38"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'GOVERNANCE' a 'PORTS'.",
+      "dp_id": "circ_GOVERNANCE_PORTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: GOVERNANCE -> PORTS",
+      "path_length": 1,
+      "path_nodes": [
+        "GOVERNANCE/INDEX.md",
+        "PORTS/INDEX.md"
+      ],
+      "source_room": "GOVERNANCE",
+      "source_room_id": "room_c9766ca4",
+      "target_room": "PORTS",
+      "target_room_id": "room_815390b4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'GOVERNANCE' a 'PRODUCTS'.",
+      "dp_id": "circ_GOVERNANCE_PRODUCTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: GOVERNANCE -> PRODUCTS",
+      "path_length": 1,
+      "path_nodes": [
+        "GOVERNANCE/INDEX.md",
+        "PRODUCTS/INDEX.md"
+      ],
+      "source_room": "GOVERNANCE",
+      "source_room_id": "room_c9766ca4",
+      "target_room": "PRODUCTS",
+      "target_room_id": "room_3370c7a7"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'GOVERNANCE' a 'Root_Domain'.",
+      "dp_id": "circ_GOVERNANCE_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: GOVERNANCE -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "GOVERNANCE/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "GOVERNANCE",
+      "source_room_id": "room_c9766ca4",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'GOVERNANCE' a 'TRACE'.",
+      "dp_id": "circ_GOVERNANCE_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: GOVERNANCE -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "GOVERNANCE/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "GOVERNANCE",
+      "source_room_id": "room_c9766ca4",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'GOVERNANCE' a 'WORLD'.",
+      "dp_id": "circ_GOVERNANCE_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: GOVERNANCE -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "GOVERNANCE/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "GOVERNANCE",
+      "source_room_id": "room_c9766ca4",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'INTELLIGENCE' a 'MACHINES'.",
+      "dp_id": "circ_INTELLIGENCE_MACHINES",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: INTELLIGENCE -> MACHINES",
+      "path_length": 1,
+      "path_nodes": [
+        "INTELLIGENCE/INDEX.md",
+        "MACHINES/INDEX.md"
+      ],
+      "source_room": "INTELLIGENCE",
+      "source_room_id": "room_4a3fa3f8",
+      "target_room": "MACHINES",
+      "target_room_id": "room_6cc52edd"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'INTELLIGENCE' a 'PLANT'.",
+      "dp_id": "circ_INTELLIGENCE_PLANT",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: INTELLIGENCE -> PLANT",
+      "path_length": 1,
+      "path_nodes": [
+        "INTELLIGENCE/INDEX.md",
+        "PLANT/INDEX.md"
+      ],
+      "source_room": "INTELLIGENCE",
+      "source_room_id": "room_4a3fa3f8",
+      "target_room": "PLANT",
+      "target_room_id": "room_8084dc38"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'INTELLIGENCE' a 'PORTS'.",
+      "dp_id": "circ_INTELLIGENCE_PORTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: INTELLIGENCE -> PORTS",
+      "path_length": 1,
+      "path_nodes": [
+        "INTELLIGENCE/INDEX.md",
+        "PORTS/INDEX.md"
+      ],
+      "source_room": "INTELLIGENCE",
+      "source_room_id": "room_4a3fa3f8",
+      "target_room": "PORTS",
+      "target_room_id": "room_815390b4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'INTELLIGENCE' a 'PRODUCTS'.",
+      "dp_id": "circ_INTELLIGENCE_PRODUCTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: INTELLIGENCE -> PRODUCTS",
+      "path_length": 1,
+      "path_nodes": [
+        "INTELLIGENCE/INDEX.md",
+        "PRODUCTS/INDEX.md"
+      ],
+      "source_room": "INTELLIGENCE",
+      "source_room_id": "room_4a3fa3f8",
+      "target_room": "PRODUCTS",
+      "target_room_id": "room_3370c7a7"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'INTELLIGENCE' a 'Root_Domain'.",
+      "dp_id": "circ_INTELLIGENCE_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: INTELLIGENCE -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "INTELLIGENCE/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "INTELLIGENCE",
+      "source_room_id": "room_4a3fa3f8",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'INTELLIGENCE' a 'TRACE'.",
+      "dp_id": "circ_INTELLIGENCE_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: INTELLIGENCE -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "INTELLIGENCE/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "INTELLIGENCE",
+      "source_room_id": "room_4a3fa3f8",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'INTELLIGENCE' a 'WORLD'.",
+      "dp_id": "circ_INTELLIGENCE_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: INTELLIGENCE -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "INTELLIGENCE/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "INTELLIGENCE",
+      "source_room_id": "room_4a3fa3f8",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'MACHINES' a 'PLANT'.",
+      "dp_id": "circ_MACHINES_PLANT",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: MACHINES -> PLANT",
+      "path_length": 1,
+      "path_nodes": [
+        "MACHINES/INDEX.md",
+        "PLANT/INDEX.md"
+      ],
+      "source_room": "MACHINES",
+      "source_room_id": "room_6cc52edd",
+      "target_room": "PLANT",
+      "target_room_id": "room_8084dc38"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'MACHINES' a 'PORTS'.",
+      "dp_id": "circ_MACHINES_PORTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: MACHINES -> PORTS",
+      "path_length": 1,
+      "path_nodes": [
+        "MACHINES/INDEX.md",
+        "PORTS/INDEX.md"
+      ],
+      "source_room": "MACHINES",
+      "source_room_id": "room_6cc52edd",
+      "target_room": "PORTS",
+      "target_room_id": "room_815390b4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'MACHINES' a 'PRODUCTS'.",
+      "dp_id": "circ_MACHINES_PRODUCTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: MACHINES -> PRODUCTS",
+      "path_length": 1,
+      "path_nodes": [
+        "MACHINES/INDEX.md",
+        "PRODUCTS/INDEX.md"
+      ],
+      "source_room": "MACHINES",
+      "source_room_id": "room_6cc52edd",
+      "target_room": "PRODUCTS",
+      "target_room_id": "room_3370c7a7"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'MACHINES' a 'Root_Domain'.",
+      "dp_id": "circ_MACHINES_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: MACHINES -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "MACHINES/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "MACHINES",
+      "source_room_id": "room_6cc52edd",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'MACHINES' a 'TRACE'.",
+      "dp_id": "circ_MACHINES_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: MACHINES -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "MACHINES/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "MACHINES",
+      "source_room_id": "room_6cc52edd",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'MACHINES' a 'WORLD'.",
+      "dp_id": "circ_MACHINES_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: MACHINES -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "MACHINES/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "MACHINES",
+      "source_room_id": "room_6cc52edd",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PLANT' a 'PORTS'.",
+      "dp_id": "circ_PLANT_PORTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PLANT -> PORTS",
+      "path_length": 1,
+      "path_nodes": [
+        "PLANT/INDEX.md",
+        "PORTS/INDEX.md"
+      ],
+      "source_room": "PLANT",
+      "source_room_id": "room_8084dc38",
+      "target_room": "PORTS",
+      "target_room_id": "room_815390b4"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PLANT' a 'PRODUCTS'.",
+      "dp_id": "circ_PLANT_PRODUCTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PLANT -> PRODUCTS",
+      "path_length": 1,
+      "path_nodes": [
+        "PLANT/INDEX.md",
+        "PRODUCTS/INDEX.md"
+      ],
+      "source_room": "PLANT",
+      "source_room_id": "room_8084dc38",
+      "target_room": "PRODUCTS",
+      "target_room_id": "room_3370c7a7"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PLANT' a 'Root_Domain'.",
+      "dp_id": "circ_PLANT_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PLANT -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "PLANT/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "PLANT",
+      "source_room_id": "room_8084dc38",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PLANT' a 'TRACE'.",
+      "dp_id": "circ_PLANT_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PLANT -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "PLANT/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "PLANT",
+      "source_room_id": "room_8084dc38",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PLANT' a 'WORLD'.",
+      "dp_id": "circ_PLANT_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PLANT -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "PLANT/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "PLANT",
+      "source_room_id": "room_8084dc38",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PORTS' a 'PRODUCTS'.",
+      "dp_id": "circ_PORTS_PRODUCTS",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PORTS -> PRODUCTS",
+      "path_length": 1,
+      "path_nodes": [
+        "PORTS/INDEX.md",
+        "PRODUCTS/INDEX.md"
+      ],
+      "source_room": "PORTS",
+      "source_room_id": "room_815390b4",
+      "target_room": "PRODUCTS",
+      "target_room_id": "room_3370c7a7"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PORTS' a 'Root_Domain'.",
+      "dp_id": "circ_PORTS_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PORTS -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "PORTS/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "PORTS",
+      "source_room_id": "room_815390b4",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PORTS' a 'TRACE'.",
+      "dp_id": "circ_PORTS_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PORTS -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "PORTS/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "PORTS",
+      "source_room_id": "room_815390b4",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PORTS' a 'WORLD'.",
+      "dp_id": "circ_PORTS_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PORTS -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "PORTS/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "PORTS",
+      "source_room_id": "room_815390b4",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PRODUCTS' a 'Root_Domain'.",
+      "dp_id": "circ_PRODUCTS_Root_Domain",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PRODUCTS -> Root_Domain",
+      "path_length": 1,
+      "path_nodes": [
+        "PRODUCTS/INDEX.md",
+        "INDEX.md"
+      ],
+      "source_room": "PRODUCTS",
+      "source_room_id": "room_3370c7a7",
+      "target_room": "Root_Domain",
+      "target_room_id": "room_060880c5"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PRODUCTS' a 'TRACE'.",
+      "dp_id": "circ_PRODUCTS_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PRODUCTS -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "PRODUCTS/INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "PRODUCTS",
+      "source_room_id": "room_3370c7a7",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'PRODUCTS' a 'WORLD'.",
+      "dp_id": "circ_PRODUCTS_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: PRODUCTS -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "PRODUCTS/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "PRODUCTS",
+      "source_room_id": "room_3370c7a7",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'Root_Domain' a 'TRACE'.",
+      "dp_id": "circ_Root_Domain_TRACE",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: Root_Domain -> TRACE",
+      "path_length": 1,
+      "path_nodes": [
+        "INDEX.md",
+        "TRACE/INDEX.md"
+      ],
+      "source_room": "Root_Domain",
+      "source_room_id": "room_060880c5",
+      "target_room": "TRACE",
+      "target_room_id": "room_1c2d8148"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'Root_Domain' a 'WORLD'.",
+      "dp_id": "circ_Root_Domain_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: Root_Domain -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "Root_Domain",
+      "source_room_id": "room_060880c5",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.9,
+      "derivation_reason": "Caminho canônico ligando 'TRACE' a 'WORLD'.",
+      "dp_id": "circ_TRACE_WORLD",
+      "dp_type": "CIRCUIT",
+      "name": "Circuit: TRACE -> WORLD",
+      "path_length": 1,
+      "path_nodes": [
+        "TRACE/INDEX.md",
+        "WORLD/INDEX.md"
+      ],
+      "source_room": "TRACE",
+      "source_room_id": "room_1c2d8148",
+      "target_room": "WORLD",
+      "target_room_id": "room_d7b0bbea"
+    }
+  ],
+  "classification": "OBSERVED",
+  "confidence": 1.0,
+  "dp_type": "TERRITORY",
+  "name": "vault",
+  "ports": [
+    {
+      "bridge_node_id": "node_9eba37a2b772",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'CAPABILITIES' com os cômodos ['COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PORTS', 'PRODUCTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_9b614210",
+      "dp_type": "PORT",
+      "file_path": "CAPABILITIES/INDEX.md",
+      "home_room": "CAPABILITIES",
+      "home_room_id": "room_bb02bd34",
+      "incoming_edges_count": 7,
+      "name": "Port: ⚡ CAPABILITIES",
+      "outgoing_edges_count": 4,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\CAPABILITIES\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 103,
+        "relative_path": "CAPABILITIES/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_9e60c996f255",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'COCKPITS' com os cômodos ['CAPABILITIES', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PORTS', 'PRODUCTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_fe7431db",
+      "dp_type": "PORT",
+      "file_path": "COCKPITS/INDEX.md",
+      "home_room": "COCKPITS",
+      "home_room_id": "room_9d9f2a8c",
+      "incoming_edges_count": 6,
+      "name": "Port: 🎛️ COCKPITS",
+      "outgoing_edges_count": 5,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\COCKPITS\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 106,
+        "relative_path": "COCKPITS/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_0e32a8926ce9",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'EXTERNAL' com os cômodos ['CAPABILITIES', 'COCKPITS', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PORTS', 'PRODUCTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_aa335b26",
+      "dp_type": "PORT",
+      "file_path": "EXTERNAL/INDEX.md",
+      "home_room": "EXTERNAL",
+      "home_room_id": "room_943435e3",
+      "incoming_edges_count": 1,
+      "name": "Port: 🌐 EXTERNAL",
+      "outgoing_edges_count": 10,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\EXTERNAL\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 94,
+        "relative_path": "EXTERNAL/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_119c70942d3b",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'GOVERNANCE' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PORTS', 'PRODUCTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_2a0e1505",
+      "dp_type": "PORT",
+      "file_path": "GOVERNANCE/INDEX.md",
+      "home_room": "GOVERNANCE",
+      "home_room_id": "room_c9766ca4",
+      "incoming_edges_count": 2,
+      "name": "Port: ⚖️ GOVERNANCE - ÍNDICE MESTRE",
+      "outgoing_edges_count": 10,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\GOVERNANCE\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 300,
+        "relative_path": "GOVERNANCE/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_a48746cae70c",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'Root_Domain' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PORTS', 'PRODUCTS', 'TRACE', 'WORLD'].",
+      "dp_id": "port_6a9f30c8",
+      "dp_type": "PORT",
+      "file_path": "INDEX.md",
+      "home_room": "Root_Domain",
+      "home_room_id": "room_060880c5",
+      "incoming_edges_count": 0,
+      "name": "Port: 🏛️ HANGAR V1 VAULT - ÍNDICE MESTRE",
+      "outgoing_edges_count": 11,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 930,
+        "relative_path": "INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_f145f956f40f",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'INTELLIGENCE' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'MACHINES', 'PLANT', 'PORTS', 'PRODUCTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_9acaa2e3",
+      "dp_type": "PORT",
+      "file_path": "INTELLIGENCE/INDEX.md",
+      "home_room": "INTELLIGENCE",
+      "home_room_id": "room_4a3fa3f8",
+      "incoming_edges_count": 11,
+      "name": "Port: 🧠 INTELLIGENCE",
+      "outgoing_edges_count": 0,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\INTELLIGENCE\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 116,
+        "relative_path": "INTELLIGENCE/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_d681635298c1",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'MACHINES' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'PLANT', 'PORTS', 'PRODUCTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_8977123a",
+      "dp_type": "PORT",
+      "file_path": "MACHINES/INDEX.md",
+      "home_room": "MACHINES",
+      "home_room_id": "room_6cc52edd",
+      "incoming_edges_count": 9,
+      "name": "Port: ⚙️ MACHINES",
+      "outgoing_edges_count": 2,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\MACHINES\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 110,
+        "relative_path": "MACHINES/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_a06ea6120ba4",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'PLANT' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PORTS', 'PRODUCTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_94253892",
+      "dp_type": "PORT",
+      "file_path": "PLANT/INDEX.md",
+      "home_room": "PLANT",
+      "home_room_id": "room_8084dc38",
+      "incoming_edges_count": 8,
+      "name": "Port: 🏭 PLANT",
+      "outgoing_edges_count": 3,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PLANT\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 103,
+        "relative_path": "PLANT/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_e07829c4a5ff",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'PORTS' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PRODUCTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_194181f6",
+      "dp_type": "PORT",
+      "file_path": "PORTS/INDEX.md",
+      "home_room": "PORTS",
+      "home_room_id": "room_815390b4",
+      "incoming_edges_count": 10,
+      "name": "Port: 🔌 PORTS",
+      "outgoing_edges_count": 1,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PORTS\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 106,
+        "relative_path": "PORTS/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_8d7011ac7467",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "Root_Domain",
+        "TRACE",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'PRODUCTS' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PORTS', 'Root_Domain', 'TRACE', 'WORLD'].",
+      "dp_id": "port_2181476b",
+      "dp_type": "PORT",
+      "file_path": "PRODUCTS/INDEX.md",
+      "home_room": "PRODUCTS",
+      "home_room_id": "room_3370c7a7",
+      "incoming_edges_count": 4,
+      "name": "Port: 📦 PRODUCTS",
+      "outgoing_edges_count": 7,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PRODUCTS\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 99,
+        "relative_path": "PRODUCTS/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_6b392e7b1dd4",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "WORLD"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'TRACE' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PORTS', 'PRODUCTS', 'Root_Domain', 'WORLD'].",
+      "dp_id": "port_daa5fe57",
+      "dp_type": "PORT",
+      "file_path": "TRACE/INDEX.md",
+      "home_room": "TRACE",
+      "home_room_id": "room_1c2d8148",
+      "incoming_edges_count": 3,
+      "name": "Port: 📜 TRACE",
+      "outgoing_edges_count": 8,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\TRACE\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 105,
+        "relative_path": "TRACE/INDEX.md"
+      }
+    },
+    {
+      "bridge_node_id": "node_9a2ce141c446",
+      "classification": "DERIVED",
+      "confidence": 0.95,
+      "connected_rooms": [
+        "CAPABILITIES",
+        "COCKPITS",
+        "EXTERNAL",
+        "GOVERNANCE",
+        "INTELLIGENCE",
+        "MACHINES",
+        "PLANT",
+        "PORTS",
+        "PRODUCTS",
+        "Root_Domain",
+        "TRACE"
+      ],
+      "derivation_reason": "Nó bridge interconectando o cômodo 'WORLD' com os cômodos ['CAPABILITIES', 'COCKPITS', 'EXTERNAL', 'GOVERNANCE', 'INTELLIGENCE', 'MACHINES', 'PLANT', 'PORTS', 'PRODUCTS', 'Root_Domain', 'TRACE'].",
+      "dp_id": "port_c248bb39",
+      "dp_type": "PORT",
+      "file_path": "WORLD/INDEX.md",
+      "home_room": "WORLD",
+      "home_room_id": "room_d7b0bbea",
+      "incoming_edges_count": 5,
+      "name": "Port: 🌍 WORLD",
+      "outgoing_edges_count": 6,
+      "source_artifact": {
+        "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\WORLD\\INDEX.md",
+        "exists_on_disk": true,
+        "file_size_bytes": 100,
+        "relative_path": "WORLD/INDEX.md"
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'CAPABILITIES'.",
+      "dp_id": "room_bb02bd34",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_9eba37a2b772"
+      ],
+      "hubs": [
+        "node_9eba37a2b772"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_9b614210",
+              "dp_type": "ARTIFACT",
+              "file_path": "CAPABILITIES/INDEX.md",
+              "graph_node_id": "node_9eba37a2b772",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\CAPABILITIES\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 103,
+                "relative_path": "CAPABILITIES/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '⚡ CAPABILITIES' no cômodo 'CAPABILITIES'.",
+          "dp_id": "mod_f44979ba",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_9eba37a2b772"
+          ],
+          "name": "⚡ CAPABILITIES",
+          "parent_room_id": "room_bb02bd34",
+          "source_artifacts": [
+            "art_9b614210"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "CAPABILITIES"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'COCKPITS'.",
+      "dp_id": "room_9d9f2a8c",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_9e60c996f255"
+      ],
+      "hubs": [
+        "node_9e60c996f255"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_fe7431db",
+              "dp_type": "ARTIFACT",
+              "file_path": "COCKPITS/INDEX.md",
+              "graph_node_id": "node_9e60c996f255",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\COCKPITS\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 106,
+                "relative_path": "COCKPITS/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '🎛️ COCKPITS' no cômodo 'COCKPITS'.",
+          "dp_id": "mod_5ae0548e",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_9e60c996f255"
+          ],
+          "name": "🎛️ COCKPITS",
+          "parent_room_id": "room_9d9f2a8c",
+          "source_artifacts": [
+            "art_fe7431db"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "COCKPITS"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'EXTERNAL'.",
+      "dp_id": "room_943435e3",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_0e32a8926ce9"
+      ],
+      "hubs": [
+        "node_0e32a8926ce9"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_aa335b26",
+              "dp_type": "ARTIFACT",
+              "file_path": "EXTERNAL/INDEX.md",
+              "graph_node_id": "node_0e32a8926ce9",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\EXTERNAL\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 94,
+                "relative_path": "EXTERNAL/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '🌐 EXTERNAL' no cômodo 'EXTERNAL'.",
+          "dp_id": "mod_0c8ede9e",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_0e32a8926ce9"
+          ],
+          "name": "🌐 EXTERNAL",
+          "parent_room_id": "room_943435e3",
+          "source_artifacts": [
+            "art_aa335b26"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "EXTERNAL"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 1.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'GOVERNANCE'.",
+      "dp_id": "room_c9766ca4",
+      "dp_type": "ROOM",
+      "graph_edges_count": 1,
+      "graph_nodes": [
+        "node_119c70942d3b",
+        "node_b5ecc52ba56e"
+      ],
+      "hubs": [
+        "node_119c70942d3b"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_ecd23f78",
+              "dp_type": "ARTIFACT",
+              "file_path": "GOVERNANCE/GOVERNANCE.md",
+              "graph_node_id": "node_b5ecc52ba56e",
+              "name": "GOVERNANCE.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\GOVERNANCE\\GOVERNANCE.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 15753,
+                "relative_path": "GOVERNANCE/GOVERNANCE.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '⚖️ GOVERNANCE MONOLITH - HANGAR V1' no cômodo 'GOVERNANCE'.",
+          "dp_id": "mod_f5f1800b",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_b5ecc52ba56e"
+          ],
+          "name": "⚖️ GOVERNANCE MONOLITH - HANGAR V1",
+          "parent_room_id": "room_c9766ca4",
+          "source_artifacts": [
+            "art_ecd23f78"
+          ],
+          "submodules": []
+        },
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_2a0e1505",
+              "dp_type": "ARTIFACT",
+              "file_path": "GOVERNANCE/INDEX.md",
+              "graph_node_id": "node_119c70942d3b",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\GOVERNANCE\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 300,
+                "relative_path": "GOVERNANCE/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '⚖️ GOVERNANCE - ÍNDICE MESTRE' no cômodo 'GOVERNANCE'.",
+          "dp_id": "mod_fa069b3e",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_119c70942d3b"
+          ],
+          "name": "⚖️ GOVERNANCE - ÍNDICE MESTRE",
+          "parent_room_id": "room_c9766ca4",
+          "source_artifacts": [
+            "art_2a0e1505"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 2,
+      "name": "GOVERNANCE"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'INTELLIGENCE'.",
+      "dp_id": "room_4a3fa3f8",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_f145f956f40f"
+      ],
+      "hubs": [
+        "node_f145f956f40f"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_9acaa2e3",
+              "dp_type": "ARTIFACT",
+              "file_path": "INTELLIGENCE/INDEX.md",
+              "graph_node_id": "node_f145f956f40f",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\INTELLIGENCE\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 116,
+                "relative_path": "INTELLIGENCE/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '🧠 INTELLIGENCE' no cômodo 'INTELLIGENCE'.",
+          "dp_id": "mod_ca19048c",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_f145f956f40f"
+          ],
+          "name": "🧠 INTELLIGENCE",
+          "parent_room_id": "room_4a3fa3f8",
+          "source_artifacts": [
+            "art_9acaa2e3"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "INTELLIGENCE"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'MACHINES'.",
+      "dp_id": "room_6cc52edd",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_d681635298c1"
+      ],
+      "hubs": [
+        "node_d681635298c1"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_8977123a",
+              "dp_type": "ARTIFACT",
+              "file_path": "MACHINES/INDEX.md",
+              "graph_node_id": "node_d681635298c1",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\MACHINES\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 110,
+                "relative_path": "MACHINES/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '⚙️ MACHINES' no cômodo 'MACHINES'.",
+          "dp_id": "mod_145372b0",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_d681635298c1"
+          ],
+          "name": "⚙️ MACHINES",
+          "parent_room_id": "room_6cc52edd",
+          "source_artifacts": [
+            "art_8977123a"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "MACHINES"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'PLANT'.",
+      "dp_id": "room_8084dc38",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_a06ea6120ba4"
+      ],
+      "hubs": [
+        "node_a06ea6120ba4"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_94253892",
+              "dp_type": "ARTIFACT",
+              "file_path": "PLANT/INDEX.md",
+              "graph_node_id": "node_a06ea6120ba4",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PLANT\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 103,
+                "relative_path": "PLANT/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '🏭 PLANT' no cômodo 'PLANT'.",
+          "dp_id": "mod_5c36ac06",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_a06ea6120ba4"
+          ],
+          "name": "🏭 PLANT",
+          "parent_room_id": "room_8084dc38",
+          "source_artifacts": [
+            "art_94253892"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "PLANT"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'PORTS'.",
+      "dp_id": "room_815390b4",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_e07829c4a5ff"
+      ],
+      "hubs": [
+        "node_e07829c4a5ff"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_194181f6",
+              "dp_type": "ARTIFACT",
+              "file_path": "PORTS/INDEX.md",
+              "graph_node_id": "node_e07829c4a5ff",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PORTS\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 106,
+                "relative_path": "PORTS/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '🔌 PORTS' no cômodo 'PORTS'.",
+          "dp_id": "mod_0ed1478d",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_e07829c4a5ff"
+          ],
+          "name": "🔌 PORTS",
+          "parent_room_id": "room_815390b4",
+          "source_artifacts": [
+            "art_194181f6"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "PORTS"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'PRODUCTS'.",
+      "dp_id": "room_3370c7a7",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_8d7011ac7467"
+      ],
+      "hubs": [
+        "node_8d7011ac7467"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_2181476b",
+              "dp_type": "ARTIFACT",
+              "file_path": "PRODUCTS/INDEX.md",
+              "graph_node_id": "node_8d7011ac7467",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\PRODUCTS\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 99,
+                "relative_path": "PRODUCTS/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '📦 PRODUCTS' no cômodo 'PRODUCTS'.",
+          "dp_id": "mod_f40c20e1",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_8d7011ac7467"
+          ],
+          "name": "📦 PRODUCTS",
+          "parent_room_id": "room_3370c7a7",
+          "source_artifacts": [
+            "art_2181476b"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "PRODUCTS"
+    },
+    {
+      "classification": "DERIVED",
+      "confidence": 0.8,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'Root_Domain'.",
+      "dp_id": "room_060880c5",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_a48746cae70c"
+      ],
+      "hubs": [
+        "node_a48746cae70c"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_6a9f30c8",
+              "dp_type": "ARTIFACT",
+              "file_path": "INDEX.md",
+              "graph_node_id": "node_a48746cae70c",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 930,
+                "relative_path": "INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '🏛️ HANGAR V1 VAULT - ÍNDICE MESTRE' no cômodo 'Root_Domain'.",
+          "dp_id": "mod_810ea968",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_a48746cae70c"
+          ],
+          "name": "🏛️ HANGAR V1 VAULT - ÍNDICE MESTRE",
+          "parent_room_id": "room_060880c5",
+          "source_artifacts": [
+            "art_6a9f30c8"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "Root_Domain"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'TRACE'.",
+      "dp_id": "room_1c2d8148",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_6b392e7b1dd4"
+      ],
+      "hubs": [
+        "node_6b392e7b1dd4"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_daa5fe57",
+              "dp_type": "ARTIFACT",
+              "file_path": "TRACE/INDEX.md",
+              "graph_node_id": "node_6b392e7b1dd4",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\TRACE\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 105,
+                "relative_path": "TRACE/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '📜 TRACE' no cômodo 'TRACE'.",
+          "dp_id": "mod_a6fef128",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_6b392e7b1dd4"
+          ],
+          "name": "📜 TRACE",
+          "parent_room_id": "room_1c2d8148",
+          "source_artifacts": [
+            "art_daa5fe57"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "TRACE"
+    },
+    {
+      "classification": "OBSERVED",
+      "confidence": 0.95,
+      "density": 0.0,
+      "derivation_reason": "Cômodo arquitetural estruturado em torno do domínio coeso 'WORLD'.",
+      "dp_id": "room_d7b0bbea",
+      "dp_type": "ROOM",
+      "graph_edges_count": 0,
+      "graph_nodes": [
+        "node_9a2ce141c446"
+      ],
+      "hubs": [
+        "node_9a2ce141c446"
+      ],
+      "modules": [
+        {
+          "artifacts": [
+            {
+              "classification": "OBSERVED",
+              "confidence": 1.0,
+              "derivation_reason": "Arquivo físico identificado no disco com integridade observável.",
+              "dp_id": "art_c248bb39",
+              "dp_type": "ARTIFACT",
+              "file_path": "WORLD/INDEX.md",
+              "graph_node_id": "node_9a2ce141c446",
+              "name": "INDEX.md",
+              "source_artifact": {
+                "absolute_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault\\WORLD\\INDEX.md",
+                "exists_on_disk": true,
+                "file_size_bytes": 100,
+                "relative_path": "WORLD/INDEX.md"
+              }
+            }
+          ],
+          "classification": "DERIVED",
+          "confidence": 0.9,
+          "derivation_reason": "Módulo funcional derivado do agrupamento '🌍 WORLD' no cômodo 'WORLD'.",
+          "dp_id": "mod_bc9a747c",
+          "dp_type": "MODULE",
+          "graph_nodes": [
+            "node_9a2ce141c446"
+          ],
+          "name": "🌍 WORLD",
+          "parent_room_id": "room_d7b0bbea",
+          "source_artifacts": [
+            "art_c248bb39"
+          ],
+          "submodules": []
+        }
+      ],
+      "modules_count": 1,
+      "name": "WORLD"
+    }
+  ],
+  "root_path": "C:\\Users\\PICHAU\\syntheon_adk\\hangar_v1\\vault",
+  "schema": "DOWNPLANT-TERRITORY-GRAPH-1",
+  "summary": {
+    "artifact_count": 13,
+    "circuit_count": 66,
+    "module_count": 13,
+    "port_count": 12,
+    "room_count": 12,
+    "submodule_count": 0,
+    "unresolved_count": 0
+  },
+  "territory_id": "territory_99ed9e94",
+  "unresolved": []
+}

@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-CANVAS-NAV-001-curate-map-persist-dpjson-v",
+  "target_path": "curator_downplant_graph.json",
+  "expected_sha256": "22bbc2320a30b1683b61792f7427909e8c4871c379fd9ed836a4bcba8c86fd91"
+}

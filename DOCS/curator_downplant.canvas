@@ -1,0 +1,779 @@
+{
+  "edges": [
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_50119357c40a",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_b5ecc52ba56e",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_25e4a90091f8",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_9a2ce141c446",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_bffdf0161626",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_a06ea6120ba4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_3782ebda101a",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_0939e0f78bfb",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_9e60c996f255",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_820289975aa0",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_9eba37a2b772",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_fc334df2fab6",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_7b1a47fb8229",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_1956f542a38f",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_119c70942d3b",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_6168bb4ca62c",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_0e32a8926ce9",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_0e1f36fc39e7",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_6b392e7b1dd4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a48746cae70c",
+      "fromSide": "right",
+      "id": "edge_e282f82c8716",
+      "label": "LINKS_TO (EXTRACTED)",
+      "toNode": "node_8d7011ac7467",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_dc9c8216b276",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_119c70942d3b",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_6d5141557d9c",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_6b392e7b1dd4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_758d54bd77f0",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_8d7011ac7467",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_65aab40f44a7",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9a2ce141c446",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_79a985f6211d",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9e60c996f255",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_9b2b7729627e",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9eba37a2b772",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_2ca6da38d10e",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_a06ea6120ba4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_6a90ab5007af",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_9184f3db352e",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_0e32a8926ce9",
+      "fromSide": "right",
+      "id": "edge_38517cfbae8a",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_0b9e076cebeb",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_6b392e7b1dd4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_17d4d76e55a1",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_8d7011ac7467",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_d07fa94f569a",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9a2ce141c446",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_e1a9d88e7e8a",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9e60c996f255",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_786643bf2ac2",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9eba37a2b772",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_e1cc59d9ef40",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_a06ea6120ba4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_1cabfe3f1346",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_fa1fca41975f",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_119c70942d3b",
+      "fromSide": "right",
+      "id": "edge_cf07c050fc24",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_6b392e7b1dd4",
+      "fromSide": "right",
+      "id": "edge_146c104c63bb",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_8d7011ac7467",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_6b392e7b1dd4",
+      "fromSide": "right",
+      "id": "edge_bc5a69ce4166",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9a2ce141c446",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_6b392e7b1dd4",
+      "fromSide": "right",
+      "id": "edge_999d446c1b5f",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9e60c996f255",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_6b392e7b1dd4",
+      "fromSide": "right",
+      "id": "edge_e0f48fbce59e",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9eba37a2b772",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_6b392e7b1dd4",
+      "fromSide": "right",
+      "id": "edge_e4d01a1704b7",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_a06ea6120ba4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_6b392e7b1dd4",
+      "fromSide": "right",
+      "id": "edge_2525c61ba8b4",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_6b392e7b1dd4",
+      "fromSide": "right",
+      "id": "edge_4bc8ebd4473a",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_6b392e7b1dd4",
+      "fromSide": "right",
+      "id": "edge_a64af218a4b4",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_8d7011ac7467",
+      "fromSide": "right",
+      "id": "edge_cdcebeb85e2c",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9a2ce141c446",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_8d7011ac7467",
+      "fromSide": "right",
+      "id": "edge_c287db40fc10",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9e60c996f255",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_8d7011ac7467",
+      "fromSide": "right",
+      "id": "edge_0c8aa48ea8a4",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9eba37a2b772",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_8d7011ac7467",
+      "fromSide": "right",
+      "id": "edge_13b79cce3aa5",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_a06ea6120ba4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_8d7011ac7467",
+      "fromSide": "right",
+      "id": "edge_0ac4d3d12fc7",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_8d7011ac7467",
+      "fromSide": "right",
+      "id": "edge_43c4aabc5060",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_8d7011ac7467",
+      "fromSide": "right",
+      "id": "edge_ab29ac163c83",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9a2ce141c446",
+      "fromSide": "right",
+      "id": "edge_9b780de4a8b7",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9e60c996f255",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9a2ce141c446",
+      "fromSide": "right",
+      "id": "edge_7ec090f7351a",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9eba37a2b772",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9a2ce141c446",
+      "fromSide": "right",
+      "id": "edge_e66017860fae",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_a06ea6120ba4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9a2ce141c446",
+      "fromSide": "right",
+      "id": "edge_3dfe15b7c80d",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9a2ce141c446",
+      "fromSide": "right",
+      "id": "edge_dabb8bf0014a",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9a2ce141c446",
+      "fromSide": "right",
+      "id": "edge_b69f9102942a",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9e60c996f255",
+      "fromSide": "right",
+      "id": "edge_cc5f1421ec72",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_9eba37a2b772",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9e60c996f255",
+      "fromSide": "right",
+      "id": "edge_66f7ecceafca",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_a06ea6120ba4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9e60c996f255",
+      "fromSide": "right",
+      "id": "edge_4a22b9be233d",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9e60c996f255",
+      "fromSide": "right",
+      "id": "edge_ec49f7e1da3c",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9e60c996f255",
+      "fromSide": "right",
+      "id": "edge_3b76044d3403",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9eba37a2b772",
+      "fromSide": "right",
+      "id": "edge_97a111506e76",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_a06ea6120ba4",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9eba37a2b772",
+      "fromSide": "right",
+      "id": "edge_7d005e7cc3df",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9eba37a2b772",
+      "fromSide": "right",
+      "id": "edge_f5eb807c06ec",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_9eba37a2b772",
+      "fromSide": "right",
+      "id": "edge_07462ddd3234",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a06ea6120ba4",
+      "fromSide": "right",
+      "id": "edge_cc4389470a9d",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_d681635298c1",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a06ea6120ba4",
+      "fromSide": "right",
+      "id": "edge_cefa6a31b0f5",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_a06ea6120ba4",
+      "fromSide": "right",
+      "id": "edge_0f9281550c91",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_d681635298c1",
+      "fromSide": "right",
+      "id": "edge_7d410469d9f4",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_e07829c4a5ff",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_d681635298c1",
+      "fromSide": "right",
+      "id": "edge_f05d8c504c80",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    },
+    {
+      "fromNode": "node_e07829c4a5ff",
+      "fromSide": "right",
+      "id": "edge_e05b69b8db38",
+      "label": "INFERRED_SIMILARITY (INFERRED)",
+      "toNode": "node_f145f956f40f",
+      "toSide": "left"
+    }
+  ],
+  "nodes": [
+    {
+      "color": "1",
+      "height": 600,
+      "id": "group_room_bb02bd34",
+      "label": "Cômodo: CAPABILITIES (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "file": "CAPABILITIES/INDEX.md",
+      "height": 120,
+      "id": "node_9eba37a2b772",
+      "type": "file",
+      "width": 300,
+      "x": 40,
+      "y": 60
+    },
+    {
+      "color": "2",
+      "height": 600,
+      "id": "group_room_9d9f2a8c",
+      "label": "Cômodo: COCKPITS (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 860,
+      "y": 0
+    },
+    {
+      "file": "COCKPITS/INDEX.md",
+      "height": 120,
+      "id": "node_9e60c996f255",
+      "type": "file",
+      "width": 300,
+      "x": 900,
+      "y": 60
+    },
+    {
+      "color": "3",
+      "height": 600,
+      "id": "group_room_943435e3",
+      "label": "Cômodo: EXTERNAL (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 1720,
+      "y": 0
+    },
+    {
+      "file": "EXTERNAL/INDEX.md",
+      "height": 120,
+      "id": "node_0e32a8926ce9",
+      "type": "file",
+      "width": 300,
+      "x": 1760,
+      "y": 60
+    },
+    {
+      "color": "4",
+      "height": 600,
+      "id": "group_room_c9766ca4",
+      "label": "Cômodo: GOVERNANCE (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 2580,
+      "y": 0
+    },
+    {
+      "file": "GOVERNANCE/INDEX.md",
+      "height": 120,
+      "id": "node_119c70942d3b",
+      "type": "file",
+      "width": 300,
+      "x": 2620,
+      "y": 60
+    },
+    {
+      "file": "GOVERNANCE/GOVERNANCE.md",
+      "height": 120,
+      "id": "node_b5ecc52ba56e",
+      "type": "file",
+      "width": 300,
+      "x": 2960,
+      "y": 60
+    },
+    {
+      "color": "5",
+      "height": 600,
+      "id": "group_room_4a3fa3f8",
+      "label": "Cômodo: INTELLIGENCE (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 3440,
+      "y": 0
+    },
+    {
+      "file": "INTELLIGENCE/INDEX.md",
+      "height": 120,
+      "id": "node_f145f956f40f",
+      "type": "file",
+      "width": 300,
+      "x": 3480,
+      "y": 60
+    },
+    {
+      "color": "6",
+      "height": 600,
+      "id": "group_room_6cc52edd",
+      "label": "Cômodo: MACHINES (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 4300,
+      "y": 0
+    },
+    {
+      "file": "MACHINES/INDEX.md",
+      "height": 120,
+      "id": "node_d681635298c1",
+      "type": "file",
+      "width": 300,
+      "x": 4340,
+      "y": 60
+    },
+    {
+      "color": "1",
+      "height": 600,
+      "id": "group_room_8084dc38",
+      "label": "Cômodo: PLANT (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 5160,
+      "y": 0
+    },
+    {
+      "file": "PLANT/INDEX.md",
+      "height": 120,
+      "id": "node_a06ea6120ba4",
+      "type": "file",
+      "width": 300,
+      "x": 5200,
+      "y": 60
+    },
+    {
+      "color": "2",
+      "height": 600,
+      "id": "group_room_815390b4",
+      "label": "Cômodo: PORTS (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 6020,
+      "y": 0
+    },
+    {
+      "file": "PORTS/INDEX.md",
+      "height": 120,
+      "id": "node_e07829c4a5ff",
+      "type": "file",
+      "width": 300,
+      "x": 6060,
+      "y": 60
+    },
+    {
+      "color": "3",
+      "height": 600,
+      "id": "group_room_3370c7a7",
+      "label": "Cômodo: PRODUCTS (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 6880,
+      "y": 0
+    },
+    {
+      "file": "PRODUCTS/INDEX.md",
+      "height": 120,
+      "id": "node_8d7011ac7467",
+      "type": "file",
+      "width": 300,
+      "x": 6920,
+      "y": 60
+    },
+    {
+      "color": "4",
+      "height": 600,
+      "id": "group_room_060880c5",
+      "label": "Cômodo: Root_Domain (DERIVED)",
+      "type": "group",
+      "width": 800,
+      "x": 7740,
+      "y": 0
+    },
+    {
+      "file": "INDEX.md",
+      "height": 120,
+      "id": "node_a48746cae70c",
+      "type": "file",
+      "width": 300,
+      "x": 7780,
+      "y": 60
+    },
+    {
+      "color": "5",
+      "height": 600,
+      "id": "group_room_1c2d8148",
+      "label": "Cômodo: TRACE (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 8600,
+      "y": 0
+    },
+    {
+      "file": "TRACE/INDEX.md",
+      "height": 120,
+      "id": "node_6b392e7b1dd4",
+      "type": "file",
+      "width": 300,
+      "x": 8640,
+      "y": 60
+    },
+    {
+      "color": "6",
+      "height": 600,
+      "id": "group_room_d7b0bbea",
+      "label": "Cômodo: WORLD (OBSERVED)",
+      "type": "group",
+      "width": 800,
+      "x": 9460,
+      "y": 0
+    },
+    {
+      "file": "WORLD/INDEX.md",
+      "height": 120,
+      "id": "node_9a2ce141c446",
+      "type": "file",
+      "width": 300,
+      "x": 9500,
+      "y": 60
+    }
+  ]
+}

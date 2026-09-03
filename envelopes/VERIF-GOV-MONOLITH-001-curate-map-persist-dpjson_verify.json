@@ -1,0 +1,6 @@
+{
+  "schema": "NM-OBS-VERIFY-FILE-1",
+  "operation_id": "VERIF-GOV-MONOLITH-001-curate-map-persist-dpjson-v",
+  "target_path": "curator_downplant_graph.json",
+  "expected_sha256": "9dda3eab264dca57e3f0841790326184886b5644990b9c69e5f4f1989bcf29d9"
+}

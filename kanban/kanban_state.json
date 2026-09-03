@@ -1,14 +1,14 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-03T06:41:55.333022-03:00",
-  "total_cards": 125,
+  "generated_at": "2026-09-03T06:49:26.179626-03:00",
+  "total_cards": 126,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
     "in_progress": 0,
     "blocked": 0,
-    "review": 0,
+    "review": 1,
     "done": 16,
     "archived": 109
   },
@@ -2437,6 +2437,31 @@
         "tests_passed": "7/7 OK (1.963s)",
         "promoted_at": 1788428515,
         "homologation_call": "CALL-HANGAR-V1-REPO-MIGRATION-T5-001"
+      }
+    },
+    {
+      "card_id": "t_hangar_governance_roadtrace_01",
+      "title": "T-HANGAR-GOVERNANCE-ROADTRACE-01: Documenta\u00e7\u00e3o Can\u00f4nica do Road Trace e Mapa de Governan\u00e7a Plena",
+      "body": "Documenta\u00e7\u00e3o can\u00f4nica do caminho percorrido pelo Hangar V1 e mapeamento do caminho at\u00e9 Governan\u00e7a Plena:\n- Cria\u00e7\u00e3o de 09_HANGAR_GOVERNANCE_ROADTRACE.md em DOCS/.\n- Registro factual com proveni\u00eancia de cards, decis\u00f5es do Owner, atritos, desvios e corre\u00e7\u00f5es.\n- Taxonomia rigorosa: IMPLEMENTED, DOCUMENTED_ONLY, IMPLEMENTATION_GAP, KNOWN_BUT_NOT_DECOMPOSED, CANDIDATE_IMPROVEMENT.\n- Crit\u00e9rios objetivos para GOVERNAN\u00c7A_PLENA.\n- Rota: N01 > N02 > Hermes > N10 > N09 > N08 > N07.",
+      "status": "review",
+      "priority": 1,
+      "created_at": 1788428957,
+      "started_at": 1788428957,
+      "completed_at": null,
+      "metadata": {
+        "card_id": "t_hangar_governance_roadtrace_01",
+        "call_id": "CALL-HANGAR-GOVERNANCE-ROADTRACE-001",
+        "target": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\09_HANGAR_GOVERNANCE_ROADTRACE.md",
+        "workspace_kind": "Hangar_v1",
+        "status": "ROADTRACE_DOCUMENTED",
+        "trust_level": "T4",
+        "quality_gate_status": "QUALITY_GATE_PASS",
+        "recommendation": "ADVANCE",
+        "eligible_for_promotion": true,
+        "verifier_sha256": "f7e1d88639ee929c89c1ed8a661994572dd088a0d40905cc147a2e20bfed4de3",
+        "security_sha256": "1348d0cdb0f8e7bb761003eb018c41336606f450621adc584ae04373053b922c",
+        "document_path": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\09_HANGAR_GOVERNANCE_ROADTRACE.md",
+        "tests_passed": "7/7 OK"
       }
     }
   ]

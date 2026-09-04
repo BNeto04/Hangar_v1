@@ -1,14 +1,14 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T17:31:21.511103-03:00",
-  "total_cards": 128,
+  "generated_at": "2026-09-04T17:34:49.340219-03:00",
+  "total_cards": 129,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
     "in_progress": 0,
     "blocked": 0,
-    "review": 0,
+    "review": 1,
     "done": 19,
     "archived": 109
   },
@@ -2518,6 +2518,33 @@
         "tests_passed": "7/7 OK",
         "promoted_at": 1788553881,
         "homologation_call": "CALL-VIGIA-PONTE-SIMPLIFY-REUSE-T5-001"
+      }
+    },
+    {
+      "card_id": "t_hangar_git_enforcement_foundation_01",
+      "title": "T-HANGAR-GIT-ENFORCEMENT-FOUNDATION-01: Funda\u00e7\u00e3o Git Determin\u00edstica M\u00ednima e CI Enforcement",
+      "body": "Incorporar Git/GitHub como infraestrutura determin\u00edstica do Hangar V1:\n- Commits sem\u00e2nticos ligados a CARD_ID / INTENT_ID / endere\u00e7o Down Plant.\n- Script can\u00f4nico scripts/git_enforcement.py para valida\u00e7\u00e3o de commits e checks determin\u00edsticos.\n- Pipeline GitHub Actions .github/workflows/hangar_enforcement.yml.\n- Documenta\u00e7\u00e3o can\u00f4nica DOCS/12_GIT_ENFORCEMENT_FOUNDATION.md.\n- Comprova\u00e7\u00e3o com pelo menos 1 caminho PASS e 1 caminho FAIL bloqueado.\n- Atualiza\u00e7\u00e3o do ROAD_TRACE com a pavimenta\u00e7\u00e3o de infraestrutura.\n- Rota: N01 > N02 > Hermes > N03 > N09 > N08 > N07.",
+      "status": "review",
+      "priority": 1,
+      "created_at": 1788554082,
+      "started_at": 1788554082,
+      "completed_at": null,
+      "metadata": {
+        "card_id": "t_hangar_git_enforcement_foundation_01",
+        "call_id": "CALL-HANGAR-GIT-ENFORCEMENT-FOUNDATION-001",
+        "target": "C:\\Users\\PICHAU\\Hangar_v1",
+        "workspace_kind": "Hangar_v1",
+        "status": "GIT_ENFORCEMENT_FOUNDATION_IMPLEMENTED",
+        "trust_level": "T4",
+        "quality_gate_status": "QUALITY_GATE_PASS",
+        "recommendation": "ADVANCE",
+        "eligible_for_promotion": true,
+        "verifier_sha256": "18245ecbe578fec7f8aa94fcd95378950e548355135df615489189cc480e168b",
+        "security_sha256": "913f4da9ecd9e4a87e2c453d50fc463028e709cb4f044b501ccb553b339f6c4a",
+        "document_path": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\12_GIT_ENFORCEMENT_FOUNDATION.md",
+        "tests_passed": "7/7 OK",
+        "pass_proof": "Semantic commit valid + check-all status PASS",
+        "fail_proof": "Missing traceability blocked + invalid type blocked"
       }
     }
   ]

@@ -344,21 +344,34 @@ def handle_message(msg: Dict[str, Any]) -> None:
             f"{kanban_info}\n\n"
             f"🔗 *Repositório Canônico:* `BNeto04/Hangar_v1`\n"
             f"📬 *Bridge PR #1:* Ativa e monitorada em tempo real\n"
-            f"🤖 *Nó Local:* `Sentinela_PC_Casa` operando normalmente."
+            f"🤖 *Nó Local:* `Sentinela_PC_Casa` operando normalmente.\n\n"
+            f"⚡ *Pulso de Despertar:* Antigravity e Codex acordados para varredura da esteira!"
         )
         send_telegram_alert(response, chat_id)
+        
+        # WAKE ANTIGRAVITY & CODEX
+        now_str = time.strftime("%Y-%m-%d %H:%M:%S")
+        try:
+            with open(CONVERSA_PERSISTENTE, "a", encoding="utf-8") as f:
+                f.write(f"\n[TELEGRAM_WAKE_PULSE {now_str}]: Pulso 'v' recebido do Proprietário via Telegram.\n")
+            with open(CONVERSA_IA, "a", encoding="utf-8") as f:
+                f.write(f"\n[TELEGRAM_WAKE_PULSE {now_str}]: Pulso 'v' recebido do Proprietário via Telegram.\n")
+        except Exception as e:
+            logger.error(f"Erro ao registrar wake v em conversa: {e}")
+            
+        notify_codex_trigger("v")
         
     elif intent == "HELP":
         help_text = (
             f"🛡️ *Sentinela_PC_Casa — Central de Comando do Proprietário*\n\n"
             f"Olá *{first_name}*! Você está no canal direto e soberano do Hangar V1.\n\n"
             f"📊 *Consultas Rápidas:*\n"
-            f"• `v` ou `status` — Censo do Hermes Kanban e estado do PR #1.\n"
+            f"• `v` ou `status` — Censo do Hermes Kanban, estado do PR #1 e acorda o Antigravity/Codex.\n"
             f"• `cards` ou `tarefas` — Detalhes do card em andamento e últimos homologados.\n"
             f"• `saude do pc` ou `pc` — Telemetria em tempo real de CPU, RAM, Disco e Ollama.\n"
             f"• `testes` ou `validar` — Executa a suíte de testes de integridade e traz o laudo.\n\n"
             f"⚡ *Ações Operacionais:*\n"
-            f"• `/disparar` — Envia o pulso 'v' ao Codex local para avançar a esteira.\n\n"
+            f"• `/disparar` — Envia o pulso 'v' para acordar o Antigravity e a esteira Codex.\n\n"
             f"📝 *Diretivas Soberanas (Texto Livre):*\n"
             f"• Digite qualquer ordem ou instrução técnica (ex: *'crie um card para...'*, *'audite o módulo X'*).\n"
             f"• Ela é registrada imediatamente com prioridade soberana (`OWNER_DIRECTIVE`) e despachada ao Antigravity e ao Codex, sem que nenhuma auditoria pendente silencie você!"
@@ -380,9 +393,18 @@ def handle_message(msg: Dict[str, Any]) -> None:
         send_telegram_alert(cards_report, chat_id)
         
     elif intent == "DISPARAR":
+        now_str = time.strftime("%Y-%m-%d %H:%M:%S")
+        try:
+            with open(CONVERSA_PERSISTENTE, "a", encoding="utf-8") as f:
+                f.write(f"\n[TELEGRAM_WAKE_PULSE {now_str}]: Disparo explícito recebido do Proprietário via Telegram.\n")
+            with open(CONVERSA_IA, "a", encoding="utf-8") as f:
+                f.write(f"\n[TELEGRAM_WAKE_PULSE {now_str}]: Disparo explícito recebido do Proprietário via Telegram.\n")
+        except Exception as e:
+            logger.error(f"Erro ao registrar wake em conversa: {e}")
+            
         ok, detail = notify_codex_trigger("v")
         if ok:
-            send_telegram_alert("⚡ *Comando 'v' disparado com sucesso no Codex local!* Esteira em processamento.", chat_id)
+            send_telegram_alert("⚡ *Comando 'v' disparado com sucesso!* Antigravity e Codex acordados.", chat_id)
         else:
             send_telegram_alert(f"⚠️ *Falha ao disparar no Codex:* {detail}", chat_id)
             

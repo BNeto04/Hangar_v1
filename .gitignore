@@ -1,0 +1,5 @@
+.env
+*.env
+runtime/.github_bridge_state.json
+.telegram_owner.json
+__pycache__/

@@ -320,8 +320,15 @@ def classify_intent(text: str) -> str:
     if any(k in t for k in test_keywords):
         return "TESTS"
 
-    # 7. Status
-    status_keywords = ["v", "/v", "/status", "status", "situacao", "situação", "censo"]
+    # 7. Status e Vivacidade
+    status_keywords = [
+        "v", "/v", "/status", "status", "situacao", "situação", "censo",
+        "esta trabalhando", "está trabalhando", "ta trabalhando", "tá trabalhando",
+        "esta ativo", "está ativo", "ta ativo", "tá ativo",
+        "esta acordado", "está acordado", "ta acordado", "tá acordado",
+        "esta rodando", "está rodando", "ta rodando", "tá rodando",
+        "esta online", "está online", "ta online", "tá online"
+    ]
     if any(k in t for k in status_keywords):
         return "STATUS"
         

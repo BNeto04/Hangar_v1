@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Hangar V1 - ChatGPT Inbound Wake Bridge",
+  "version": "1.0.0",
+  "description": "Injeta automaticamente o pulso de wake/sincroniza\u00e7\u00e3o no ChatGPT Web quando um RESULT do Antigravity \u00e9 emitido.",
+  "permissions": [],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "http://127.0.0.1:8765/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

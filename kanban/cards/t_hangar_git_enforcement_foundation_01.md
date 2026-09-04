@@ -1,10 +1,10 @@
 # T-HANGAR-GIT-ENFORCEMENT-FOUNDATION-01: Fundação Git Determinística Mínima e CI Enforcement
 
 - **CARD_ID:** `t_hangar_git_enforcement_foundation_01`
-- **STATUS:** `review`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `1788554082`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `1788555808`
 
 ## Descrição
 Incorporar Git/GitHub como infraestrutura determinística do Hangar V1:
@@ -23,8 +23,8 @@ Incorporar Git/GitHub como infraestrutura determinística do Hangar V1:
   "call_id": "CALL-HANGAR-GIT-ENFORCEMENT-FOUNDATION-001",
   "target": "C:\\Users\\PICHAU\\Hangar_v1",
   "workspace_kind": "Hangar_v1",
-  "status": "GIT_ENFORCEMENT_FOUNDATION_IMPLEMENTED",
-  "trust_level": "T4",
+  "status": "DONE",
+  "trust_level": "T5",
   "quality_gate_status": "QUALITY_GATE_PASS",
   "recommendation": "ADVANCE",
   "eligible_for_promotion": true,
@@ -33,6 +33,8 @@ Incorporar Git/GitHub como infraestrutura determinística do Hangar V1:
   "document_path": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\12_GIT_ENFORCEMENT_FOUNDATION.md",
   "tests_passed": "7/7 OK",
   "pass_proof": "Semantic commit valid + check-all status PASS",
-  "fail_proof": "Missing traceability blocked + invalid type blocked"
+  "fail_proof": "Missing traceability blocked + invalid type blocked",
+  "promoted_at": 1788555808,
+  "homologation_call": "CALL-HANGAR-GIT-ENFORCEMENT-T5-001"
 }
 ```

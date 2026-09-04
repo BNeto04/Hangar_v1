@@ -23,7 +23,7 @@ class TestTelegramAutowakeE2E(unittest.TestCase):
         self.assertIn("Pulso 'v' recebido do Propriet", content)
 
     def test_02_card_in_review_in_kanban(self):
-        """TEST_C: Verifica se o card foi criado em estado review no Kanban Hermes."""
+        """TEST_C: Verifica se o card foi criado e posteriormente promovido em T5."""
         self.assertTrue(self.db_path.exists())
         conn = sqlite3.connect(self.db_path)
         cur = conn.cursor()
@@ -31,7 +31,7 @@ class TestTelegramAutowakeE2E(unittest.TestCase):
         row = cur.fetchone()
         conn.close()
         self.assertIsNotNone(row)
-        self.assertEqual(row[0], "review", "Card deve estar em status review (T4)")
+        self.assertIn(row[0], ("review", "done"), "Card deve estar em status review (T4) ou done (T5)")
 
     def test_03_canonical_documentation_exists(self):
         """Verifica a documentação canônica com as seções obrigatórias."""

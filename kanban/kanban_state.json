@@ -1,14 +1,14 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T18:03:28.404747-03:00",
-  "total_cards": 129,
+  "generated_at": "2026-09-04T18:10:28.409958-03:00",
+  "total_cards": 130,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
     "in_progress": 0,
     "blocked": 0,
-    "review": 0,
+    "review": 1,
     "done": 20,
     "archived": 109
   },
@@ -2547,6 +2547,31 @@
         "fail_proof": "Missing traceability blocked + invalid type blocked",
         "promoted_at": 1788555808,
         "homologation_call": "CALL-HANGAR-GIT-ENFORCEMENT-T5-001"
+      }
+    },
+    {
+      "card_id": "t_bridge_owner_sovereignty_bot_powers_01",
+      "title": "T-BRIDGE-OWNER-SOVEREIGNTY-BOT-POWERS-01: Soberania do Owner, Matriz de Poderes Reais e Regra Anti-Sil\u00eancio",
+      "body": "Tornar a ponte comprovadamente operacional com os poderes reais do Sentinela_PC_Casa e corrigir preced\u00eancia de autoridade:\n- Preced\u00eancia formal: OWNER_DIRECTIVE > fila/auditoria/rotina.\n- Invariante anti-sil\u00eancio: auditoria pendente nunca impede resposta ou a\u00e7\u00e3o explicitamente autorizada pelo Owner.\n- Matriz de poderes reais do Sentinela_PC_Casa e do Antigravity (sem inventar capacidades).\n- M\u00f3dulo bridge/owner_sovereignty.py e testes E2E comprovando PASS autorizado e HOLD leg\u00edtimo.\n- Documenta\u00e7\u00e3o can\u00f4nica DOCS/13_OWNER_SOVEREIGNTY_AND_BOT_POWERS.md.\n- Rota: N01 > N02 > Hermes > N03 > N09 > N08 > N07.",
+      "status": "review",
+      "priority": 1,
+      "created_at": 1788556220,
+      "started_at": 1788556220,
+      "completed_at": null,
+      "metadata": {
+        "card_id": "t_bridge_owner_sovereignty_bot_powers_01",
+        "call_id": "CALL-BRIDGE-OWNER-SOVEREIGNTY-BOT-POWERS-001",
+        "target": "bridge/owner_sovereignty.py",
+        "workspace_kind": "Hangar_v1",
+        "status": "OWNER_SOVEREIGNTY_CODIFIED_QUALITY_GATE_PASS",
+        "trust_level": "T4",
+        "quality_gate_status": "QUALITY_GATE_PASS",
+        "recommendation": "ADVANCE",
+        "eligible_for_promotion": true,
+        "verifier_sha256": "0bb20e7df598635cb23476bf9a23d78ed0d11a002f64e882a13f371cf8c4fd06",
+        "security_sha256": "134c98e580e93012b18c31c2c2ba296ad061d02cd504a203ae163ced7599a435",
+        "document_path": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\13_OWNER_SOVEREIGNTY_AND_BOT_POWERS.md",
+        "tests_passed": "E2E 5/5 OK + Sprint01 7/7 OK"
       }
     }
   ]

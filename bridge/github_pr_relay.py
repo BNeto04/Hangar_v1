@@ -210,6 +210,11 @@ class GitHubPRRelay:
                 data = json.loads(resp.read().decode("utf-8"))
                 comment_id = data.get("id")
                 logger.info(f"Comentário postado com sucesso no PR #{self.pr_number}! ID={comment_id}")
+                try:
+                    from sentinela_telegram import send_telegram_alert
+                    send_telegram_alert(f"📤 *Novo Comentário/RESULT Publicado no PR #{self.pr_number}!* (ID: `{comment_id}`)")
+                except Exception:
+                    pass
                 return comment_id
         except Exception as exc:
             logger.error(f"Falha ao postar comentário no PR #{self.pr_number}: {exc}")
@@ -280,6 +285,11 @@ class GitHubPRRelay:
                 body_content = envelope.get("BODY", "")
                 self.target_ia_file.write_text(body_content, encoding="utf-8")
                 logger.info(f"Conteúdo de {mid} entregue com sucesso para {self.target_ia_file}")
+                try:
+                    from sentinela_telegram import send_telegram_alert
+                    send_telegram_alert(f"📥 *Nova CALL Recebida do ChatGPT!*\n\n• *MESSAGE_ID:* `{mid}`\n• *PR #{self.pr_number} Comment ID:* `{cid}`\n\n_{body_content[:180]}..._")
+                except Exception:
+                    pass
 
                 self.state["processed_message_ids"].append(mid)
                 self.state["processed_comment_ids"].append(cid)

@@ -102,3 +102,7 @@ Consulte [`10_PURPOSE_FIRST_INVARIANT.md`](10_PURPOSE_FIRST_INVARIANT.md) para a
 
 ## 7. Fundação Git Determinística e CI Enforcement
 Consulte [`12_GIT_ENFORCEMENT_FOUNDATION.md`](12_GIT_ENFORCEMENT_FOUNDATION.md) para o enforcement automatizado via `scripts/git_enforcement.py` e `.github/workflows/hangar_enforcement.yml`, garantindo commits semânticos com rastreabilidade obrigatória, validação de invariantes e suíte de testes determinísticos antes de qualquer avanço.
+
+
+## 8. Soberania do Owner e Regra Anti-Silêncio
+Consulte [`13_OWNER_SOVEREIGNTY_AND_BOT_POWERS.md`](13_OWNER_SOVEREIGNTY_AND_BOT_POWERS.md) para a formalização da precedência soberana das diretivas do Proprietário, matriz de poderes reais do `Sentinela_PC_Casa` e do `Antigravity`, e a garantia determinística de que auditorias pendentes nunca causam silêncio.

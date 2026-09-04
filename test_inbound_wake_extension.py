@@ -51,5 +51,19 @@ class TestInboundWakeExtension(unittest.TestCase):
         self.assertIn("ESCOLHIDA (MENOR IMPLEMENTAÇÃO FACTUAL)", content)
         self.assertIn("STOP em T4/Review", content)
 
+    def test_05_canonical_playwright_framework_configured(self):
+        """Valida existência dos artefatos canônicos do Playwright Test (CG-000119)."""
+        pw_config = self.hangar_dir / "playwright.config.ts"
+        pw_suite = self.hangar_dir / "tests" / "e2e" / "test_inbound_wake_playwright.py"
+        evidence_img = self.hangar_dir / "evidence" / "inbound_wake_injection_success.png"
+        
+        self.assertTrue(pw_config.exists(), "playwright.config.ts deve existir")
+        self.assertTrue(pw_suite.exists(), "tests/e2e/test_inbound_wake_playwright.py deve existir")
+        self.assertTrue(evidence_img.exists(), "Evidência de injeção Playwright deve existir")
+        
+        cfg_text = pw_config.read_text(encoding="utf-8")
+        self.assertIn("--load-extension", cfg_text)
+        self.assertIn("--disable-extensions-except", cfg_text)
+
 if __name__ == "__main__":
     unittest.main()

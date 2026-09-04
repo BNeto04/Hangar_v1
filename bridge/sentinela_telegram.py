@@ -171,7 +171,8 @@ def run_tests_summary() -> str:
         "test_hangar_v1_sprint_01.py",
         "test_telegram_autowake_e2e.py",
         "test_chatgpt_inbound_wake.py",
-        "test_inbound_wake_extension.py"
+        "test_inbound_wake_extension.py",
+        "tests/e2e/test_inbound_wake_playwright.py"
     ]
     lines = ["🧪 *Execução da Suíte de Testes do Hangar V1:*\n"]
     all_pass = True

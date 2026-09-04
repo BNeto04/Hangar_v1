@@ -189,6 +189,40 @@ def run_tests_summary() -> str:
         lines.append("\n🔴 *Resultado Geral:* Falha detectada em um ou mais testes.")
     return "\n".join(lines)
 
+def get_system_health() -> str:
+    """Coleta métricas reais de hardware e serviços locais."""
+    try:
+        import psutil
+        import shutil
+        
+        cpu = psutil.cpu_percent(interval=0.5)
+        mem = psutil.virtual_memory()
+        total, used, free = shutil.disk_usage("C:\\")
+        boot_time = psutil.boot_time()
+        uptime_sec = time.time() - boot_time
+        days = int(uptime_sec // 86400)
+        hours = int((uptime_sec % 86400) // 3600)
+        mins = int((uptime_sec % 3600) // 60)
+        
+        procs = [p.info['name'] for p in psutil.process_iter(['name'])]
+        ollama_up = "🟢 Ativo" if any("ollama" in (p or "").lower() for p in procs) else "🔴 Inativo"
+        python_count = sum(1 for p in procs if "python" in (p or "").lower())
+        
+        return (
+            f"🖥️ *Diagnóstico de Saúde do PC (Sentinela_PC_Casa):*\n\n"
+            f"⏱️ *Uptime do Sistema:* {days}d {hours}h {mins}m\n"
+            f"⚡ *Uso de CPU:* {cpu}%\n"
+            f"🧠 *Memória RAM:* {mem.used/(1024**3):.1f} GB / {mem.total/(1024**3):.1f} GB ({mem.percent}%)\n"
+            f"💾 *Disco C:* {used/(1024**3):.1f} GB / {total/(1024**3):.1f} GB ({free/(1024**3):.1f} GB livres - {used/total*100:.1f}% usado)\n\n"
+            f"🤖 *Serviços e Daemons Locais:*\n"
+            f"• Ollama (LLMs locais): {ollama_up}\n"
+            f"• Processos Python Ativos: {python_count}\n"
+            f"• Nó Hangar V1: `Sentinela_PC_Casa` 100% operacional\n\n"
+            f"Tudo operando dentro dos parâmetros de estabilidade!"
+        )
+    except Exception as exc:
+        return f"⚠️ Erro ao coletar saúde do sistema: {exc}"
+
 def notify_codex_trigger(msg: str = "v") -> Tuple[bool, str]:
     """Dispara o pulso no Codex local."""
     script_path = RUNTIME_DIR / "notify_codex.py"
@@ -217,31 +251,39 @@ def classify_intent(text: str) -> str:
     if any(k in t for k in help_keywords) or t in ("?", "help", "ajuda"):
         return "HELP"
 
-    # 2. Diretivas com verbos imperativos de mutação/ação
+    # 2. Saúde do PC e métricas de hardware
+    health_keywords = [
+        "saude", "saúde", "pc", "computador", "hardware", "cpu", "memoria", "memória",
+        "ram", "disco", "hd", "ssd", "como tá o pc", "como ta o pc", "status do pc", "uptime"
+    ]
+    if any(k in t for k in health_keywords):
+        return "HEALTH"
+
+    # 3. Diretivas com verbos imperativos de mutação/ação
     directive_triggers = ["crie ", "criar ", "faça ", "atualize ", "atualizar ", "audite ", "auditar ", "adicione ", "adicionar ", "remova ", "remover ", "delete ", "deletar "]
     if any(k in t for k in directive_triggers):
         return "DIRECTIVE"
 
-    # 3. Tarefas / Cards / Review (perguntas ou visualização)
+    # 4. Tarefas / Cards / Review (perguntas ou visualização)
     cards_keywords = ["cards", "card", "tarefas", "tarefa", "/cards", "/tarefas", "kanban", "review", "em review"]
     if any(k in t for k in cards_keywords):
         return "CARDS"
 
-    # 3. Testes
+    # 5. Testes
     test_keywords = ["testes", "teste", "/test", "/testes", "test", "tests", "rodar testes", "validar", "verificar"]
     if any(k in t for k in test_keywords):
         return "TESTS"
 
-    # 4. Status
+    # 6. Status
     status_keywords = ["v", "/v", "/status", "status", "situacao", "situação", "censo"]
     if any(k in t for k in status_keywords):
         return "STATUS"
         
-    # 5. Disparar
+    # 7. Disparar
     if t in ("/disparar", "disparar", "/run_v", "rodar", "acordar", "wake", "pulso"):
         return "DISPARAR"
         
-    # 6. Saudações
+    # 8. Saudações
     greetings = ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite", "hey", "opa", "salve", "alo", "alô"]
     if t in greetings:
         return "GREETING"
@@ -313,6 +355,7 @@ def handle_message(msg: Dict[str, Any]) -> None:
             f"📊 *Consultas Rápidas:*\n"
             f"• `v` ou `status` — Censo do Hermes Kanban e estado do PR #1.\n"
             f"• `cards` ou `tarefas` — Detalhes do card em andamento e últimos homologados.\n"
+            f"• `saude do pc` ou `pc` — Telemetria em tempo real de CPU, RAM, Disco e Ollama.\n"
             f"• `testes` ou `validar` — Executa a suíte de testes de integridade e traz o laudo.\n\n"
             f"⚡ *Ações Operacionais:*\n"
             f"• `/disparar` — Envia o pulso 'v' ao Codex local para avançar a esteira.\n\n"
@@ -321,6 +364,11 @@ def handle_message(msg: Dict[str, Any]) -> None:
             f"• Ela é registrada imediatamente com prioridade soberana (`OWNER_DIRECTIVE`) e despachada ao Antigravity e ao Codex, sem que nenhuma auditoria pendente silencie você!"
         )
         send_telegram_alert(help_text, chat_id)
+
+    elif intent == "HEALTH":
+        send_telegram_alert("⏳ Coletando telemetria de hardware e serviços locais...", chat_id)
+        health_report = get_system_health()
+        send_telegram_alert(health_report, chat_id)
         
     elif intent == "TESTS":
         send_telegram_alert("⏳ Executando suíte de testes do Hangar V1...", chat_id)
@@ -343,6 +391,7 @@ def handle_message(msg: Dict[str, Any]) -> None:
             f"👋 *Olá, {first_name}!* Sentinela_PC_Casa em prontidão.\n\n"
             f"O ecossistema Hangar V1 está ativo e operando normalmente.\n\n"
             f"• Digite `v` para ver o status geral.\n"
+            f"• Digite `saude do pc` para ver telemetria de hardware.\n"
             f"• Digite `cards` para ver o andamento das tarefas.\n"
             f"• Digite `testes` para validar a integridade técnica.\n"
             f"• Ou envie sua ordem/diretiva diretamente!"

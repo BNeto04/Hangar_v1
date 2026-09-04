@@ -98,3 +98,7 @@ Para que a Governança do Hangar V1 seja promovida do estado atual para **GOVERN
 
 ## 6. Invariante Soberano de Propósito (Purpose-First)
 Consulte [`10_PURPOSE_FIRST_INVARIANT.md`](10_PURPOSE_FIRST_INVARIANT.md) para a codificação das 8 dimensões obrigatórias em toda ação material e políticas fail-closed contra mutações puramente estéticas ou duplicadas.
+
+
+## 7. Fundação Git Determinística e CI Enforcement
+Consulte [`12_GIT_ENFORCEMENT_FOUNDATION.md`](12_GIT_ENFORCEMENT_FOUNDATION.md) para o enforcement automatizado via `scripts/git_enforcement.py` e `.github/workflows/hangar_enforcement.yml`, garantindo commits semânticos com rastreabilidade obrigatória, validação de invariantes e suíte de testes determinísticos antes de qualquer avanço.

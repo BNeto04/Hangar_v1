@@ -1,0 +1,24 @@
+name: Hangar V1 Deterministic CI Enforcement
+
+on:
+  push:
+    branches: [ main, bridge-chatgpt-antigravity ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  enforce-governance-and-tests:
+    name: Validate Plant, Docs, Kanban, and Deterministic Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Canonical Hangar Enforcement Checks
+        run: |
+          python scripts/git_enforcement.py check-all

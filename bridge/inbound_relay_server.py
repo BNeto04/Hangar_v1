@@ -6,6 +6,7 @@ Porta 8765 / CORS habilitado / Dedupe e state persistente.
 
 import json
 import logging
+import time
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 
@@ -40,6 +41,8 @@ class InboundHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/status":
             state = load_state()
+            if state.get("pending_wake"):
+                logger.info(f"GET /status consultado com PENDING_WAKE ativo para {state.get('message_id')}")
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self._set_cors()

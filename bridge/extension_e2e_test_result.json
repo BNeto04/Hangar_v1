@@ -1,0 +1,20 @@
+{
+  "test_started_at": "2026-09-04T19:59:53.605225",
+  "message_id": "AG-RES-000120",
+  "call_id": "CALL-BRIDGE-INBOUND-WAKE-E2E-POSTLOAD-001",
+  "card_id": "t_bridge_inbound_wake_extension_01",
+  "hops": {
+    "hop_1_emit_signal": {
+      "status": "SUCCESS",
+      "response": {
+        "status": "armed"
+      },
+      "timestamp": "2026-09-04T19:59:54.120114"
+    },
+    "hop_3_extension_poll": {
+      "status": "FAILED_OR_TIMEOUT",
+      "detail": "Nenhum ACK recebido no relay dentro da janela de 30s"
+    },
+    "failing_hop": "Hop 3 / Hop 4: A extensão ainda não consultou o relay ou a aba chatgpt.com não está aberta/recarregada."
+  }
+}

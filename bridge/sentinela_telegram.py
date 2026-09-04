@@ -206,18 +206,7 @@ def classify_intent(text: str) -> str:
     """Classifica a intenção da mensagem em linguagem natural."""
     t = text.strip().lower()
     
-    if t in ("v", "/v", "/status", "status", "situacao", "situação", "censo"):
-        return "STATUS"
-        
-    if t in ("testes", "teste", "/test", "/testes", "test", "tests", "rodar testes", "validar", "verificar"):
-        return "TESTS"
-        
-    if t in ("cards", "card", "tarefas", "tarefa", "/cards", "/tarefas", "kanban"):
-        return "CARDS"
-        
-    if t in ("/disparar", "disparar", "/run_v", "rodar", "acordar", "wake", "pulso"):
-        return "DISPARAR"
-        
+    # 1. Ajuda e perguntas de capacidades
     help_keywords = [
         "help", "/help", "ajuda", "/ajuda", "menu", "/menu", "comandos", "/comandos",
         "o que posso fazer", "o que eu posso fazer", "oque posso fazer",
@@ -227,7 +216,32 @@ def classify_intent(text: str) -> str:
     ]
     if any(k in t for k in help_keywords) or t in ("?", "help", "ajuda"):
         return "HELP"
+
+    # 2. Diretivas com verbos imperativos de mutação/ação
+    directive_triggers = ["crie ", "criar ", "faça ", "atualize ", "atualizar ", "audite ", "auditar ", "adicione ", "adicionar ", "remova ", "remover ", "delete ", "deletar "]
+    if any(k in t for k in directive_triggers):
+        return "DIRECTIVE"
+
+    # 3. Tarefas / Cards / Review (perguntas ou visualização)
+    cards_keywords = ["cards", "card", "tarefas", "tarefa", "/cards", "/tarefas", "kanban", "review", "em review"]
+    if any(k in t for k in cards_keywords):
+        return "CARDS"
+
+    # 3. Testes
+    test_keywords = ["testes", "teste", "/test", "/testes", "test", "tests", "rodar testes", "validar", "verificar"]
+    if any(k in t for k in test_keywords):
+        return "TESTS"
+
+    # 4. Status
+    status_keywords = ["v", "/v", "/status", "status", "situacao", "situação", "censo"]
+    if any(k in t for k in status_keywords):
+        return "STATUS"
         
+    # 5. Disparar
+    if t in ("/disparar", "disparar", "/run_v", "rodar", "acordar", "wake", "pulso"):
+        return "DISPARAR"
+        
+    # 6. Saudações
     greetings = ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite", "hey", "opa", "salve", "alo", "alô"]
     if t in greetings:
         return "GREETING"

@@ -1,6 +1,6 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-03T06:51:04.809296-03:00",
+  "generated_at": "2026-09-04T17:26:04.781816-03:00",
   "total_cards": 127,
   "counts": {
     "triage": 0,
@@ -8,8 +8,8 @@
     "todo": 0,
     "in_progress": 0,
     "blocked": 0,
-    "review": 2,
-    "done": 16,
+    "review": 0,
+    "done": 18,
     "archived": 109
   },
   "cards": [
@@ -2443,50 +2443,54 @@
       "card_id": "t_hangar_governance_roadtrace_01",
       "title": "T-HANGAR-GOVERNANCE-ROADTRACE-01: Documenta\u00e7\u00e3o Can\u00f4nica do Road Trace e Mapa de Governan\u00e7a Plena",
       "body": "Documenta\u00e7\u00e3o can\u00f4nica do caminho percorrido pelo Hangar V1 e mapeamento do caminho at\u00e9 Governan\u00e7a Plena:\n- Cria\u00e7\u00e3o de 09_HANGAR_GOVERNANCE_ROADTRACE.md em DOCS/.\n- Registro factual com proveni\u00eancia de cards, decis\u00f5es do Owner, atritos, desvios e corre\u00e7\u00f5es.\n- Taxonomia rigorosa: IMPLEMENTED, DOCUMENTED_ONLY, IMPLEMENTATION_GAP, KNOWN_BUT_NOT_DECOMPOSED, CANDIDATE_IMPROVEMENT.\n- Crit\u00e9rios objetivos para GOVERNAN\u00c7A_PLENA.\n- Rota: N01 > N02 > Hermes > N10 > N09 > N08 > N07.",
-      "status": "review",
+      "status": "done",
       "priority": 1,
       "created_at": 1788428957,
       "started_at": 1788428957,
-      "completed_at": null,
+      "completed_at": 1788553564,
       "metadata": {
         "card_id": "t_hangar_governance_roadtrace_01",
         "call_id": "CALL-HANGAR-GOVERNANCE-ROADTRACE-001",
         "target": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\09_HANGAR_GOVERNANCE_ROADTRACE.md",
         "workspace_kind": "Hangar_v1",
-        "status": "ROADTRACE_DOCUMENTED",
-        "trust_level": "T4",
+        "status": "DONE",
+        "trust_level": "T5",
         "quality_gate_status": "QUALITY_GATE_PASS",
         "recommendation": "ADVANCE",
         "eligible_for_promotion": true,
         "verifier_sha256": "f7e1d88639ee929c89c1ed8a661994572dd088a0d40905cc147a2e20bfed4de3",
         "security_sha256": "1348d0cdb0f8e7bb761003eb018c41336606f450621adc584ae04373053b922c",
         "document_path": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\09_HANGAR_GOVERNANCE_ROADTRACE.md",
-        "tests_passed": "7/7 OK"
+        "tests_passed": "7/7 OK",
+        "promoted_at": 1788553564,
+        "homologation_call": "CALL-HANGAR-GOVERNANCE-DOCS-T5-001"
       }
     },
     {
       "card_id": "t_hangar_purpose_first_invariant_01",
       "title": "T-HANGAR-PURPOSE-FIRST-INVARIANT-01: Codifica\u00e7\u00e3o do Invariante Soberano de Prop\u00f3sito Operacional Obrigat\u00f3rio",
       "body": "Codifica\u00e7\u00e3o can\u00f4nica do Invariante Soberano Purpose-First da Governan\u00e7a do Hangar V1:\n- Cria\u00e7\u00e3o de DOCS/10_PURPOSE_FIRST_INVARIANT.md.\n- Defini\u00e7\u00e3o dos 8 campos obrigat\u00f3rios para a\u00e7\u00f5es materiais (PURPOSE, SCOPE, BENEFICIARY, EXPECTED_RESULT, ACCEPTANCE_CRITERIA, EVIDENCE, COST/RISK, PRESERVE).\n- Pol\u00edticas fail-closed: ESTHETIC_ONLY => HOLD, DUPLICATE_WITHOUT_NEW_CAPABILITY => HOLD, TOOL_WITHOUT_CLEAR_CONSUMER => HOLD, CHANGE_WITHOUT_ACCEPTANCE_CRITERIA => HOLD.\n- Regra de n\u00e3o-substitui\u00e7\u00e3o de capacidades existentes sem raz\u00e3o funcional + evid\u00eancia de migra\u00e7\u00e3o + zero perda.\n- Atualiza\u00e7\u00e3o do ROAD_TRACE cont\u00ednuo.\n- Rota: N01 > N02 > Hermes > N10 > N09 > N08 > N07.",
-      "status": "review",
+      "status": "done",
       "priority": 1,
       "created_at": 1788429056,
       "started_at": 1788429056,
-      "completed_at": null,
+      "completed_at": 1788553564,
       "metadata": {
         "card_id": "t_hangar_purpose_first_invariant_01",
         "call_id": "CALL-HANGAR-PURPOSE-FIRST-INVARIANT-001",
         "target": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\10_PURPOSE_FIRST_INVARIANT.md",
         "workspace_kind": "Hangar_v1",
-        "status": "PURPOSE_FIRST_INVARIANT_CODIFIED",
-        "trust_level": "T4",
+        "status": "DONE",
+        "trust_level": "T5",
         "quality_gate_status": "QUALITY_GATE_PASS",
         "recommendation": "ADVANCE",
         "eligible_for_promotion": true,
         "verifier_sha256": "b3f749e3f588a994ba8bbea6bbf5c4df90bf7305dcb27328583fccd2b6b5ae5a",
         "security_sha256": "c335d421a7caf4caf8b0345ce2fc46d7e269ce3e60a203e192bcb63c35fd0c3c",
         "document_path": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\10_PURPOSE_FIRST_INVARIANT.md",
-        "tests_passed": "7/7 OK"
+        "tests_passed": "7/7 OK",
+        "promoted_at": 1788553564,
+        "homologation_call": "CALL-HANGAR-GOVERNANCE-DOCS-T5-001"
       }
     }
   ]

@@ -1,10 +1,10 @@
 # T-HANGAR-PURPOSE-FIRST-INVARIANT-01: Codificação do Invariante Soberano de Propósito Operacional Obrigatório
 
 - **CARD_ID:** `t_hangar_purpose_first_invariant_01`
-- **STATUS:** `review`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `1788429056`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `1788553564`
 
 ## Descrição
 Codificação canônica do Invariante Soberano Purpose-First da Governança do Hangar V1:
@@ -22,14 +22,16 @@ Codificação canônica do Invariante Soberano Purpose-First da Governança do H
   "call_id": "CALL-HANGAR-PURPOSE-FIRST-INVARIANT-001",
   "target": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\10_PURPOSE_FIRST_INVARIANT.md",
   "workspace_kind": "Hangar_v1",
-  "status": "PURPOSE_FIRST_INVARIANT_CODIFIED",
-  "trust_level": "T4",
+  "status": "DONE",
+  "trust_level": "T5",
   "quality_gate_status": "QUALITY_GATE_PASS",
   "recommendation": "ADVANCE",
   "eligible_for_promotion": true,
   "verifier_sha256": "b3f749e3f588a994ba8bbea6bbf5c4df90bf7305dcb27328583fccd2b6b5ae5a",
   "security_sha256": "c335d421a7caf4caf8b0345ce2fc46d7e269ce3e60a203e192bcb63c35fd0c3c",
   "document_path": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\10_PURPOSE_FIRST_INVARIANT.md",
-  "tests_passed": "7/7 OK"
+  "tests_passed": "7/7 OK",
+  "promoted_at": 1788553564,
+  "homologation_call": "CALL-HANGAR-GOVERNANCE-DOCS-T5-001"
 }
 ```

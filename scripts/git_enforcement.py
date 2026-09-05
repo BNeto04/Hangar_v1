@@ -104,7 +104,7 @@ def run_tests(repo_root: Path) -> Tuple[bool, str]:
         if res2.returncode != 0:
             return False, f"Suíte de cômodos da ARCA (tests/) falhou:\n{res2.stderr}"
 
-    return True, "Suíte completa de testes determinísticos (Sprint 01 + 11 Cômodos ARCA: 86 testes) 100% PASS."
+    return True, "Suíte completa de testes determinísticos (Sprint 01 + 11 Cômodos ARCA + Policy Engines: 92 testes) 100% PASS."
 
 def run_all_checks(repo_root: Path) -> Dict[str, Any]:
     """Executa todos os checks canônicos do Hangar V1."""

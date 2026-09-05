@@ -19,8 +19,16 @@ from .ports import (
     PORT_INTENT_HANDOFF_N01,
     PORT_PLANNER_N01_RECEIVE,
 )
+from ..arca.canonical_domain_rules import ARCA_SCHEMA_VERSION, get_rule_by_id
 
-# Constantes e Políticas de Soberania
+# Referências Canônicas ao Módulo ARCA (R-DOM-006: SINGLE_SOURCE_OF_TRUTH_ARCA)
+ARCA_RULES_REF = {
+    "sovereignty": "R-DOM-001",
+    "fail_closed": "R-DOM-002",
+    "no_unsealed_pass": "R-DOM-003",
+}
+
+# Constantes e Políticas de Soberania (Fundamentadas na ARCA)
 ALLOWED_OWNERS = {"OWNER", "CHATGPT", "PROPRIETARIO"}
 AUTHORIZED_SCOPES_PREFIXES = ["hangar_v1", "AZ000", "syntheon_adk"]
 AMBIGUOUS_KEYWORDS = ["talvez", "se possível", "opcionalmente", "quem sabe", "pode ser"]

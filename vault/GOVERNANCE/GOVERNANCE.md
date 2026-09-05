@@ -84,6 +84,9 @@ Catálogo unificado de políticas normativas ativas no Hangar V1:
 6. `POL-UI-FRONTEND-SLOT-01`: Exigência de slot em FRONTEND antes da implementação de funções de UI.
 7. `POL-AZIMUTH-COMPLETION-01`: Conclusão de produtos vinculada ao percurso de azimutes obrigatórios.
 
+8. `POL-ARCA-DOMAIN-RULES-01`: Unicidade e imutabilidade de regras de domínio centralizadas no módulo [[ARCA_DOMAIN_RULES|ARCA]].
+9. `POL-ROOM-ORDER-EXECUTION-01`: Execução e fechamento integral de SPECs por cômodo antes do avanço topológico.
+
 ---
 
 ## 7. Diretriz SPEC_FIRST & NO_SPEC_NO_CODE

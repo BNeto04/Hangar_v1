@@ -1,5 +1,5 @@
 {
   "schema": "NM-OBS-READ-1",
   "operation_id": "op-vault-graph-r-gn-12",
-  "target_path": "WORLD/INDEX.md"
+  "target_path": "TRACE/INDEX.md"
 }

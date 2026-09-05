@@ -1,15 +1,15 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T18:10:28.409958-03:00",
-  "total_cards": 130,
+  "generated_at": "2026-09-04T22:34:43.600279-03:00",
+  "total_cards": 134,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 0,
+    "in_progress": 1,
     "blocked": 0,
-    "review": 1,
-    "done": 20,
+    "review": 2,
+    "done": 22,
     "archived": 109
   },
   "cards": [
@@ -2553,11 +2553,11 @@
       "card_id": "t_bridge_owner_sovereignty_bot_powers_01",
       "title": "T-BRIDGE-OWNER-SOVEREIGNTY-BOT-POWERS-01: Soberania do Owner, Matriz de Poderes Reais e Regra Anti-Sil\u00eancio",
       "body": "Tornar a ponte comprovadamente operacional com os poderes reais do Sentinela_PC_Casa e corrigir preced\u00eancia de autoridade:\n- Preced\u00eancia formal: OWNER_DIRECTIVE > fila/auditoria/rotina.\n- Invariante anti-sil\u00eancio: auditoria pendente nunca impede resposta ou a\u00e7\u00e3o explicitamente autorizada pelo Owner.\n- Matriz de poderes reais do Sentinela_PC_Casa e do Antigravity (sem inventar capacidades).\n- M\u00f3dulo bridge/owner_sovereignty.py e testes E2E comprovando PASS autorizado e HOLD leg\u00edtimo.\n- Documenta\u00e7\u00e3o can\u00f4nica DOCS/13_OWNER_SOVEREIGNTY_AND_BOT_POWERS.md.\n- Rota: N01 > N02 > Hermes > N03 > N09 > N08 > N07.",
-      "status": "review",
+      "status": "done",
       "priority": 1,
       "created_at": 1788556220,
       "started_at": 1788556220,
-      "completed_at": null,
+      "completed_at": 1788558385,
       "metadata": {
         "card_id": "t_bridge_owner_sovereignty_bot_powers_01",
         "call_id": "CALL-BRIDGE-OWNER-SOVEREIGNTY-BOT-POWERS-001",
@@ -2573,6 +2573,50 @@
         "document_path": "C:\\Users\\PICHAU\\Hangar_v1\\DOCS\\13_OWNER_SOVEREIGNTY_AND_BOT_POWERS.md",
         "tests_passed": "E2E 5/5 OK + Sprint01 7/7 OK"
       }
+    },
+    {
+      "card_id": "t_bridge_telegram_v_autowake_e2e_01",
+      "title": "T-BRIDGE-TELEGRAM-V-AUTOWAKE-E2E-01: Prova E2E do Ciclo Real do Owner, Autowake e Inbound Gap Analysis",
+      "body": "Prova E2E factual do ciclo real do Owner:\n- TEST_A: Telegram V -> Sentinela ACK -> conversa de ia.txt -> autowake_receiver -> Antigravity (PASS com evidencia real de 18:36:37).\n- TEST_B: Inbound de retorno para ChatGPT (IMPLEMENTATION_GAP factual com identifica\u00e7\u00e3o do menor mecanismo faltante via Chrome CDP/Extension).\n- TEST_C: Retorno ao estado factual do Kanban Hermes e obten\u00e7\u00e3o da pr\u00f3xima tarefa autorizada.\n- Documenta\u00e7\u00e3o can\u00f4nica em DOCS/14_TELEGRAM_V_AUTOWAKE_E2E_AND_INBOUND_GAP.md.\n- Rota: N01 > N02 > Hermes > N03 > N09 > N08 > N07 (STOP em Review/T4).",
+      "status": "done",
+      "priority": 1,
+      "created_at": 1788557871,
+      "started_at": 1788557871,
+      "completed_at": 1788558385,
+      "metadata": {}
+    },
+    {
+      "card_id": "t_bridge_chatgpt_inbound_wake_01",
+      "title": "T-BRIDGE-CHATGPT-INBOUND-WAKE-01: Mapeamento de Mecanismos e An\u00e1lise Factual de Gap Inbound ChatGPT",
+      "body": "Mapeamento rigoroso e factual dos mecanismos reais de retorno inbound RESULT -> ChatGPT:\n- Mecanismo 1 (OpenAI Public Inbound API): Inexistente para sess\u00f5es web ativas.\n- Mecanismo 2 (GitHub Actions Webhook Push): Sem receptor inbound do lado do cliente web.\n- Mecanismo 3 (Automa\u00e7\u00e3o Local via Chrome CDP / Playwright): Exige flag --remote-debugging-port n\u00e3o ativa no navegador do Owner e autoriza\u00e7\u00e3o expl\u00edcita de seguran\u00e7a.\n- Veredito: IMPLEMENTATION_GAP / HOLD com o menor bloqueio factual identificado.\n- Documenta\u00e7\u00e3o can\u00f4nica em DOCS/15_CHATGPT_INBOUND_WAKE_ANALYSIS.md.\n- Rota: N01 > N02 > Hermes > N03 > N09 > N08 > N07 (STOP em Review/T4).",
+      "status": "review",
+      "priority": 1,
+      "created_at": 1788558409,
+      "started_at": 1788558409,
+      "completed_at": null,
+      "metadata": {}
+    },
+    {
+      "card_id": "t_bridge_inbound_wake_extension_01",
+      "title": "T-BRIDGE-INBOUND-WAKE-EXTENSION-01: Extensao Local Manifest V3 para Inbound Wake Autonomo no ChatGPT",
+      "body": "Implementacao da solucao minimalista, reversivel e purpose-first para fechamento do gap RESULT -> ChatGPT:\n- Decisao do Planner: EXTENSION (Manifest V3 local) > CDP/Playwright (evita matar sessao do Chrome do Owner).\n- Servidor local de status/wake em 127.0.0.1:8765.\n- Content script seguro em bridge/extension com dedupe idempotente anti-loop.\n- Documentacao canonica em DOCS/16_CHATGPT_INBOUND_WAKE_EXTENSION.md.\n- Parada estrita em Review / T4 aguardando carregamento manual pelo Owner em chrome://extensions.",
+      "status": "review",
+      "priority": 1,
+      "created_at": 1788559661,
+      "started_at": 1788559661,
+      "completed_at": null,
+      "metadata": {}
+    },
+    {
+      "card_id": "t_bridge_github_webhook_sentinela_01",
+      "title": "T-BRIDGE-GITHUB-WEBHOOK-SENTINELA-01: Entrega Orientada a Eventos via GitHub Webhook e T\u00fanel Local Seguro",
+      "body": "DP_PROJECT: Hangar_v1\nDP_TERRAIN: Hangar_v1\nDP_ROOM: BRIDGE\nDP_MODULE: WEBHOOK_INBOUND\nDP_SUBMODULE: GITHUB_WEBHOOK_ADAPTER\nDP_PORT: P-BRIDGE-GITHUB-WEBHOOK-SENTINELA-01\nDP_CIRCUIT: CIRCUIT_GITHUB_PR1_TO_SENTINELA\nDP_ARTIFACT: bridge/github_webhook_server.py + bridge/tunnel_manager.py + bridge/sentinela_telegram.py\nDP_ACTION: Implementar endpoint HTTP local com valida\u00e7\u00e3o HMAC SHA-256 e t\u00fanel seguro reverso para entrega orientada a evento no Sentinela.\nDP_TARGET: Eventos issue_comment da PR #1 no reposit\u00f3rio BNeto04/Hangar_v1.\nDP_IMPACT_DIRECT: Substitui o wake manual/polling prim\u00e1rio no sentido GitHub -> Sentinela por entrega direta orientada a eventos.\nDP_IMPACT_INDIRECT: Polling mantido como fallback de resili\u00eancia. Sem impacto em CronosEdu ou n\u00f3s de IA externos.\nDP_AXIS_DOCUMENTATION: DOCS/18_GITHUB_WEBHOOK_EVENT_DRIVEN_BRIDGE.md\nDP_AXIS_CODE: bridge/github_webhook_server.py, bridge/tunnel_manager.py\nDP_AXIS_TEST: tests/test_github_webhook_server.py (unit\u00e1rio com HMAC, dedupe, filtragem de TYPE: CALL e fallback)\nDP_OUT_OF_SCOPE: Altera\u00e7\u00e3o na extens\u00e3o de retorno RESULT -> ChatGPT; altera\u00e7\u00e3o nos cards em T5; redesign da arquitetura da ponte.\nDP_ACCEPTANCE:\n  1. Endpoint local valida assinatura HMAC SHA-256 (X-Hub-Signature-256) fail-closed (rejeita payloads inv\u00e1lidos com HTTP 401).\n  2. Filtra estritamente coment\u00e1rios da PR #1 que contenham TYPE: CALL.\n  3. Deduplica\u00e7\u00e3o por delivery_id (X-GitHub-Delivery) e comment_id.\n  4. Dispara o processamento do Antigravity exatamente 1x.\n  5. Resposta HTTP r\u00e1pida (200 OK / 202 Accepted) em < 500ms.\n  6. Nenhuma credencial em log.\n  7. Rollback claro e reversibilidade total.\nDP_ROLLBACK: Parar o t\u00fanel e microservi\u00e7o, deletar o webhook via API do GitHub (DELETE /repos/BNeto04/Hangar_v1/hooks/{id}) e manter o github_pr_relay.py em polling cont\u00ednuo.\n",
+      "status": "in_progress",
+      "priority": 1,
+      "created_at": 1788572083,
+      "started_at": 1788572083,
+      "completed_at": null,
+      "metadata": {}
     }
   ]
 }

@@ -1,10 +1,10 @@
 # T-BRIDGE-OWNER-SOVEREIGNTY-BOT-POWERS-01: Soberania do Owner, Matriz de Poderes Reais e Regra Anti-Silêncio
 
 - **CARD_ID:** `t_bridge_owner_sovereignty_bot_powers_01`
-- **STATUS:** `review`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `1788556220`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `1788558385`
 
 ## Descrição
 Tornar a ponte comprovadamente operacional com os poderes reais do Sentinela_PC_Casa e corrigir precedência de autoridade:

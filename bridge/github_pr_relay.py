@@ -210,6 +210,30 @@ class GitHubPRRelay:
                 data = json.loads(resp.read().decode("utf-8"))
                 comment_id = data.get("id")
                 logger.info(f"Comentário postado com sucesso no PR #{self.pr_number}! ID={comment_id}")
+                
+                # Auto-arm inbound wake relay para a extensão no ChatGPT
+                try:
+                    import re
+                    msg_match = re.search(r"MESSAGE_ID:\s*([^\s]+)", envelope_text)
+                    msg_id = msg_match.group(1) if msg_match else f"comment-{comment_id}"
+                    call_match = re.search(r"CALL_ID:\s*([^\s]+)", envelope_text)
+                    call_id = call_match.group(1) if call_match else "auto-post"
+                    
+                    arm_payload = json.dumps({
+                        "message_id": msg_id,
+                        "call_id": call_id,
+                        "text": "v"
+                    }).encode("utf-8")
+                    arm_req = urllib.request.Request(
+                        "http://127.0.0.1:8765/arm_wake",
+                        data=arm_payload,
+                        headers={"Content-Type": "application/json"}
+                    )
+                    with urllib.request.urlopen(arm_req, timeout=2) as arm_resp:
+                        logger.info(f"Auto-arm inbound wake relay ativado para {msg_id}")
+                except Exception as arm_exc:
+                    logger.debug(f"Inbound relay arm skip/offline: {arm_exc}")
+
                 try:
                     from sentinela_telegram import send_telegram_alert
                     send_telegram_alert(f"📤 *Novo Comentário/RESULT Publicado no PR #{self.pr_number}!* (ID: `{comment_id}`)")

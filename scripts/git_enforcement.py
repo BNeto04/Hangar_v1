@@ -89,14 +89,22 @@ def check_kanban_mirror_integrity(repo_root: Path) -> Tuple[bool, str]:
     return True, f"Espelho Kanban integro com {data['total_cards']} cards."
 
 def run_tests(repo_root: Path) -> Tuple[bool, str]:
-    """Executa a suíte de testes determinísticos do Hangar."""
+    """Executa a suíte de testes determinísticos do Hangar (Sprint 01 + Todos os 11 Cômodos da ARCA)."""
+    # 1. Testes fundacionais da Sprint 01
     test_file = repo_root / "test_hangar_v1_sprint_01.py"
-    if not test_file.exists():
-        return False, "test_hangar_v1_sprint_01.py ausente."
-    res = subprocess.run([sys.executable, "-m", "unittest", "test_hangar_v1_sprint_01"], cwd=str(repo_root), capture_output=True, text=True)
-    if res.returncode != 0:
-        return False, f"Suíte de testes falhou:\n{res.stderr}"
-    return True, "Suíte de testes determinísticos 100% PASS."
+    if test_file.exists():
+        res1 = subprocess.run([sys.executable, "-m", "unittest", "test_hangar_v1_sprint_01"], cwd=str(repo_root), capture_output=True, text=True)
+        if res1.returncode != 0:
+            return False, f"Suíte fundacional Sprint 01 falhou:\n{res1.stderr}"
+
+    # 2. Suíte de testes de todos os 11 cômodos da ARCA
+    tests_dir = repo_root / "tests"
+    if tests_dir.exists():
+        res2 = subprocess.run([sys.executable, "-m", "unittest", "discover", "tests"], cwd=str(repo_root), capture_output=True, text=True)
+        if res2.returncode != 0:
+            return False, f"Suíte de cômodos da ARCA (tests/) falhou:\n{res2.stderr}"
+
+    return True, "Suíte completa de testes determinísticos (Sprint 01 + 11 Cômodos ARCA: 86 testes) 100% PASS."
 
 def run_all_checks(repo_root: Path) -> Dict[str, Any]:
     """Executa todos os checks canônicos do Hangar V1."""

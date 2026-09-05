@@ -19,6 +19,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
 from bridge.sentinela_telegram import send_telegram_alert
+from bridge.tunnel_manager import get_github_token
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [watchdog-gpt] %(levelname)s: %(message)s")
 logger = logging.getLogger("watchdog-gpt")
@@ -30,16 +31,21 @@ PROBE_COOLDOWN_SECONDS = 60
 
 def get_latest_pr_comment_author() -> str:
     try:
+        token = get_github_token()
+        headers = {"User-Agent": "Watchdog-Bot"}
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+
         req = urllib.request.Request(
             "https://api.github.com/repos/BNeto04/Hangar_v1/issues/1",
-            headers={"User-Agent": "Watchdog-Bot"}
+            headers=headers
         )
         issue = json.loads(urllib.request.urlopen(req, timeout=10).read())
         total = issue["comments"]
         page = (total // 30) + 1
         req2 = urllib.request.Request(
             f"https://api.github.com/repos/BNeto04/Hangar_v1/issues/1/comments?page={page}&per_page=30",
-            headers={"User-Agent": "Watchdog-Bot"}
+            headers=headers
         )
         comments = json.loads(urllib.request.urlopen(req2, timeout=10).read())
         if comments:

@@ -1,12 +1,12 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T23:29:08.068818-03:00",
-  "total_cards": 136,
+  "generated_at": "2026-09-04T23:32:13.741899-03:00",
+  "total_cards": 137,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 0,
+    "in_progress": 1,
     "blocked": 0,
     "review": 3,
     "done": 24,
@@ -2663,6 +2663,34 @@
         "closed_at": "2026-09-04T23:29:07.797631-03:00",
         "room_status": "COMPLETE",
         "closure_evidence": "30/30 unit & regression tests passing; SHA-256 contracts verified; zero gaps."
+      }
+    },
+    {
+      "card_id": "t_hangar_world_room_completion_01",
+      "title": "T-HANGAR-WORLD-ROOM-COMPLETION-01: Consolidacao da Ontologia de Mundo e Fechamento do Comodo WORLD (Tier 2)",
+      "body": "Consolidacao da Ontologia do Territorio, Sincronizacao do Vault e Fechamento do Comodo WORLD (Tier 2).\nOriginado por CG-000132 (CALL-HANGAR-NEXT-ROOM-WORLD-001).\n\nDiretrizes:\n1. Trabalhar estritamente no comodo WORLD (Tier 2).\n2. Mapear estado atual, dependencias (GOVERNANCE), specs, Vault e regras ARCA.\n3. Resolver gaps funcionais/documentais/testes em ordem de dependencias.\n4. Manter Vault sincronizado e referenciar regras ARCA sem duplicacao.\n5. Executar testes N08/N06/N07 e fechar comodo com ROOM_STATUS=COMPLETE.",
+      "status": "in_progress",
+      "priority": "high",
+      "created_at": "2026-09-04T23:32:13.486401-03:00",
+      "started_at": "2026-09-04T23:32:13.486401-03:00",
+      "completed_at": null,
+      "metadata": {
+        "call_id": "CALL-HANGAR-NEXT-ROOM-WORLD-001",
+        "reply_to": "CG-000132",
+        "dp_project": "Hangar_v1",
+        "dp_room": "WORLD",
+        "dp_module": "MODEL",
+        "dp_submodule": "SPATIAL_CANVAS",
+        "dp_port": "P-WORLD-CANVAS-NAV-01",
+        "tier": 2,
+        "dependencies": [
+          "GOVERNANCE"
+        ],
+        "upstream_status": "COMPLETE",
+        "rules_applied": [
+          "R-DOM-005",
+          "R-DOM-006"
+        ]
       }
     }
   ]

@@ -1,12 +1,12 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T23:09:55.630835-03:00",
-  "total_cards": 135,
+  "generated_at": "2026-09-04T23:19:59.530427-03:00",
+  "total_cards": 136,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 0,
+    "in_progress": 1,
     "blocked": 0,
     "review": 4,
     "done": 22,
@@ -2628,6 +2628,27 @@
       "started_at": 1788573984,
       "completed_at": null,
       "metadata": {}
+    },
+    {
+      "card_id": "t_hangar_arca_governance_domain_rules_01",
+      "title": "T-HANGAR-ARCA-GOVERNANCE-DOMAIN-RULES-01: M\u00f3dulo ARCA em Governan\u00e7a e Ordem Can\u00f4nica de C\u00f4modos",
+      "body": "M\u00f3dulo ARCA em Governan\u00e7a (AZ000) e Pol\u00edtica de Ordem de C\u00f4modos.\nOriginado por CG-000129 (CALL-HANGAR-ROOM-SPECS-ARCA-DOMAIN-RULES-001).\n\nDiretrizes:\n1. SPECs passam a ser por C\u00d4MODO.\n2. Fechar completamente um c\u00f4modo antes de seguir ao pr\u00f3ximo, respeitando depend\u00eancias.\n3. Antes de avan\u00e7ar, conferir depend\u00eancias e manter documenta\u00e7\u00e3o no Vault.\n4. Em GOVERNANCA criar m\u00f3dulo ARCA.\n5. ARCA cont\u00e9m UM arquivo can\u00f4nico somente-leitura com TODAS as regras de dom\u00ednio do projeto.\n6. M\u00f3dulos cobertos referenciam ARCA, sem duplica\u00e7\u00e3o de regras locais.",
+      "status": "in_progress",
+      "priority": "high",
+      "created_at": "2026-09-04T23:19:59.245417-03:00",
+      "started_at": "2026-09-04T23:19:59.245417-03:00",
+      "completed_at": null,
+      "metadata": {
+        "call_id": "CALL-HANGAR-ROOM-SPECS-ARCA-DOMAIN-RULES-001",
+        "reply_to": "CG-000129",
+        "dp_project": "Hangar_v1",
+        "dp_room": "AZ000_GOVERNANCA_SOBERANIA",
+        "dp_module": "ARCA",
+        "dp_submodule": "DOMAIN_RULES",
+        "dp_port": "P-GOV-ARCA-RULES-01",
+        "rules_count": 7,
+        "room_order_policy": "STRICT_SEQUENTIAL_CLOSED_BEFORE_NEXT"
+      }
     }
   ]
 }

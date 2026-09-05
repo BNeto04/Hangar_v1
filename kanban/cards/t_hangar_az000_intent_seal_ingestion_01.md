@@ -1,10 +1,10 @@
 # T-HANGAR-AZ000-INTENT-SEAL-INGESTION-01: Integracao Funcional do Circuito AZ000 Owner Intent na Recepcao da Ponte
 
 - **CARD_ID:** `t_hangar_az000_intent_seal_ingestion_01`
-- **STATUS:** `review`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `1788573984`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-04T23:29:07.797631-03:00`
 
 ## Descrição
 DP_PROJECT: Hangar_v1
@@ -33,5 +33,10 @@ DP_ROLLBACK: Reversao do arquivo ingestor.py e purga dos contratos transitórios
 
 ## Metadados Fatuais
 ```json
-{}
+{
+  "final_state": "DONE",
+  "closed_at": "2026-09-04T23:29:07.797631-03:00",
+  "room_status": "COMPLETE",
+  "closure_evidence": "30/30 unit & regression tests passing; SHA-256 contracts verified; zero gaps."
+}
 ```

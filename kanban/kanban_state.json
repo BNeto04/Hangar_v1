@@ -1,6 +1,6 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T23:21:59.376667-03:00",
+  "generated_at": "2026-09-04T23:29:08.068818-03:00",
   "total_cards": 136,
   "counts": {
     "triage": 0,
@@ -8,8 +8,8 @@
     "todo": 0,
     "in_progress": 0,
     "blocked": 0,
-    "review": 5,
-    "done": 22,
+    "review": 3,
+    "done": 24,
     "archived": 109
   },
   "cards": [
@@ -2622,22 +2622,27 @@
       "card_id": "t_hangar_az000_intent_seal_ingestion_01",
       "title": "T-HANGAR-AZ000-INTENT-SEAL-INGESTION-01: Integracao Funcional do Circuito AZ000 Owner Intent na Recepcao da Ponte",
       "body": "DP_PROJECT: Hangar_v1\nDP_TERRAIN: Hangar_v1\nDP_ROOM: AZ000_GOVERNANCA_SOBERANIA\nDP_MODULE: OWNER_INTENT\nDP_SUBMODULE: SEALED_CONTRACT_EMITTER\nDP_PORT: P-OWNER-INTENT-INGEST-01 e P-INTENT-HANDOFF-N01-01\nDP_CIRCUIT: CIRCUIT_OWNER_INTENT_TO_PLANNER\nDP_ARTIFACT: az000_governance/owner_intent/ingestor.py + bridge/github_webhook_server.py\nDP_ACTION: Implementar adaptador deterministico que ingere CALLs textuais da ponte, executa OwnerIntentCircuit, gera SealedIntentContract com SHA-256 e entrega HandoffEnvelope ao Planner N01.\nDP_TARGET: Chamadas operacionais da PR #1 recebidas via Webhook ou relay.\nDP_IMPACT_DIRECT: Garante o invariante NO_UNSEALED_PASS, vinculando cada CALL recebida a um contrato criptografico imutavel no disco.\nDP_IMPACT_INDIRECT: Sem impacto no CronosEdu ou nos CHARs T5.\nDP_AXIS_DOCUMENTATION: DOCS/19_AZ000_BRIDGE_INGESTION_SEAL_INTEGRATION.md\nDP_AXIS_CODE: az000_governance/owner_intent/ingestor.py\nDP_AXIS_TEST: tests/test_az000_bridge_ingestor.py\nDP_OUT_OF_SCOPE: Redesign de portas existentes, alteracao de rotas de transporte (webhook/inbound).\nDP_ACCEPTANCE:\n  1. Ingestao de CALL textual gera OwnerRawIntent, valida como ACCEPT, emite SealedIntentContract com SHA-256 integro e emite HandoffEnvelope.\n  2. Chamadas invalidas ou com campos faltantes sofrem bloqueio fail-closed.\n  3. Contratos gerados sao persistidos em runtime/sealed_contracts/{contract_id}.json.\n  4. Suite de testes unitarios 100% verde e sem regressoes.\nDP_ROLLBACK: Reversao do arquivo ingestor.py e purga dos contratos transit\u00f3rios de teste.\n",
-      "status": "review",
+      "status": "done",
       "priority": 1,
       "created_at": 1788573984,
       "started_at": 1788573984,
-      "completed_at": null,
-      "metadata": {}
+      "completed_at": "2026-09-04T23:29:07.797631-03:00",
+      "metadata": {
+        "final_state": "DONE",
+        "closed_at": "2026-09-04T23:29:07.797631-03:00",
+        "room_status": "COMPLETE",
+        "closure_evidence": "30/30 unit & regression tests passing; SHA-256 contracts verified; zero gaps."
+      }
     },
     {
       "card_id": "t_hangar_arca_governance_domain_rules_01",
       "title": "T-HANGAR-ARCA-GOVERNANCE-DOMAIN-RULES-01: M\u00f3dulo ARCA em Governan\u00e7a e Ordem Can\u00f4nica de C\u00f4modos",
       "body": "M\u00f3dulo ARCA em Governan\u00e7a (AZ000) e Pol\u00edtica de Ordem de C\u00f4modos.\nOriginado por CG-000129 (CALL-HANGAR-ROOM-SPECS-ARCA-DOMAIN-RULES-001).\n\nDiretrizes:\n1. SPECs passam a ser por C\u00d4MODO.\n2. Fechar completamente um c\u00f4modo antes de seguir ao pr\u00f3ximo, respeitando depend\u00eancias.\n3. Antes de avan\u00e7ar, conferir depend\u00eancias e manter documenta\u00e7\u00e3o no Vault.\n4. Em GOVERNANCA criar m\u00f3dulo ARCA.\n5. ARCA cont\u00e9m UM arquivo can\u00f4nico somente-leitura com TODAS as regras de dom\u00ednio do projeto.\n6. M\u00f3dulos cobertos referenciam ARCA, sem duplica\u00e7\u00e3o de regras locais.",
-      "status": "review",
+      "status": "done",
       "priority": "high",
       "created_at": "2026-09-04T23:19:59.245417-03:00",
       "started_at": "2026-09-04T23:19:59.245417-03:00",
-      "completed_at": "2026-09-04T23:21:59.108032-03:00",
+      "completed_at": "2026-09-04T23:29:07.797631-03:00",
       "metadata": {
         "call_id": "CALL-HANGAR-ROOM-SPECS-ARCA-DOMAIN-RULES-001",
         "reply_to": "CG-000129",
@@ -2649,12 +2654,15 @@
         "rules_count": 7,
         "room_order_count": 11,
         "arca_sha256": "b44cc173dde350c195c38ef14533c141cbaf017f4006287400447b6dce893683",
-        "final_state": "REVIEW",
+        "final_state": "DONE",
         "pending_items": [
           "Homologa\u00e7\u00e3o formal do Propriet\u00e1rio para promo\u00e7\u00e3o definitiva em T5 (Done)",
           "Auditoria independente do Codex das regras e grafo de depend\u00eancias"
         ],
-        "owner_directive_applied": "N\u00c3O PARAR O TRABALHO; registrar pend\u00eancia no cart\u00e3o e deixar em review"
+        "owner_directive_applied": "N\u00c3O PARAR O TRABALHO; registrar pend\u00eancia no cart\u00e3o e deixar em review",
+        "closed_at": "2026-09-04T23:29:07.797631-03:00",
+        "room_status": "COMPLETE",
+        "closure_evidence": "30/30 unit & regression tests passing; SHA-256 contracts verified; zero gaps."
       }
     }
   ]

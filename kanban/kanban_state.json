@@ -1,15 +1,15 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T23:46:27.392702-03:00",
+  "generated_at": "2026-09-04T23:48:25.009784-03:00",
   "total_cards": 140,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 1,
+    "in_progress": 0,
     "blocked": 0,
     "review": 3,
-    "done": 27,
+    "done": 28,
     "archived": 109
   },
   "cards": [
@@ -2759,11 +2759,11 @@
       "card_id": "t_hangar_capabilities_room_completion_01",
       "title": "T-HANGAR-CAPABILITIES-ROOM-COMPLETION-01: Registro de Motores, Curadoria Determin\u00edstica e Fechamento do C\u00f4modo CAPABILITIES (Tier 5)",
       "body": "Consolida\u00e7\u00e3o can\u00f4nica do c\u00f4modo CAPABILITIES (Tier 5): motores estruturais (Graphify, Improve, Ponytail, Ruflo, Open Design), integridade de grafos ac\u00edclicos e curadoria determin\u00edstica.\nOriginado por CG-000135 (CALL-HANGAR-NEXT-ROOM-CAPABILITIES-001).\n\nDiretrizes:\n1. Trabalhar estritamente no c\u00f4modo CAPABILITIES (Tier 5).\n2. Mapear depend\u00eancias a montante (GOVERNANCE, WORLD, PLANT, PORTS), todas COMPLETE.\n3. Consolidar especifica\u00e7\u00e3o can\u00f4nica em DOCS/25_CAPABILITIES_ROOM_SPEC.md.\n4. Implementar m\u00f3dulo az000_governance/capabilities/ (modelos, registro com valida\u00e7\u00e3o ac\u00edclica e motor Graphify).\n5. Manter Vault (vault/CAPABILITIES/INDEX.md) sincronizado e referenciando a ARCA sem duplica\u00e7\u00e3o.\n6. Executar testes N08/N06/N07 e fechar c\u00f4modo com ROOM_STATUS=COMPLETE.",
-      "status": "in_progress",
+      "status": "done",
       "priority": 1,
       "created_at": "2026-09-04T23:46:27.141154-03:00",
       "started_at": "2026-09-04T23:46:27.141154-03:00",
-      "completed_at": null,
+      "completed_at": "2026-09-04T23:48:24.735267-03:00",
       "metadata": {
         "call_id": "CALL-HANGAR-NEXT-ROOM-CAPABILITIES-001",
         "reply_to": "CG-000135",
@@ -2780,11 +2780,11 @@
           "PORTS"
         ],
         "upstream_status": "COMPLETE",
-        "room_status": "IN_PROGRESS",
-        "rules_applied": [
-          "R-DOM-005",
-          "R-DOM-006"
-        ]
+        "final_state": "DONE",
+        "closed_at": "2026-09-04T23:48:24.735267-03:00",
+        "room_status": "COMPLETE",
+        "closure_evidence": "Motores canonicos (GRAPHIFY, OPEN_DESIGN, PONYTAIL, IMPROVE, RUFLO) registrados em az000_governance/capabilities/registry.py sem ciclos; motor Graphify validado em az000_governance/capabilities/graphify_engine.py com zero links quebrados no Vault; vault/CAPABILITIES/INDEX.md e DOCS/25_CAPABILITIES_ROOM_SPEC.md consolidados; 6/6 testes unitarios PASS (test_capabilities_room.py); 43/43 testes globais PASS.",
+        "next_room_eligible": "MACHINES (Tier 6)"
       }
     }
   ]

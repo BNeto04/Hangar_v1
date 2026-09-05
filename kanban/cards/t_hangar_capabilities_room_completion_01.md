@@ -1,10 +1,10 @@
 # T-HANGAR-CAPABILITIES-ROOM-COMPLETION-01: Registro de Motores, Curadoria Determinística e Fechamento do Cômodo CAPABILITIES (Tier 5)
 
 - **CARD_ID:** `t_hangar_capabilities_room_completion_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `2026-09-04T23:46:27.141154-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-04T23:48:24.735267-03:00`
 
 ## Descrição
 Consolidação canônica do cômodo CAPABILITIES (Tier 5): motores estruturais (Graphify, Improve, Ponytail, Ruflo, Open Design), integridade de grafos acíclicos e curadoria determinística.
@@ -36,10 +36,10 @@ Diretrizes:
     "PORTS"
   ],
   "upstream_status": "COMPLETE",
-  "room_status": "IN_PROGRESS",
-  "rules_applied": [
-    "R-DOM-005",
-    "R-DOM-006"
-  ]
+  "final_state": "DONE",
+  "closed_at": "2026-09-04T23:48:24.735267-03:00",
+  "room_status": "COMPLETE",
+  "closure_evidence": "Motores canonicos (GRAPHIFY, OPEN_DESIGN, PONYTAIL, IMPROVE, RUFLO) registrados em az000_governance/capabilities/registry.py sem ciclos; motor Graphify validado em az000_governance/capabilities/graphify_engine.py com zero links quebrados no Vault; vault/CAPABILITIES/INDEX.md e DOCS/25_CAPABILITIES_ROOM_SPEC.md consolidados; 6/6 testes unitarios PASS (test_capabilities_room.py); 43/43 testes globais PASS.",
+  "next_room_eligible": "MACHINES (Tier 6)"
 }
 ```

@@ -1,12 +1,12 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-05T00:18:31.917695-03:00",
-  "total_cards": 147,
+  "generated_at": "2026-09-05T00:21:39.418516-03:00",
+  "total_cards": 148,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 0,
+    "in_progress": 1,
     "blocked": 0,
     "review": 3,
     "done": 35,
@@ -3058,6 +3058,37 @@
         ],
         "tests_passed": "86/86 deterministic tests PASS (7 sprint_01 + 79 tests/); check-all PASS",
         "next_phase": "SOVEREIGN_FINAL_HOMOLOGATION_OR_OPA_CEDAR_ENHANCEMENT"
+      }
+    },
+    {
+      "card_id": "t_hangar_formal_policy_engines_cedar_opa_01",
+      "title": "T-HANGAR-FORMAL-POLICY-ENGINES-CEDAR-OPA-01: Motores Formais de Pol\u00edtica (Cedar Authority & OPA Quality Gates)",
+      "body": "Implementa\u00e7\u00e3o dos motores can\u00f4nicos de pol\u00edtica declarativa formal para a Governan\u00e7a Plena do Hangar V1:\n1. Motor Cedar de Autoridade (az000_governance/policy/cedar_engine.py): parsing declarativo permit/forbid, valida\u00e7\u00e3o de principal/action/resource e avalia\u00e7\u00e3o determin\u00edstica estrita fail-closed.\n2. Motor OPA de Quality Gates (az000_governance/policy/opa_engine.py): avalia\u00e7\u00e3o determin\u00edstica de regras Rego sobre envelopes tipados de evid\u00eancias (TypedPortEnvelope) sem depend\u00eancia de daemons de rede.\n3. Resolu\u00e7\u00e3o integral do Crit\u00e9rio 2 do Roadtrace (GAP-001 e GAP-002).\nOriginado por CG-000143 (CALL-HANGAR-POST-CONVERGENCE-NEXT-001).",
+      "status": "in_progress",
+      "priority": 1,
+      "created_at": "2026-09-05T00:21:39.151573-03:00",
+      "started_at": "2026-09-05T00:21:39.151573-03:00",
+      "completed_at": null,
+      "metadata": {
+        "call_id": "CALL-HANGAR-POST-CONVERGENCE-NEXT-001",
+        "reply_to": "CG-000143",
+        "dp_project": "Hangar_v1",
+        "phase": "FORMAL_POLICY_ENGINES",
+        "dp_room": "GOVERNANCE",
+        "dp_module": "POLICY",
+        "dp_submodule": "CEDAR_OPA_ENGINES",
+        "dp_port": "P-GOV-POLICY-01",
+        "criterion_target": "ROADTRACE_CRITERION_2",
+        "gaps_resolved": [
+          "GAP-001",
+          "GAP-002"
+        ],
+        "rules_applied": [
+          "R-DOM-001",
+          "R-DOM-002",
+          "R-DOM-005",
+          "R-DOM-006"
+        ]
       }
     }
   ]

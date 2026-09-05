@@ -1,0 +1,11 @@
+{
+  "fired_at": "2026-09-04T22:21:37.591154",
+  "call_id": "CALL-BRIDGE-INBOUND-WAKE-REAL-E2E-RETRY-001",
+  "card_id": "t_bridge_inbound_wake_extension_01",
+  "message_id": "AG-RES-000124",
+  "relay_armed": true,
+  "ack_received": true,
+  "acked_at": "2026-09-04 22:21:40",
+  "elapsed_seconds": 4.03,
+  "failing_hop": null
+}

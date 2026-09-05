@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Hangar V1 Bridge V2 Continuous Inbound",
+  "version": "2.0.0",
+  "description": "Injeta CONTEXT_PACKET estruturado no ChatGPT para continuidade autônoma de Sprints.",
+  "permissions": [],
+  "host_permissions": [
+    "http://127.0.0.1:8765/*",
+    "https://chatgpt.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

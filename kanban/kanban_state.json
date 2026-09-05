@@ -1,14 +1,14 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-05T00:23:44.606942-03:00",
-  "total_cards": 148,
+  "generated_at": "2026-09-05T09:26:10.156974-03:00",
+  "total_cards": 151,
   "counts": {
     "triage": 0,
-    "ready": 0,
+    "ready": 1,
     "todo": 0,
-    "in_progress": 0,
+    "in_progress": 1,
     "blocked": 0,
-    "review": 3,
+    "review": 4,
     "done": 36,
     "archived": 109
   },
@@ -3100,6 +3100,99 @@
         "tests_passed": "6/6 tests/test_policy_engines.py PASS; 92/92 full regression PASS",
         "next_phase": "SOVEREIGN_FINAL_HOMOLOGATION",
         "owner_decision_required": true
+      }
+    },
+    {
+      "card_id": "t_bridge_autowake_circuit_canonicalization_01",
+      "title": "T-BRIDGE-AUTOWAKE-CIRCUIT-CANONICALIZATION-01: Reparo da Ponte, Toler\u00e2ncia a Envelopes Compactos e Autowake Dur\u00e1vel",
+      "body": "Execu\u00e7\u00e3o da Workstream A de CG-000146 e reconcilia\u00e7\u00e3o de CG-000145:\n1. Parser compat\u00edvel com envelope longo e compacto.\n2. Restaura\u00e7\u00e3o do Webhook/Cloudflare e polling como fallback.\n3. Estrutura\u00e7\u00e3o can\u00f4nica em runtime/bridge/ (inbox, outbox, journal, state, logs).\n4. Dedupe at\u00f4mico compartilhado e autowake dur\u00e1vel.",
+      "status": "in_progress",
+      "priority": 0,
+      "created_at": "2026-09-05T08:52:05.538011-03:00",
+      "started_at": "2026-09-05T08:52:05.538011-03:00",
+      "completed_at": null,
+      "metadata": {
+        "call_id": "CALL-HANGAR-BRIDGE-AUTOWAKE-AND-TERRAIN-CARTOGRAPHY-001",
+        "reply_to": "CG-000146",
+        "dp_project": "Hangar_v1",
+        "phase": "P0_BRIDGE_AUTOWAKE",
+        "dp_room": "EXTERNAL",
+        "dp_module": "BRIDGE",
+        "dp_submodule": "CIRCUIT",
+        "dp_port": "P-EXT-BRIDGE-01",
+        "rules_applied": [
+          "R-DOM-001",
+          "R-DOM-002",
+          "R-DOM-005",
+          "R-DOM-006",
+          "R-DOM-007"
+        ]
+      }
+    },
+    {
+      "card_id": "t_cartography_terrain_master_world_governance_01",
+      "title": "T-CARTOGRAPHY-TERRAIN-MASTER-WORLD-GOVERNANCE-01: Cartografia do Terreno Hangar_v1 e Fronteiras Vizinhas no Vault",
+      "body": "Execu\u00e7\u00e3o da Workstream B de CG-000146:\n1. Representa\u00e7\u00e3o expl\u00edcita de TERRAIN: Hangar_v1 e ROOM: GOVERNANCE no Governance.canvas.\n2. Indica\u00e7\u00e3o factual de terrenos vizinhos/hist\u00f3ricos (syntheon_adk, Circuito Local).\n3. Legenda can\u00f4nica de endere\u00e7amento Plant no Canvas e documenta\u00e7\u00e3o de topologia.",
+      "status": "ready",
+      "priority": 1,
+      "created_at": "2026-09-05T08:52:05.538011-03:00",
+      "started_at": null,
+      "completed_at": null,
+      "metadata": {
+        "call_id": "CALL-HANGAR-BRIDGE-AUTOWAKE-AND-TERRAIN-CARTOGRAPHY-001",
+        "reply_to": "CG-000146",
+        "dp_project": "Hangar_v1",
+        "phase": "P1_TERRAIN_CARTOGRAPHY",
+        "dp_room": "WORLD",
+        "dp_module": "CARTOGRAPHY",
+        "dp_submodule": "TERRAIN_MAP",
+        "dp_port": "P-WOR-MAP-01",
+        "rules_applied": [
+          "R-DOM-001",
+          "R-DOM-006"
+        ]
+      }
+    },
+    {
+      "card_id": "t_bridge_v2_cleanroom_sprint_01",
+      "title": "T-BRIDGE-V2-CLEANROOM-SPRINT-01: Constru\u00e7\u00e3o da Nova Ponte Clean-Room V2 e Circuito Di\u00e1rio",
+      "body": "Constru\u00e7\u00e3o da nova ponte V2 em clean-room para Hangar V1:\n1. Namespace limpo bridge_v2/ e runtime/bridge_v2/.\n2. Schemas can\u00f4nicos (CALL, RESULT, OWNER_EVENT, CONTEXT_PACKET).\n3. Webhook prim\u00e1rio + polling fallback com dedupe global at\u00f4mico.\n4. Circuito di\u00e1rio estruturado (circuito_diario/YYYY-MM-DD.jsonl e .md).\n5. Extens\u00e3o com envio de CONTEXT_PACKET ao inv\u00e9s de V puro.\n6. Telemetria humana multi-canal (Telegram, Antigravity, ChatGPT).",
+      "status": "review",
+      "priority": 0,
+      "created_at": "2026-09-05T09:15:14.760494-03:00",
+      "started_at": "2026-09-05T09:15:14.760494-03:00",
+      "completed_at": "2026-09-05T09:26:07.217983-03:00",
+      "metadata": {
+        "sprint_id": "SPRINT-BRIDGE-V2-CLEANROOM-001",
+        "call_id": "CALL-BRIDGE-V2-CLEANROOM-BUILD-001",
+        "secondary_call_id": "CALL-BRIDGE-V2-DAILY-CIRCUIT-JOURNAL-001",
+        "reply_to": "CG-000148 / CG-000149",
+        "dp_project": "Hangar_v1",
+        "phase": "CLEANROOM_BUILD",
+        "dp_room": "EXTERNAL",
+        "dp_module": "BRIDGE_V2",
+        "dp_submodule": "CLEANROOM_PIPELINE",
+        "dp_port": "P-EXT-BRIDGE-V2-01",
+        "rules_applied": [
+          "R-DOM-001",
+          "R-DOM-002",
+          "R-DOM-005",
+          "R-DOM-006",
+          "R-DOM-007"
+        ],
+        "phase_status": "REVIEW_T4",
+        "completed_at": "2026-09-05T09:26:07.217983-03:00",
+        "closure_criteria_met": [
+          "Namespace limpo bridge_v2/ e runtime/bridge_v2/ criado",
+          "Schemas canonicos unificados (CALL, RESULT, OWNER_EVENT, CONTEXT_PACKET)",
+          "Circuito diario operacional implementado (2026-09-05.jsonl e .md)",
+          "Zero dependencia de Downloads/circuito ou legado",
+          "11 testes automatizados (6 unitarios + 5 E2E) 100% PASS",
+          "Extensao V2 atualizada com envio de CONTEXT_PACKET (<= 4 KiB)",
+          "Telemetria humana multi-canal (Telegram, Antigravity, ChatGPT)"
+        ],
+        "tests_passed": "11/11 bridge_v2 unit + E2E tests PASS; 7/7 Sprint 01 PASS",
+        "next_phase": "AWAITING_AUDIT"
       }
     }
   ]

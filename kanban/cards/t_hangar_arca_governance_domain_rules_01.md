@@ -1,10 +1,10 @@
 # T-HANGAR-ARCA-GOVERNANCE-DOMAIN-RULES-01: Módulo ARCA em Governança e Ordem Canônica de Cômodos
 
 - **CARD_ID:** `t_hangar_arca_governance_domain_rules_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `review`
 - **PRIORITY:** `high`
 - **CREATED_AT:** `2026-09-04T23:19:59.245417-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-04T23:21:59.108032-03:00`
 
 ## Descrição
 Módulo ARCA em Governança (AZ000) e Política de Ordem de Cômodos.
@@ -29,6 +29,13 @@ Diretrizes:
   "dp_submodule": "DOMAIN_RULES",
   "dp_port": "P-GOV-ARCA-RULES-01",
   "rules_count": 7,
-  "room_order_policy": "STRICT_SEQUENTIAL_CLOSED_BEFORE_NEXT"
+  "room_order_count": 11,
+  "arca_sha256": "b44cc173dde350c195c38ef14533c141cbaf017f4006287400447b6dce893683",
+  "final_state": "REVIEW",
+  "pending_items": [
+    "Homologa\u00e7\u00e3o formal do Propriet\u00e1rio para promo\u00e7\u00e3o definitiva em T5 (Done)",
+    "Auditoria independente do Codex das regras e grafo de depend\u00eancias"
+  ],
+  "owner_directive_applied": "N\u00c3O PARAR O TRABALHO; registrar pend\u00eancia no cart\u00e3o e deixar em review"
 }
 ```

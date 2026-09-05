@@ -1,10 +1,10 @@
 # T-HANGAR-PORTS-ROOM-COMPLETION-01: Registro de Portas, Contratos de Interface e Fechamento do Cômodo PORTS (Tier 4)
 
 - **CARD_ID:** `t_hangar_ports_room_completion_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `2026-09-04T23:40:38.346755-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-04T23:43:00.517264-03:00`
 
 ## Descrição
 Consolidação canônica do cômodo PORTS (Tier 4): catálogo de portas, contratos tipados de envelope e protocolos de despacho assíncrono.
@@ -35,10 +35,10 @@ Diretrizes:
     "PLANT"
   ],
   "upstream_status": "COMPLETE",
-  "room_status": "IN_PROGRESS",
-  "rules_applied": [
-    "R-DOM-005",
-    "R-DOM-006"
-  ]
+  "final_state": "DONE",
+  "closed_at": "2026-09-04T23:43:00.517264-03:00",
+  "room_status": "COMPLETE",
+  "closure_evidence": "Envelopes tipados implementados em az000_governance/ports/envelope.py; registro e roteador determin\u00edstico em az000_governance/ports/registry.py; vault/PORTS/INDEX.md e DOCS/24_PORTS_ROOM_SPEC.md consolidados; 6/6 testes unit\u00e1rios PASS (tests/test_ports_room.py); 37/37 testes globais PASS.",
+  "next_room_eligible": "CAPABILITIES (Tier 5)"
 }
 ```

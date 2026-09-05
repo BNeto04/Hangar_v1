@@ -1,10 +1,10 @@
 # T-HANGAR-EXTERNAL-ROOM-COMPLETION-01: Pontes Autenticadas, Fronteiras Periféricas e Fechamento do Cômodo EXTERNAL (Tier 8)
 
 - **CARD_ID:** `t_hangar_external_room_completion_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `2026-09-05T00:00:02.417491-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-05T00:02:11.306587-03:00`
 
 ## Descrição
 Consolidação canônica do cômodo EXTERNAL (Tier 8): pontes externas com autenticação (GitHub Webhook HMAC SHA-256, PR Relay, Telegram Bot, Cloudflare Tunnel), protocolo fail-closed em indisponibilidade e isolamento de fronteiras.
@@ -39,11 +39,18 @@ Diretrizes:
     "INTELLIGENCE"
   ],
   "upstream_status": "COMPLETE",
-  "room_status": "IN_PROGRESS",
+  "room_status": "COMPLETE",
   "rules_applied": [
     "R-DOM-002",
     "R-DOM-005",
     "R-DOM-006"
-  ]
+  ],
+  "completed_at": "2026-09-05T00:02:11.306587-03:00",
+  "closure_criteria_met": [
+    "Transportes orientados a eventos comprovados",
+    "Deduplica\u00e7\u00e3o e HMAC SHA-256 ativos"
+  ],
+  "tests_passed": "6/6 tests/test_external_room.py PASS; 61/61 full regression PASS",
+  "next_eligible_room": "TRACE (Tier 9)"
 }
 ```

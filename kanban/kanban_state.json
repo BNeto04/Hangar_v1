@@ -1,14 +1,14 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T23:06:24.336357-03:00",
+  "generated_at": "2026-09-04T23:09:55.630835-03:00",
   "total_cards": 135,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 1,
+    "in_progress": 0,
     "blocked": 0,
-    "review": 3,
+    "review": 4,
     "done": 22,
     "archived": 109
   },
@@ -2622,7 +2622,7 @@
       "card_id": "t_hangar_az000_intent_seal_ingestion_01",
       "title": "T-HANGAR-AZ000-INTENT-SEAL-INGESTION-01: Integracao Funcional do Circuito AZ000 Owner Intent na Recepcao da Ponte",
       "body": "DP_PROJECT: Hangar_v1\nDP_TERRAIN: Hangar_v1\nDP_ROOM: AZ000_GOVERNANCA_SOBERANIA\nDP_MODULE: OWNER_INTENT\nDP_SUBMODULE: SEALED_CONTRACT_EMITTER\nDP_PORT: P-OWNER-INTENT-INGEST-01 e P-INTENT-HANDOFF-N01-01\nDP_CIRCUIT: CIRCUIT_OWNER_INTENT_TO_PLANNER\nDP_ARTIFACT: az000_governance/owner_intent/ingestor.py + bridge/github_webhook_server.py\nDP_ACTION: Implementar adaptador deterministico que ingere CALLs textuais da ponte, executa OwnerIntentCircuit, gera SealedIntentContract com SHA-256 e entrega HandoffEnvelope ao Planner N01.\nDP_TARGET: Chamadas operacionais da PR #1 recebidas via Webhook ou relay.\nDP_IMPACT_DIRECT: Garante o invariante NO_UNSEALED_PASS, vinculando cada CALL recebida a um contrato criptografico imutavel no disco.\nDP_IMPACT_INDIRECT: Sem impacto no CronosEdu ou nos CHARs T5.\nDP_AXIS_DOCUMENTATION: DOCS/19_AZ000_BRIDGE_INGESTION_SEAL_INTEGRATION.md\nDP_AXIS_CODE: az000_governance/owner_intent/ingestor.py\nDP_AXIS_TEST: tests/test_az000_bridge_ingestor.py\nDP_OUT_OF_SCOPE: Redesign de portas existentes, alteracao de rotas de transporte (webhook/inbound).\nDP_ACCEPTANCE:\n  1. Ingestao de CALL textual gera OwnerRawIntent, valida como ACCEPT, emite SealedIntentContract com SHA-256 integro e emite HandoffEnvelope.\n  2. Chamadas invalidas ou com campos faltantes sofrem bloqueio fail-closed.\n  3. Contratos gerados sao persistidos em runtime/sealed_contracts/{contract_id}.json.\n  4. Suite de testes unitarios 100% verde e sem regressoes.\nDP_ROLLBACK: Reversao do arquivo ingestor.py e purga dos contratos transit\u00f3rios de teste.\n",
-      "status": "in_progress",
+      "status": "review",
       "priority": 1,
       "created_at": 1788573984,
       "started_at": 1788573984,

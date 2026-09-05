@@ -1,7 +1,7 @@
 # T-HANGAR-AZ000-INTENT-SEAL-INGESTION-01: Integracao Funcional do Circuito AZ000 Owner Intent na Recepcao da Ponte
 
 - **CARD_ID:** `t_hangar_az000_intent_seal_ingestion_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `review`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `1788573984`
 - **COMPLETED_AT:** `null`

@@ -17,7 +17,7 @@ Documento canônico, integral e monolítico de governança soberana, matriz de a
 - [[#10-contrato-mínimo-do-artefato-ativo-10-campos|10. Contrato Mínimo do Artefato Ativo (10 Campos)]]
 - [[#11-política-de-frontend--slots-de-design-de-ui|11. Política de Frontend & Slots de Design de UI]]
 - [[#12-política-de-conclusão-de-produto--azimutes-obrigatórios|12. Política de Conclusão de Produto & Azimutes Obrigatórios]]
-- [[#13-referências-normativas-opa--cedar-enforcement-futuro|13. Referências Normativas OPA & Cedar (Enforcement Futuro)]]
+- [[#13-referências-normativas-opa--cedar-enforcement-futuro|13. Referências Normativas OPA & Cedar (Implementado e Operacional no Commit 91ab681)]]
 - [[#14-rastreabilidade-bidirecional-doc-script--implementation-gaps|14. Rastreabilidade Bidirecional Doc-Script & Implementation Gaps]]
 
 ---
@@ -163,7 +163,7 @@ Para que um produto ou fatia atinja o estado `DONE / T5`, ele deve obrigatoriame
 
 ---
 
-## 13. Referências Normativas OPA & Cedar (Enforcement Futuro)
+## 13. Referências Normativas OPA & Cedar (Implementado e Operacional no Commit 91ab681)
 - **Cedar Policy Engine:**
   * Alocação: Camada de `AUTHORITY`.
   * Função: Validação estática e declarativa de permissões de agentes (`permit`/`forbid`), garantindo isolamento estrito sem abertura de portas de rede.

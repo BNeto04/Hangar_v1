@@ -1,0 +1,157 @@
+{
+  "nodes": [
+    {
+      "id": "node-gov-owner",
+      "type": "text",
+      "text": "# 👑 L0 SOBERANIA DO PROPRIETÁRIO\n- **REGRA CANÔNICA:** `R-DOM-001`\n- **AUTORIDADE:** Soberana, Irrevogável e Exclusiva (Manoel)\n- **PRERROGATIVAS:**\n  - Homologação final de fases e produtos\n  - Autorização de escopo e tarefas\n  - Decisão sobre exceções arquiteturais\n  - Autorização de deploy / publicação\n\n📄 [[GOVERNANCE/GOVERNANCE#1-soberania-do-proprietário--papel-do-codex|Ver Seção de Soberania]]",
+      "x": 600,
+      "y": 0,
+      "width": 480,
+      "height": 280,
+      "color": "1"
+    },
+    {
+      "id": "node-gov-arca",
+      "type": "text",
+      "text": "# 📜 ARCA — REGRAS CANÔNICAS DE DOMÍNIO\n- **IDENTIFICADOR:** Tier 1 / AZ-000°\n- **MÓDULO:** `az000_governance/arca/canonical_domain_rules.py`\n- **REGRAS:** `R-DOM-001` a `R-DOM-007`\n- **INVARIANTES:**\n  - Single Source of Truth (`R-DOM-006`)\n  - Fail-Closed Default Deny (`R-DOM-002`)\n  - Ordem Estrita Cômodo por Cômodo (`R-DOM-005`)\n  - Topologia dos 11 Cômodos Territoriais\n\n📄 [[GOVERNANCE/ARCA_SPEC_AND_ROOM_ORDER|Especificação ARCA & Cômodos]]",
+      "x": 60,
+      "y": 360,
+      "width": 460,
+      "height": 320,
+      "color": "6"
+    },
+    {
+      "id": "node-gov-intent",
+      "type": "text",
+      "text": "# ⚡ CIRCUITO DE INTENÇÃO (OWNER INTENT)\n- **MÓDULO:** `az000_governance/owner_intent/`\n- **SCRIPT:** `scripts/owner_sovereignty.py`\n- **FUNÇÃO:**\n  - Ingestão determinística de comandos soberanos\n  - Isolamento de canais autorizados (Telegram, PR #1, CLI)\n  - Bloqueio de auto-aprovação ou bypass por agentes de IA\n\n📄 [[GOVERNANCE/OWNER_INTENT_CIRCUIT|Circuito de Intenção do Proprietário]]",
+      "x": 560,
+      "y": 360,
+      "width": 460,
+      "height": 320,
+      "color": "4"
+    },
+    {
+      "id": "node-gov-cedar",
+      "type": "text",
+      "text": "# 🛡️ MOTOR CEDAR DE AUTORIDADE\n- **MÓDULO:** `az000_governance/policy/cedar_engine.py`\n- **STATUS:** Concluído (Commit `91ab681`)\n- **SEMÂNTICA:** Estrita `permit` / `forbid` com fail-closed\n- **POLÍTICAS ATIVAS:**\n  - Soberania Irrestrita do Proprietário (`PERMIT` absoluto)\n  - Monopólio de escrita exclusivo do Executor N03\n  - Isolamento estrito de Lentes N04/N05/N06 (Read-Only puro)\n\n📄 [[GOVERNANCE/CEDAR_AUTHORITY_ENGINE|Motor Formal Cedar]]",
+      "x": 1060,
+      "y": 360,
+      "width": 460,
+      "height": 320,
+      "color": "3"
+    },
+    {
+      "id": "node-gov-opa",
+      "type": "text",
+      "text": "# 🔍 MOTOR OPA DE QUALITY GATES\n- **MÓDULO:** `az000_governance/policy/opa_engine.py`\n- **STATUS:** Concluído (Commit `91ab681`)\n- **REGRAS REGO EVALUATOR:**\n  - Validação determinística de envelopes tipados\n  - Verificação de hash SHA-256 de 64 caracteres hexadecimais\n  - Bloqueio imediato (*fail-closed*) em caso de ausência de prova\n\n📄 [[GOVERNANCE/OPA_QUALITY_GATES|Motor Formal OPA]]",
+      "x": 1560,
+      "y": 360,
+      "width": 460,
+      "height": 320,
+      "color": "2"
+    },
+    {
+      "id": "node-gov-gates",
+      "type": "text",
+      "text": "# 🚦 QUALITY GATES & CI/CD ENFORCEMENT\n- **SCRIPT:** `scripts/git_enforcement.py`\n- **SUÍTE:** 92 Testes Determinísticos (100% PASS)\n- **BARREIRAS AUTOMÁTICAS:**\n  - 1. Testes unitários de todos os cômodos e políticas\n  - 2. Árvore documental íntegra (zero arquivos soltos)\n  - 3. Espelho Kanban sincronizado (148 cards no SQLite e Git)\n\n📄 [[GOVERNANCE/QUALITY_GATES_AND_ENFORCEMENT|Quality Gates & Enforcement]]",
+      "x": 560,
+      "y": 760,
+      "width": 460,
+      "height": 320,
+      "color": "5"
+    },
+    {
+      "id": "node-gov-roadtrace",
+      "type": "text",
+      "text": "# 🗺️ ROADTRACE DE CONVERGÊNCIA (6 CRITÉRIOS)\n- **DOCUMENTO:** `DOCS/09_HANGAR_GOVERNANCE_ROADTRACE.md`\n- **CRITÉRIO 1:** Cobertura Territorial 11 Cômodos [x]\n- **CRITÉRIO 2:** Motores Cedar & OPA [x]\n- **CRITÉRIO 3:** Enforcement CI/CD Automatizado [x]\n- **CRITÉRIO 4:** Zero Intervenção Operacional [x]\n- **CRITÉRIO 5:** Rastreabilidade Factual 100% [x]\n- **CRITÉRIO 6:** Homologação Soberana Final [ ] (Aguardando Proprietário)\n\n📄 [[GOVERNANCE/ROADTRACE_CONVERGENCIA|Dossiê dos 6 Critérios]]",
+      "x": 1060,
+      "y": 760,
+      "width": 480,
+      "height": 320,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-owner-arca",
+      "fromNode": "node-gov-owner",
+      "fromSide": "bottom",
+      "toNode": "node-gov-arca",
+      "toSide": "top",
+      "label": "Institui Regras Soberanas",
+      "color": "1"
+    },
+    {
+      "id": "edge-owner-intent",
+      "fromNode": "node-gov-owner",
+      "fromSide": "bottom",
+      "toNode": "node-gov-intent",
+      "toSide": "top",
+      "label": "Canal Exclusivo de Intenção",
+      "color": "4"
+    },
+    {
+      "id": "edge-arca-cedar",
+      "fromNode": "node-gov-arca",
+      "fromSide": "right",
+      "toNode": "node-gov-cedar",
+      "toSide": "left",
+      "label": "Autoridade Formal R-DOM-001/003",
+      "color": "3"
+    },
+    {
+      "id": "edge-arca-opa",
+      "fromNode": "node-gov-cedar",
+      "fromSide": "right",
+      "toNode": "node-gov-opa",
+      "toSide": "left",
+      "label": "Validação de Evidências",
+      "color": "2"
+    },
+    {
+      "id": "edge-intent-gates",
+      "fromNode": "node-gov-intent",
+      "fromSide": "bottom",
+      "toNode": "node-gov-gates",
+      "toSide": "top",
+      "label": "Acionamento de Gates",
+      "color": "4"
+    },
+    {
+      "id": "edge-cedar-gates",
+      "fromNode": "node-gov-cedar",
+      "fromSide": "bottom",
+      "toNode": "node-gov-gates",
+      "toSide": "top",
+      "label": "Enforcement de Autoridade",
+      "color": "3"
+    },
+    {
+      "id": "edge-opa-roadtrace",
+      "fromNode": "node-gov-opa",
+      "fromSide": "bottom",
+      "toNode": "node-gov-roadtrace",
+      "toSide": "top",
+      "label": "Evidências de Quality Gate",
+      "color": "2"
+    },
+    {
+      "id": "edge-gates-roadtrace",
+      "fromNode": "node-gov-gates",
+      "fromSide": "right",
+      "toNode": "node-gov-roadtrace",
+      "toSide": "left",
+      "label": "Consolidação de Provas",
+      "color": "5"
+    },
+    {
+      "id": "edge-roadtrace-owner",
+      "fromNode": "node-gov-roadtrace",
+      "fromSide": "top",
+      "toNode": "node-gov-owner",
+      "toSide": "right",
+      "label": "Submissão para Homologação Soberana",
+      "color": "1"
+    }
+  ]
+}

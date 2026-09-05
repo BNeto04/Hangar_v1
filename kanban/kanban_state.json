@@ -1,12 +1,12 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-05T00:05:56.332461-03:00",
-  "total_cards": 144,
+  "generated_at": "2026-09-05T00:08:01.856988-03:00",
+  "total_cards": 145,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 0,
+    "in_progress": 1,
     "blocked": 0,
     "review": 3,
     "done": 32,
@@ -2934,6 +2934,38 @@
         ],
         "tests_passed": "6/6 tests/test_trace_room.py PASS; 67/67 full regression PASS",
         "next_eligible_room": "COCKPITS (Tier 10)"
+      }
+    },
+    {
+      "card_id": "t_hangar_cockpits_room_completion_01",
+      "title": "T-HANGAR-COCKPITS-ROOM-COMPLETION-01: Pain\u00e9is de Visualiza\u00e7\u00e3o Espacial, Teacher Mode e Fechamento do C\u00f4modo COCKPITS (Tier 10)",
+      "body": "Consolida\u00e7\u00e3o can\u00f4nica do c\u00f4modo COCKPITS (Tier 10): pain\u00e9is de visualiza\u00e7\u00e3o espacial sem atrito, Teacher Mode, mapeamento de comandos soberanos do Propriet\u00e1rio (R-DOM-001) e protocolo fail-closed em comandos n\u00e3o autenticados.\nOriginado por CG-000140 (CALL-HANGAR-NEXT-ROOM-COCKPITS-001).\n\nDiretrizes:\n1. Trabalhar estritamente no c\u00f4modo COCKPITS (Tier 10).\n2. Validar depend\u00eancias a montante (INTELLIGENCE, TRACE e predecessores), todas COMPLETE.\n3. Consolidar especifica\u00e7\u00e3o can\u00f4nica em DOCS/30_COCKPITS_ROOM_SPEC.md.\n4. Implementar m\u00f3dulo az000_governance/cockpits/ (controlador de cockpit, modelos tipados e visualiza\u00e7\u00e3o espacial).\n5. Manter Vault (vault/COCKPITS/INDEX.md) sincronizado e referenciando a ARCA sem duplica\u00e7\u00e3o.\n6. Executar testes N08/N06/N07 e fechar c\u00f4modo com ROOM_STATUS=COMPLETE.",
+      "status": "in_progress",
+      "priority": 1,
+      "created_at": "2026-09-05T00:08:01.561146-03:00",
+      "started_at": "2026-09-05T00:08:01.561146-03:00",
+      "completed_at": null,
+      "metadata": {
+        "call_id": "CALL-HANGAR-NEXT-ROOM-COCKPITS-001",
+        "reply_to": "CG-000140",
+        "dp_project": "Hangar_v1",
+        "dp_room": "COCKPITS",
+        "dp_module": "CONSOLE",
+        "dp_submodule": "TEACHER_MODE",
+        "dp_port": "P-COCKPIT-DISPATCH-01",
+        "tier": 10,
+        "dependencies": [
+          "INTELLIGENCE",
+          "TRACE"
+        ],
+        "upstream_status": "COMPLETE",
+        "room_status": "IN_PROGRESS",
+        "rules_applied": [
+          "R-DOM-001",
+          "R-DOM-002",
+          "R-DOM-005",
+          "R-DOM-006"
+        ]
       }
     }
   ]

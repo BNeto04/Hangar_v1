@@ -7,7 +7,7 @@ Porta 8765 / CORS habilitado / Dedupe e state persistente.
 import json
 import logging
 import time
-from http.server import HTTPServer, BaseHTTPRequestHandler
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [inbound-relay] %(levelname)s: %(message)s")
@@ -99,7 +99,7 @@ class InboundHandler(BaseHTTPRequestHandler):
         pass
 
 def run_server(port=8765):
-    server = HTTPServer(("127.0.0.1", port), InboundHandler)
+    server = ThreadingHTTPServer(("127.0.0.1", port), InboundHandler)
     logger.info(f"Inbound Relay Server ouvindo em http://127.0.0.1:{port}")
     server.serve_forever()
 

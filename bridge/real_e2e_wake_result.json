@@ -1,0 +1,10 @@
+{
+  "fired_at": "2026-09-04T21:27:33.087708",
+  "call_id": "CALL-BRIDGE-INBOUND-WAKE-REAL-E2E-001",
+  "card_id": "t_bridge_inbound_wake_extension_01",
+  "message_id": "AG-RES-000123",
+  "relay_armed": true,
+  "ack_received": false,
+  "acked_at": null,
+  "failing_hop": "Hop 3 (Extension Polling / DOM Injection) — Nenhum ACK recebido da extensão dentro da janela de 30s."
+}

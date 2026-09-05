@@ -1,14 +1,14 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T22:34:43.600279-03:00",
+  "generated_at": "2026-09-04T22:39:22.240397-03:00",
   "total_cards": 134,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 1,
+    "in_progress": 0,
     "blocked": 0,
-    "review": 2,
+    "review": 3,
     "done": 22,
     "archived": 109
   },
@@ -2611,7 +2611,7 @@
       "card_id": "t_bridge_github_webhook_sentinela_01",
       "title": "T-BRIDGE-GITHUB-WEBHOOK-SENTINELA-01: Entrega Orientada a Eventos via GitHub Webhook e T\u00fanel Local Seguro",
       "body": "DP_PROJECT: Hangar_v1\nDP_TERRAIN: Hangar_v1\nDP_ROOM: BRIDGE\nDP_MODULE: WEBHOOK_INBOUND\nDP_SUBMODULE: GITHUB_WEBHOOK_ADAPTER\nDP_PORT: P-BRIDGE-GITHUB-WEBHOOK-SENTINELA-01\nDP_CIRCUIT: CIRCUIT_GITHUB_PR1_TO_SENTINELA\nDP_ARTIFACT: bridge/github_webhook_server.py + bridge/tunnel_manager.py + bridge/sentinela_telegram.py\nDP_ACTION: Implementar endpoint HTTP local com valida\u00e7\u00e3o HMAC SHA-256 e t\u00fanel seguro reverso para entrega orientada a evento no Sentinela.\nDP_TARGET: Eventos issue_comment da PR #1 no reposit\u00f3rio BNeto04/Hangar_v1.\nDP_IMPACT_DIRECT: Substitui o wake manual/polling prim\u00e1rio no sentido GitHub -> Sentinela por entrega direta orientada a eventos.\nDP_IMPACT_INDIRECT: Polling mantido como fallback de resili\u00eancia. Sem impacto em CronosEdu ou n\u00f3s de IA externos.\nDP_AXIS_DOCUMENTATION: DOCS/18_GITHUB_WEBHOOK_EVENT_DRIVEN_BRIDGE.md\nDP_AXIS_CODE: bridge/github_webhook_server.py, bridge/tunnel_manager.py\nDP_AXIS_TEST: tests/test_github_webhook_server.py (unit\u00e1rio com HMAC, dedupe, filtragem de TYPE: CALL e fallback)\nDP_OUT_OF_SCOPE: Altera\u00e7\u00e3o na extens\u00e3o de retorno RESULT -> ChatGPT; altera\u00e7\u00e3o nos cards em T5; redesign da arquitetura da ponte.\nDP_ACCEPTANCE:\n  1. Endpoint local valida assinatura HMAC SHA-256 (X-Hub-Signature-256) fail-closed (rejeita payloads inv\u00e1lidos com HTTP 401).\n  2. Filtra estritamente coment\u00e1rios da PR #1 que contenham TYPE: CALL.\n  3. Deduplica\u00e7\u00e3o por delivery_id (X-GitHub-Delivery) e comment_id.\n  4. Dispara o processamento do Antigravity exatamente 1x.\n  5. Resposta HTTP r\u00e1pida (200 OK / 202 Accepted) em < 500ms.\n  6. Nenhuma credencial em log.\n  7. Rollback claro e reversibilidade total.\nDP_ROLLBACK: Parar o t\u00fanel e microservi\u00e7o, deletar o webhook via API do GitHub (DELETE /repos/BNeto04/Hangar_v1/hooks/{id}) e manter o github_pr_relay.py em polling cont\u00ednuo.\n",
-      "status": "in_progress",
+      "status": "review",
       "priority": 1,
       "created_at": 1788572083,
       "started_at": 1788572083,

@@ -1,7 +1,7 @@
 # T-BRIDGE-GITHUB-WEBHOOK-SENTINELA-01: Entrega Orientada a Eventos via GitHub Webhook e Túnel Local Seguro
 
 - **CARD_ID:** `t_bridge_github_webhook_sentinela_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `review`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `1788572083`
 - **COMPLETED_AT:** `null`

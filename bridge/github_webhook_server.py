@@ -170,7 +170,24 @@ class WebhookHandler(BaseHTTPRequestHandler):
         # Registrar no dedupe
         save_dedupe_id(dedupe_key)
 
-        # 5. Resposta HTTP rápida antes/durante o disparo
+        # 5. Ingestão e Selagem Criptográfica Soberana AZ000
+        az000_info = {}
+        try:
+            from az000_governance.owner_intent.ingestor import ingest_and_seal_call
+            seal_res = ingest_and_seal_call(comment_body)
+            az000_info = {
+                "status": seal_res.get("status"),
+                "stage": seal_res.get("stage"),
+                "verdict": seal_res.get("validation", {}).get("verdict"),
+                "contract_id": seal_res.get("sealed_contract", {}).get("contract_id") if seal_res.get("sealed_contract") else None,
+                "contract_file": seal_res.get("contract_file")
+            }
+            logger.info(f"[AZ000] Ingestão e selagem concluídas: status={az000_info['status']} contract_id={az000_info['contract_id']}")
+        except Exception as exc:
+            logger.error(f"[AZ000] Erro na ingestão e selagem AZ000: {exc}")
+            az000_info = {"status": "ERROR", "error": str(exc)}
+
+        # 6. Resposta HTTP rápida antes/durante o disparo
         self.send_response(202)
         self.send_header("Content-Type", "application/json")
         self.end_headers()
@@ -178,10 +195,11 @@ class WebhookHandler(BaseHTTPRequestHandler):
             "status": "accepted",
             "comment_id": comment_id,
             "delivery_id": delivery_id,
-            "dispatched": True
+            "dispatched": True,
+            "az000_seal": az000_info
         }).encode("utf-8"))
 
-        # 6. Disparo assíncrono do Antigravity
+        # 7. Disparo assíncrono do Antigravity
         trigger_antigravity_wake(comment_body, comment_id, delivery_id)
 
 def create_server(host="127.0.0.1", port=8766, secret=None):

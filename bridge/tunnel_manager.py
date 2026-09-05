@@ -83,7 +83,7 @@ class TunnelManager:
             if not line and self.process.poll() is not None:
                 raise RuntimeError(f"Processo cloudflared encerrou prematuramente com codigo {self.process.poll()}")
             m = re.search(r"https://[a-zA-Z0-9-]+\.trycloudflare\.com", line)
-            if m:
+            if m and "api.trycloudflare.com" not in m.group(0):
                 url = m.group(0)
                 break
             time.sleep(0.1)

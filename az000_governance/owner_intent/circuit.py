@@ -85,7 +85,8 @@ class OwnerIntentCircuit:
 
         # 2. Validação de Escopo Físico
         scope_normalized = intent.scope.replace("\\", "/")
-        if not any(scope_normalized.startswith(p) or p in scope_normalized for p in AUTHORIZED_SCOPES_PREFIXES):
+        scope_lower = scope_normalized.lower()
+        if not any(scope_lower.startswith(p.lower()) or p.lower() in scope_lower for p in AUTHORIZED_SCOPES_PREFIXES):
             return IntentValidationResult(
                 is_valid=False,
                 verdict="REJECT_UNAUTHORIZED",

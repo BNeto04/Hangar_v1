@@ -1,10 +1,10 @@
 # T-HANGAR-TRACE-ROOM-COMPLETION-01: Trilhas Append-Only, Evidências Criptográficas e Fechamento do Cômodo TRACE (Tier 9)
 
 - **CARD_ID:** `t_hangar_trace_room_completion_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `2026-09-05T00:04:24.137509-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-05T00:05:56.061108-03:00`
 
 ## Descrição
 Consolidação canônica do cômodo TRACE (Tier 9): trilhas de auditoria append-only, evidências criptográficas SHA-256 encadeadas, conformidade com DOCS/06_TRACE_SCHEMA.md e protocolo fail-closed em inconsistência de hash.
@@ -35,11 +35,18 @@ Diretrizes:
     "EXTERNAL"
   ],
   "upstream_status": "COMPLETE",
-  "room_status": "IN_PROGRESS",
+  "room_status": "COMPLETE",
   "rules_applied": [
     "R-DOM-002",
     "R-DOM-005",
     "R-DOM-006"
-  ]
+  ],
+  "completed_at": "2026-09-05T00:05:56.061108-03:00",
+  "closure_criteria_met": [
+    "06_TRACE_SCHEMA.md em conformidade",
+    "Hashes SHA-256 verific\u00e1veis"
+  ],
+  "tests_passed": "6/6 tests/test_trace_room.py PASS; 67/67 full regression PASS",
+  "next_eligible_room": "COCKPITS (Tier 10)"
 }
 ```

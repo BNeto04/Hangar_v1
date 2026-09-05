@@ -1,15 +1,15 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-05T00:04:24.399795-03:00",
+  "generated_at": "2026-09-05T00:05:56.332461-03:00",
   "total_cards": 144,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 1,
+    "in_progress": 0,
     "blocked": 0,
     "review": 3,
-    "done": 31,
+    "done": 32,
     "archived": 109
   },
   "cards": [
@@ -2901,11 +2901,11 @@
       "card_id": "t_hangar_trace_room_completion_01",
       "title": "T-HANGAR-TRACE-ROOM-COMPLETION-01: Trilhas Append-Only, Evid\u00eancias Criptogr\u00e1ficas e Fechamento do C\u00f4modo TRACE (Tier 9)",
       "body": "Consolida\u00e7\u00e3o can\u00f4nica do c\u00f4modo TRACE (Tier 9): trilhas de auditoria append-only, evid\u00eancias criptogr\u00e1ficas SHA-256 encadeadas, conformidade com DOCS/06_TRACE_SCHEMA.md e protocolo fail-closed em inconsist\u00eancia de hash.\nOriginado por CG-000139 (CALL-HANGAR-NEXT-ROOM-TRACE-001).\n\nDiretrizes:\n1. Trabalhar estritamente no c\u00f4modo TRACE (Tier 9).\n2. Validar depend\u00eancias a montante (GOVERNANCE, INTELLIGENCE, EXTERNAL), todas COMPLETE.\n3. Consolidar especifica\u00e7\u00e3o can\u00f4nica em DOCS/29_TRACE_ROOM_SPEC.md e DOCS/06_TRACE_SCHEMA.md.\n4. Implementar m\u00f3dulo az000_governance/trace/ (motor criptogr\u00e1fico, modelos tipados e cadeia imut\u00e1vel).\n5. Manter Vault (vault/TRACE/INDEX.md) sincronizado e referenciando a ARCA sem duplica\u00e7\u00e3o.\n6. Executar testes N08/N06/N07 e fechar c\u00f4modo com ROOM_STATUS=COMPLETE.",
-      "status": "in_progress",
+      "status": "done",
       "priority": 1,
       "created_at": "2026-09-05T00:04:24.137509-03:00",
       "started_at": "2026-09-05T00:04:24.137509-03:00",
-      "completed_at": null,
+      "completed_at": "2026-09-05T00:05:56.061108-03:00",
       "metadata": {
         "call_id": "CALL-HANGAR-NEXT-ROOM-TRACE-001",
         "reply_to": "CG-000139",
@@ -2921,12 +2921,19 @@
           "EXTERNAL"
         ],
         "upstream_status": "COMPLETE",
-        "room_status": "IN_PROGRESS",
+        "room_status": "COMPLETE",
         "rules_applied": [
           "R-DOM-002",
           "R-DOM-005",
           "R-DOM-006"
-        ]
+        ],
+        "completed_at": "2026-09-05T00:05:56.061108-03:00",
+        "closure_criteria_met": [
+          "06_TRACE_SCHEMA.md em conformidade",
+          "Hashes SHA-256 verific\u00e1veis"
+        ],
+        "tests_passed": "6/6 tests/test_trace_room.py PASS; 67/67 full regression PASS",
+        "next_eligible_room": "COCKPITS (Tier 10)"
       }
     }
   ]

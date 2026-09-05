@@ -1,10 +1,10 @@
 # T-HANGAR-COCKPITS-ROOM-COMPLETION-01: Painéis de Visualização Espacial, Teacher Mode e Fechamento do Cômodo COCKPITS (Tier 10)
 
 - **CARD_ID:** `t_hangar_cockpits_room_completion_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `2026-09-05T00:08:01.561146-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-05T00:09:52.185308-03:00`
 
 ## Descrição
 Consolidação canônica do cômodo COCKPITS (Tier 10): painéis de visualização espacial sem atrito, Teacher Mode, mapeamento de comandos soberanos do Proprietário (R-DOM-001) e protocolo fail-closed em comandos não autenticados.
@@ -34,12 +34,19 @@ Diretrizes:
     "TRACE"
   ],
   "upstream_status": "COMPLETE",
-  "room_status": "IN_PROGRESS",
+  "room_status": "COMPLETE",
   "rules_applied": [
     "R-DOM-001",
     "R-DOM-002",
     "R-DOM-005",
     "R-DOM-006"
-  ]
+  ],
+  "completed_at": "2026-09-05T00:09:52.185308-03:00",
+  "closure_criteria_met": [
+    "Visualiza\u00e7\u00e3o espacial sem atrito",
+    "Mapeamento de comandos do Propriet\u00e1rio"
+  ],
+  "tests_passed": "6/6 tests/test_cockpits_room.py PASS; 73/73 full regression PASS",
+  "next_eligible_room": "PRODUCTS (Tier 11)"
 }
 ```

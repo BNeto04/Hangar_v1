@@ -1,15 +1,15 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-05T00:08:01.856988-03:00",
+  "generated_at": "2026-09-05T00:09:52.444626-03:00",
   "total_cards": 145,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 1,
+    "in_progress": 0,
     "blocked": 0,
     "review": 3,
-    "done": 32,
+    "done": 33,
     "archived": 109
   },
   "cards": [
@@ -2940,11 +2940,11 @@
       "card_id": "t_hangar_cockpits_room_completion_01",
       "title": "T-HANGAR-COCKPITS-ROOM-COMPLETION-01: Pain\u00e9is de Visualiza\u00e7\u00e3o Espacial, Teacher Mode e Fechamento do C\u00f4modo COCKPITS (Tier 10)",
       "body": "Consolida\u00e7\u00e3o can\u00f4nica do c\u00f4modo COCKPITS (Tier 10): pain\u00e9is de visualiza\u00e7\u00e3o espacial sem atrito, Teacher Mode, mapeamento de comandos soberanos do Propriet\u00e1rio (R-DOM-001) e protocolo fail-closed em comandos n\u00e3o autenticados.\nOriginado por CG-000140 (CALL-HANGAR-NEXT-ROOM-COCKPITS-001).\n\nDiretrizes:\n1. Trabalhar estritamente no c\u00f4modo COCKPITS (Tier 10).\n2. Validar depend\u00eancias a montante (INTELLIGENCE, TRACE e predecessores), todas COMPLETE.\n3. Consolidar especifica\u00e7\u00e3o can\u00f4nica em DOCS/30_COCKPITS_ROOM_SPEC.md.\n4. Implementar m\u00f3dulo az000_governance/cockpits/ (controlador de cockpit, modelos tipados e visualiza\u00e7\u00e3o espacial).\n5. Manter Vault (vault/COCKPITS/INDEX.md) sincronizado e referenciando a ARCA sem duplica\u00e7\u00e3o.\n6. Executar testes N08/N06/N07 e fechar c\u00f4modo com ROOM_STATUS=COMPLETE.",
-      "status": "in_progress",
+      "status": "done",
       "priority": 1,
       "created_at": "2026-09-05T00:08:01.561146-03:00",
       "started_at": "2026-09-05T00:08:01.561146-03:00",
-      "completed_at": null,
+      "completed_at": "2026-09-05T00:09:52.185308-03:00",
       "metadata": {
         "call_id": "CALL-HANGAR-NEXT-ROOM-COCKPITS-001",
         "reply_to": "CG-000140",
@@ -2959,13 +2959,20 @@
           "TRACE"
         ],
         "upstream_status": "COMPLETE",
-        "room_status": "IN_PROGRESS",
+        "room_status": "COMPLETE",
         "rules_applied": [
           "R-DOM-001",
           "R-DOM-002",
           "R-DOM-005",
           "R-DOM-006"
-        ]
+        ],
+        "completed_at": "2026-09-05T00:09:52.185308-03:00",
+        "closure_criteria_met": [
+          "Visualiza\u00e7\u00e3o espacial sem atrito",
+          "Mapeamento de comandos do Propriet\u00e1rio"
+        ],
+        "tests_passed": "6/6 tests/test_cockpits_room.py PASS; 73/73 full regression PASS",
+        "next_eligible_room": "PRODUCTS (Tier 11)"
       }
     }
   ]

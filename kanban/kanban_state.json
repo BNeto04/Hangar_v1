@@ -1,15 +1,15 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T23:52:01.266196-03:00",
+  "generated_at": "2026-09-04T23:53:26.139275-03:00",
   "total_cards": 141,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 1,
+    "in_progress": 0,
     "blocked": 0,
     "review": 3,
-    "done": 28,
+    "done": 29,
     "archived": 109
   },
   "cards": [
@@ -2791,11 +2791,11 @@
       "card_id": "t_hangar_machines_room_completion_01",
       "title": "T-HANGAR-MACHINES-ROOM-COMPLETION-01: Aut\u00f4matos Finitos, Nano M\u00e1quinas e Fechamento do C\u00f4modo MACHINES (Tier 6)",
       "body": "Consolida\u00e7\u00e3o can\u00f4nica do c\u00f4modo MACHINES (Tier 6): aut\u00f4matos de estado finito (FSM) determin\u00edsticos, transi\u00e7\u00f5es puras, tratamento estrito de erro (FAIL_CLOSED) e cat\u00e1logo de Nano M\u00e1quinas operacionais (NM-OBS-01, NM-EXEC-01).\nOriginado por CG-000136 (CALL-HANGAR-NEXT-ROOM-MACHINES-001).\n\nDiretrizes:\n1. Trabalhar estritamente no c\u00f4modo MACHINES (Tier 6).\n2. Mapear depend\u00eancias a montante (GOVERNANCE, WORLD, PLANT, PORTS, CAPABILITIES), todas COMPLETE.\n3. Consolidar especifica\u00e7\u00e3o can\u00f4nica em DOCS/26_MACHINES_ROOM_SPEC.md.\n4. Implementar m\u00f3dulo az000_governance/machines/ (FSM com transi\u00e7\u00f5es puras e Nano M\u00e1quinas).\n5. Manter Vault (vault/MACHINES/INDEX.md) sincronizado e referenciando a ARCA sem duplica\u00e7\u00e3o.\n6. Executar testes N08/N06/N07 e fechar c\u00f4modo com ROOM_STATUS=COMPLETE.",
-      "status": "in_progress",
+      "status": "done",
       "priority": 1,
       "created_at": "2026-09-04T23:52:00.979533-03:00",
       "started_at": "2026-09-04T23:52:00.979533-03:00",
-      "completed_at": null,
+      "completed_at": "2026-09-04T23:53:25.858583-03:00",
       "metadata": {
         "call_id": "CALL-HANGAR-NEXT-ROOM-MACHINES-001",
         "reply_to": "CG-000136",
@@ -2813,11 +2813,11 @@
           "CAPABILITIES"
         ],
         "upstream_status": "COMPLETE",
-        "room_status": "IN_PROGRESS",
-        "rules_applied": [
-          "R-DOM-005",
-          "R-DOM-006"
-        ]
+        "final_state": "DONE",
+        "closed_at": "2026-09-04T23:53:25.858583-03:00",
+        "room_status": "COMPLETE",
+        "closure_evidence": "Motor FSM deterministico implementado em az000_governance/machines/fsm.py com transicoes puras e rejeicao estrita FAIL_CLOSED; catalogo de Nano Maquinas em az000_governance/machines/nano_machines.py (NM-OBS-01, NM-EXEC-01); vault/MACHINES/INDEX.md e DOCS/26_MACHINES_ROOM_SPEC.md consolidados; 6/6 testes unitarios PASS (test_machines_room.py); 49/49 testes globais PASS.",
+        "next_room_eligible": "INTELLIGENCE (Tier 7)"
       }
     }
   ]

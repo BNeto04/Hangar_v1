@@ -1,12 +1,12 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-05T00:09:52.444626-03:00",
-  "total_cards": 145,
+  "generated_at": "2026-09-05T00:11:45.116322-03:00",
+  "total_cards": 146,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 0,
+    "in_progress": 1,
     "blocked": 0,
     "review": 3,
     "done": 33,
@@ -2973,6 +2973,46 @@
         ],
         "tests_passed": "6/6 tests/test_cockpits_room.py PASS; 73/73 full regression PASS",
         "next_eligible_room": "PRODUCTS (Tier 11)"
+      }
+    },
+    {
+      "card_id": "t_hangar_products_room_completion_01",
+      "title": "T-HANGAR-PRODUCTS-ROOM-COMPLETION-01: Release Notes Can\u00f4nicas, Manifesto de Integridade Final e Fechamento do C\u00f4modo PRODUCTS (Tier 11)",
+      "body": "Consolida\u00e7\u00e3o can\u00f4nica do c\u00f4modo PRODUCTS (Tier 11 - C\u00f4modo Final): valida\u00e7\u00e3o das release notes can\u00f4nicas de entrega, emiss\u00e3o do manifesto de integridade criptogr\u00e1fica final de todos os 11 c\u00f4modos da ARCA e fechamento do ciclo de desenvolvimento estrutural.\nOriginado por CG-000141 (CALL-HANGAR-NEXT-ROOM-PRODUCTS-001).\n\nDiretrizes:\n1. Trabalhar estritamente no c\u00f4modo PRODUCTS (Tier 11).\n2. Validar todas as 10 depend\u00eancias a montante (GOVERNANCE a COCKPITS), todas 100% COMPLETE.\n3. Consolidar especifica\u00e7\u00e3o can\u00f4nica em DOCS/31_PRODUCTS_ROOM_SPEC.md.\n4. Implementar m\u00f3dulo az000_governance/products/ (gerenciador de release, modelos tipados e manifesto de integridade).\n5. Manter Vault (vault/PRODUCTS/INDEX.md) sincronizado e referenciando a ARCA sem duplica\u00e7\u00e3o.\n6. Executar testes N08/N06/N07 e fechar c\u00f4modo com ROOM_STATUS=COMPLETE.",
+      "status": "in_progress",
+      "priority": 1,
+      "created_at": "2026-09-05T00:11:44.852744-03:00",
+      "started_at": "2026-09-05T00:11:44.852744-03:00",
+      "completed_at": null,
+      "metadata": {
+        "call_id": "CALL-HANGAR-NEXT-ROOM-PRODUCTS-001",
+        "reply_to": "CG-000141",
+        "dp_project": "Hangar_v1",
+        "dp_room": "PRODUCTS",
+        "dp_module": "RELEASE",
+        "dp_submodule": "MANIFEST",
+        "dp_port": "P-PROD-RELEASE-01",
+        "tier": 11,
+        "dependencies": [
+          "GOVERNANCE",
+          "WORLD",
+          "PLANT",
+          "PORTS",
+          "CAPABILITIES",
+          "MACHINES",
+          "INTELLIGENCE",
+          "EXTERNAL",
+          "TRACE",
+          "COCKPITS"
+        ],
+        "upstream_status": "COMPLETE",
+        "room_status": "IN_PROGRESS",
+        "rules_applied": [
+          "R-DOM-001",
+          "R-DOM-002",
+          "R-DOM-005",
+          "R-DOM-006"
+        ]
       }
     }
   ]

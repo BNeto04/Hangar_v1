@@ -78,9 +78,9 @@ class InboundHandler(BaseHTTPRequestHandler):
                 data = json.loads(body)
                 state = load_state()
                 state["pending_wake"] = True
-                state["message_id"] = data.get("message_id")
-                state["call_id"] = data.get("call_id")
-                state["text"] = data.get("text", "v")
+                state["message_id"] = data.get("message_id") or f"WAKE-{int(time.time()*1000)}"
+                state["call_id"] = data.get("call_id") or "DIRECT_WAKE"
+                state["text"] = data.get("text") or data.get("prompt") or "v"
                 save_state(state)
                 logger.info(f"Wake armado para {state['message_id']} ({state['call_id']}).")
                 self.send_response(200)

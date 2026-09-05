@@ -1,10 +1,10 @@
 # T-HANGAR-FULL-GOVERNANCE-CONVERGENCE-01: Reconciliação dos 11 Cômodos, Atualização do Roadtrace e Enforcement CI/CD dos 79 Testes
 
 - **CARD_ID:** `t_hangar_full_governance_convergence_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `2026-09-05T00:16:47.533892-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-05T00:18:31.448470-03:00`
 
 ## Descrição
 Fase pós-conclusão dos 11 cômodos da ARCA: reconciliação canônica de toda a topologia territorial no Roadtrace (DOCS/09_HANGAR_GOVERNANCE_ROADTRACE.md), atualização do motor de enforcement do Git e CI (scripts/git_enforcement.py) para cobrir integralmente os 79 testes de regressão dos 11 tiers, e verificação de rastreabilidade factual 100% auditável.
@@ -36,6 +36,15 @@ Diretrizes:
     "R-DOM-002",
     "R-DOM-005",
     "R-DOM-006"
-  ]
+  ],
+  "phase_status": "COMPLETE",
+  "completed_at": "2026-09-05T00:18:31.448470-03:00",
+  "closure_criteria_met": [
+    "Reconcilia\u00e7\u00e3o integral dos 11 c\u00f4modos da ARCA no Roadtrace",
+    "Enforcement do Git e CI/CD cobrindo os 86 testes determin\u00edsticos (100% PASS)",
+    "Zero discrep\u00e2ncias na \u00e1rvore documental e espelho Kanban (147 cards)"
+  ],
+  "tests_passed": "86/86 deterministic tests PASS (7 sprint_01 + 79 tests/); check-all PASS",
+  "next_phase": "SOVEREIGN_FINAL_HOMOLOGATION_OR_OPA_CEDAR_ENHANCEMENT"
 }
 ```

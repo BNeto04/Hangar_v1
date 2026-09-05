@@ -1,15 +1,15 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-05T00:16:47.797940-03:00",
+  "generated_at": "2026-09-05T00:18:31.917695-03:00",
   "total_cards": 147,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 1,
+    "in_progress": 0,
     "blocked": 0,
     "review": 3,
-    "done": 34,
+    "done": 35,
     "archived": 109
   },
   "cards": [
@@ -3026,11 +3026,11 @@
       "card_id": "t_hangar_full_governance_convergence_01",
       "title": "T-HANGAR-FULL-GOVERNANCE-CONVERGENCE-01: Reconcilia\u00e7\u00e3o dos 11 C\u00f4modos, Atualiza\u00e7\u00e3o do Roadtrace e Enforcement CI/CD dos 79 Testes",
       "body": "Fase p\u00f3s-conclus\u00e3o dos 11 c\u00f4modos da ARCA: reconcilia\u00e7\u00e3o can\u00f4nica de toda a topologia territorial no Roadtrace (DOCS/09_HANGAR_GOVERNANCE_ROADTRACE.md), atualiza\u00e7\u00e3o do motor de enforcement do Git e CI (scripts/git_enforcement.py) para cobrir integralmente os 79 testes de regress\u00e3o dos 11 tiers, e verifica\u00e7\u00e3o de rastreabilidade factual 100% audit\u00e1vel.\nOriginado por CG-000142 (CALL-HANGAR-POST-ROOMS-NEXT-PHASE-001).\n\nDiretrizes:\n1. Reconciliar a cadeia completa dos 11 c\u00f4modos contra Planta, Vault, ARCA, Kanban e Roadtrace sem reabrir c\u00f4modos e sem inventar novos c\u00f4modos.\n2. Atualizar scripts/git_enforcement.py para validar a \u00e1rvore documental, o espelho Kanban e a su\u00edte completa de testes (79/79).\n3. Atualizar DOCS/09_HANGAR_GOVERNANCE_ROADTRACE.md formalizando o encerramento do GAP territorial e a prontid\u00e3o para GOVERNAN\u00c7A PLENA.\n4. Executar checagens can\u00f4nicas completas e validar exit code 0.\n5. Manter regras de dom\u00ednio derivadas estritamente da ARCA.",
-      "status": "in_progress",
+      "status": "done",
       "priority": 1,
       "created_at": "2026-09-05T00:16:47.533892-03:00",
       "started_at": "2026-09-05T00:16:47.533892-03:00",
-      "completed_at": null,
+      "completed_at": "2026-09-05T00:18:31.448470-03:00",
       "metadata": {
         "call_id": "CALL-HANGAR-POST-ROOMS-NEXT-PHASE-001",
         "reply_to": "CG-000142",
@@ -3048,7 +3048,16 @@
           "R-DOM-002",
           "R-DOM-005",
           "R-DOM-006"
-        ]
+        ],
+        "phase_status": "COMPLETE",
+        "completed_at": "2026-09-05T00:18:31.448470-03:00",
+        "closure_criteria_met": [
+          "Reconcilia\u00e7\u00e3o integral dos 11 c\u00f4modos da ARCA no Roadtrace",
+          "Enforcement do Git e CI/CD cobrindo os 86 testes determin\u00edsticos (100% PASS)",
+          "Zero discrep\u00e2ncias na \u00e1rvore documental e espelho Kanban (147 cards)"
+        ],
+        "tests_passed": "86/86 deterministic tests PASS (7 sprint_01 + 79 tests/); check-all PASS",
+        "next_phase": "SOVEREIGN_FINAL_HOMOLOGATION_OR_OPA_CEDAR_ENHANCEMENT"
       }
     }
   ]

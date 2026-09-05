@@ -1,10 +1,10 @@
 # T-HANGAR-PRODUCTS-ROOM-COMPLETION-01: Release Notes Canônicas, Manifesto de Integridade Final e Fechamento do Cômodo PRODUCTS (Tier 11)
 
 - **CARD_ID:** `t_hangar_products_room_completion_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `done`
 - **PRIORITY:** `1`
 - **CREATED_AT:** `2026-09-05T00:11:44.852744-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-05T00:13:56.276719-03:00`
 
 ## Descrição
 Consolidação canônica do cômodo PRODUCTS (Tier 11 - Cômodo Final): validação das release notes canônicas de entrega, emissão do manifesto de integridade criptográfica final de todos os 11 cômodos da ARCA e fechamento do ciclo de desenvolvimento estrutural.
@@ -42,12 +42,19 @@ Diretrizes:
     "COCKPITS"
   ],
   "upstream_status": "COMPLETE",
-  "room_status": "IN_PROGRESS",
+  "room_status": "COMPLETE",
   "rules_applied": [
     "R-DOM-001",
     "R-DOM-002",
     "R-DOM-005",
     "R-DOM-006"
-  ]
+  ],
+  "completed_at": "2026-09-05T00:13:56.276719-03:00",
+  "closure_criteria_met": [
+    "Todos os 10 c\u00f4modos precedentes fechados e auditados",
+    "Homologa\u00e7\u00e3o expl\u00edcita do Propriet\u00e1rio"
+  ],
+  "tests_passed": "6/6 tests/test_products_room.py PASS; 79/79 full regression PASS",
+  "next_eligible_room": "NONE (ALL_11_ROOMS_COMPLETE)"
 }
 ```

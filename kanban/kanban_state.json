@@ -1,15 +1,15 @@
 {
   "schema": "HERMES-KANBAN-GIT-MIRROR-1",
-  "generated_at": "2026-09-04T23:36:05.033752-03:00",
+  "generated_at": "2026-09-04T23:38:06.204721-03:00",
   "total_cards": 138,
   "counts": {
     "triage": 0,
     "ready": 0,
     "todo": 0,
-    "in_progress": 1,
+    "in_progress": 0,
     "blocked": 0,
     "review": 3,
-    "done": 25,
+    "done": 26,
     "archived": 109
   },
   "cards": [
@@ -2698,29 +2698,30 @@
       "card_id": "t_hangar_plant_room_completion_01",
       "title": "T-HANGAR-PLANT-ROOM-COMPLETION-01: Topologia Fisica, Enderecamento GPS e Fechamento do Comodo PLANT (Tier 3)",
       "body": "Consolidacao da Topologia Fisica, Workspaces Confinados, Parser de Enderecamento GPS e Fechamento do Comodo PLANT (Tier 3).\nOriginado por CG-000133 (CALL-HANGAR-NEXT-ROOM-PLANT-001).\n\nDiretrizes:\n1. Trabalhar estritamente no comodo PLANT (Tier 3).\n2. Mapear dependencias a montante (GOVERNANCE, WORLD), ambas COMPLETE.\n3. Consolidar topologia de workspaces, isolamento de pastas e parser de enderecamento.\n4. Manter Vault e DOCS sincronizados com referencias a ARCA sem duplicacao.\n5. Executar testes N08/N06/N07 e fechar comodo com ROOM_STATUS=COMPLETE.",
-      "status": "in_progress",
+      "status": "done",
       "priority": "high",
       "created_at": "2026-09-04T23:36:04.771964-03:00",
       "started_at": "2026-09-04T23:36:04.771964-03:00",
-      "completed_at": null,
+      "completed_at": "2026-09-04T23:38:05.951032-03:00",
       "metadata": {
         "call_id": "CALL-HANGAR-NEXT-ROOM-PLANT-001",
         "reply_to": "CG-000133",
         "dp_project": "Hangar_v1",
         "dp_room": "PLANT",
-        "dp_module": "TOPOLOGY",
-        "dp_submodule": "WORKSPACES",
-        "dp_port": "P-PLANT-TOPOLOGY-LAYOUT-01",
+        "dp_module": "ADDRESSING",
+        "dp_submodule": "GPS_PARSER",
+        "dp_port": "P-PLANT-ADDR-RESOLVER-01",
         "tier": 3,
         "dependencies": [
           "GOVERNANCE",
           "WORLD"
         ],
         "upstream_status": "COMPLETE",
-        "rules_applied": [
-          "R-DOM-005",
-          "R-DOM-006"
-        ]
+        "final_state": "DONE",
+        "closed_at": "2026-09-04T23:38:05.951032-03:00",
+        "room_status": "COMPLETE",
+        "closure_evidence": "DownPlantAddress parser implementado em az000_governance/plant/addressing.py; 11 c\u00f4modos f\u00edsicos indexados em vault/PLANT/INDEX.md; DOCS/23_PLANT_ROOM_SPEC.md consolidado; 6/6 testes unit\u00e1rios PASS (test_plant_room.py); 31/31 testes globais PASS.",
+        "next_room_eligible": "PORTS (Tier 4)"
       }
     }
   ]

@@ -1,82 +1,156 @@
-# 🚀 HANGAR V1 — BRIEFING DE TRANSIÇÃO E INSIGHTS PARA A NOVA CONVERSA
+# 🚀 HANGAR V1 — DOSSIÊ COMPLETO DE TRANSIÇÃO E MAPA DE AMBIENTE
 
-Este documento consolida a memória viva, a arquitetura, os aprendizados e o estado factual do **Hangar V1**. Cole este texto no início da sua próxima conversa para carregar instantaneamente todo o contexto operacional, estratégico e técnico sem qualquer perda de alinhamento.
-
----
-
-## 1. O QUE É O HANGAR V1 & QUEM É QUEM
-
-O **Hangar V1** é a plataforma de governança e engenharia autônoma multiagente da Syntheon ADK. Ele opera sob o modelo rigoroso **Down Plant**, com estrita separação de papéis:
-
-1. **Manoel (O Proprietário Soberano — L0):** Detém autoridade irrevogável e exclusiva sobre escopo, prioridade, publicação, exceções e homologação final (Regra `R-DOM-001`). Nenhuma máquina decide por ele.
-2. **Codex / ChatGPT (Planejador Estratégico & Auditor Independente):** Analisa requisitos, decompõe planos em rotas formais, audita evidências e despacha chamadas via GitHub PR #1 bridge. Opera em modo *payload-in / parecer-out*.
-3. **Antigravity (Executor Técnico Down Plant — N03):** Detém o monopólio físico exclusivo de mutação de código e execução no terminal. Não amplia escopo, segue ordens canônicas e **nunca se auto-homologa** (Regra `R-DOM-007`).
+> **Instrução:** Cole este documento na primeira mensagem de uma nova conversa com o assistente/agente para retomar o trabalho com 100% de precisão factual, sem necessidade de pesquisa prévia ou reexplicações.
 
 ---
 
-## 2. A ARQUITETURA DA ARCA (OS 11 CÔMODOS CONCLUÍDOS)
+## 1. O QUE É O HANGAR V1 & MATRIZ DE AUTORIDADE (DOWN PLANT)
 
-O sistema é modelado como uma planta espacial contínua dividida em 11 cômodos (Tiers 1 a 11), todos **100% implementados, testados e comitados na branch main**:
+O **Hangar V1** é o ecossistema soberano de engenharia de software autônoma e orquestração multiagente da Syntheon ADK. Ele opera sob o modelo estrito **Down Plant**, com separação inegociável de autoridades:
 
-| Tier | Cômodo | Módulo no Repositório | Papel e Invariante Central |
-|---|---|---|---|
-| **01** | `GOVERNANCE` | `az000_governance/arca/` | 7 Regras Canônicas de Domínio (`R-DOM-001..007`) e invariantes imutáveis. |
-| **02** | `WORLD` | `vault/WORLD/Master_World.canvas` | Ontologia global com 17 nós e 24 arestas mapeando os azimutes espaciais. |
-| **03** | `PLANT` | `az000_governance/plant/` | Endereçamento formal GPS Down Plant (`TERRENO/COMODO/MODULO/SUBMODULO:PORTA`). |
-| **04** | `PORTS` | `az000_governance/ports/` | Registro central de portas tipadas e envelopes canônicos de mensagem. |
-| **05** | `CAPABILITIES` | `az000_governance/capabilities/` | Motores de automação (Graphify, Improve, Ponytail, Ruflo e Open Design). |
-| **06** | `MACHINES` | `az000_governance/machines/` | FSM determinística e isolamento estrito entre observador e executor. |
-| **07** | `INTELLIGENCE` | `az000_governance/intelligence/` | Orquestrador de agentes cognitivos confinados (CHARs N01..N10) com prova anti-alucinação. |
-| **08** | `EXTERNAL` | `az000_governance/external/` | Gateway de fronteira com verificação HMAC SHA-256 constant-time e dedupe. |
-| **09** | `TRACE` | `az000_governance/trace/` | Motor criptográfico e ledger append-only encadeado por SHA-256. |
-| **10** | `COCKPITS` | `az000_governance/cockpits/` | Painéis centrais dos 11 cômodos, telemetria e Teacher Mode. |
-| **11** | `PRODUCTS` | `az000_governance/products/` | Compilação de releases canônicas e manifesto com hash raiz. |
+1. **Manoel (O Proprietário Soberano — L0):**
+   - Detém autoridade exclusiva e irrevogável sobre escopo, prioridade, homologação final, concessão de exceções e publicação em produção (Regra `R-DOM-001`).
+   - Nenhuma máquina, SLM ou agente de IA tem poder de deliberação ou auto-aprovação.
+2. **Codex / ChatGPT (Planejador Estratégico & Auditor Independente):**
+   - Decompõe planos em rotas formais, audita evidências e despacha chamadas via barramento do GitHub PR #1.
+   - Opera estritamente no modo *payload-in / parecer-out* (sem ferramentas de escrita ou execução direta).
+3. **Antigravity (Executor Técnico Down Plant — N03):**
+   - Detém o monopólio físico de mutação de arquivos no repositório e execução de comandos no terminal local.
+   - Opera sob escopo autorizado, preserva alterações pré-existentes, gera testes e evidências determinísticas e **nunca se auto-homologa** (Regra `R-DOM-007`).
 
 ---
 
-## 3. OS MOTORES FORMAIS DE POLÍTICA (CEDAR & OPA)
+## 2. MAPA FÍSICO DE CAMINHOS E AMBIENTE LOCAL
 
-Um dos maiores saltos conceituais do projeto:
-- **Insight Crucial:** Jamais tente controlar ferramentas de agentes ou permissões apenas por prompt (`SOUL.md`). O controle de ferramentas deve ser estrutural no `config.yaml` e validado por motores formais de autoridade.
+| Entidade / Recurso | Caminho Físico no Windows | Finalidade Factual |
+|---|---|---|
+| **Repositório Central** | `C:\Users\PICHAU\Hangar_v1` | Checkout Git principal (`origin/main`). |
+| **Workspace Default / Scratch** | `C:\Users\PICHAU\.gemini\antigravity\scratch` | Diretório de rascunhos e scripts temporários. |
+| **App Data Antigravity** | `C:\Users\PICHAU\.gemini\antigravity` | Dados de runtime, logs e artefatos. |
+| **Banco SQLite Hermes Kanban** | `C:\Users\PICHAU\AppData\Local\hermes\kanban.db` | Base viva dos 148 cartões da esteira de trabalho. |
+| **Espelho Git do Kanban** | `C:\Users\PICHAU\Hangar_v1\kanban\kanban_state.json` | Sincronismo do Kanban versionado em Git. |
+| **Cartões Individuais Kanban** | `C:\Users\PICHAU\Hangar_v1\kanban\cards\` | 148 arquivos Markdown (`<card_id>.md`). |
+| **Vault Obsidian (Base)** | `C:\Users\PICHAU\Hangar_v1\vault` | Cofre de conhecimento vivo e modelo de mundo. |
+| **Dashboard de Governança (Vault)** | `C:\Users\PICHAU\Hangar_v1\vault\GOVERNANCE\INDEX.md` | Painel mestre interativo de navegação. |
+| **Canvas de Governança (Vault)** | `C:\Users\PICHAU\Hangar_v1\vault\GOVERNANCE\Governance.canvas` | Mapa visual nativo da Governança e Regras. |
+| **Master World Canvas (Vault)** | `C:\Users\PICHAU\Hangar_v1\vault\WORLD\Master_World.canvas` | Ontologia espacial mestre (17 nós, 24 arestas). |
+| **Pasta de Documentação Técnica** | `C:\Users\PICHAU\Hangar_v1\DOCS\` | 31 especificações normativas (`DOCS/01` a `DOCS/31`). |
+| **Roadtrace de Governança** | `C:\Users\PICHAU\Hangar_v1\DOCS\09_HANGAR_GOVERNANCE_ROADTRACE.md` | Matriz de maturidade dos 6 Critérios. |
+| **Circuito de Comunicação (Legado)** | `C:\Users\PICHAU\Downloads\circuito` | Arquivos `conversa de ia.txt` e `resposta do executor.txt`. |
+| **Binário Codex CLI** | `C:\Users\PICHAU\AppData\Local\OpenAI\Codex\bin\d5f4c71927a04589\codex.exe` | Executável oficial da CLI do Codex. |
+| **Sessões Locais do Codex** | `C:\Users\PICHAU\.codex\sessions\` | Rollouts e transcrições de sessões do Codex. |
+| **Binário Cloudflared** | `C:\Users\PICHAU\Hangar_v1\bin\cloudflared.exe` | Túnel seguro para webhook do GitHub. |
+| **Extensão Inbound Wake (Chrome)** | `C:\Users\PICHAU\Hangar_v1\bridge\extension` | Extensão Manifest V3 carregada em `chrome://extensions`. |
+| **Ledger Criptográfico de Trace** | `C:\Users\PICHAU\Hangar_v1\runtime\traces\trace_ledger.jsonl` | Livro-razão append-only encadeado por SHA-256. |
+
+---
+
+## 3. MAPA DE REPOSITÓRIO REMOTO & BARRAMENTOS EXTERNOS
+
+- **Repositório GitHub:** `https://github.com/BNeto04/Hangar_v1`
+- **Branch Principal:** `main` (rastreada com `origin/main`).
+- **Barramento de PR:** [Pull Request #1 (BNeto04/Hangar_v1)](https://github.com/BNeto04/Hangar_v1/pull/1) — Canal assíncrono onde ChatGPT/Codex posta `CALL` e Antigravity responde `RESULT`.
+- **Canal Telegram Soberano:** Bot `@Sentinela_PC_CasaBot` (notificações de término e canal de emergência do Proprietário).
+- **Token GitHub:** Carregado automaticamente via `bridge/tunnel_manager.py` (via arquivo `.env` ou variável de ambiente `GITHUB_TOKEN`).
+
+---
+
+## 4. TOPOLOGIA DA PLANTA FÍSICA: OS 11 CÔMODOS DA ARCA (100% FECHADOS)
+
+A arquitetura da ARCA organiza o Hangar V1 em 11 Tiers ordenados cômodo por cômodo, todos com módulos de código, testes determinísticos e notas no Vault:
+
+1. **Tier 1 — `GOVERNANCE`:**
+   - Código: `az000_governance/arca/canonical_domain_rules.py`
+   - Teste: `tests/test_arca_domain_rules.py` (6/6 PASS)
+   - Vault: `vault/GOVERNANCE/` (`INDEX.md`, `Governance.canvas`, `ARCA_SPEC_AND_ROOM_ORDER.md`)
+   - Regras: `R-DOM-001` (Soberania) a `R-DOM-007` (Sem Auto-Homologação), seladas por hash SHA-256.
+2. **Tier 2 — `WORLD`:**
+   - Código/Modelo: `vault/WORLD/Master_World.canvas` (17 nós, 24 arestas)
+   - Teste: `tests/test_world_room.py` (4/4 PASS)
+   - Vault: `vault/WORLD/INDEX.md`
+3. **Tier 3 — `PLANT`:**
+   - Código: `az000_governance/plant/addressing.py` (`DownPlantAddress`, gramática de 4 barras e 5 segmentos)
+   - Teste: `tests/test_plant_room.py` (6/6 PASS)
+   - Vault: `vault/PLANT/INDEX.md`
+4. **Tier 4 — `PORTS`:**
+   - Código: `az000_governance/ports/registry.py` e `envelope.py` (`TypedPortEnvelope`)
+   - Teste: `tests/test_ports_room.py` (6/6 PASS)
+   - Vault: `vault/PORTS/INDEX.md`
+5. **Tier 5 — `CAPABILITIES`:**
+   - Código: `az000_governance/capabilities/graphify_engine.py` (Graphify, Improve, Ponytail, Ruflo, Open Design)
+   - Teste: `tests/test_capabilities_room.py` (6/6 PASS)
+   - Vault: `vault/CAPABILITIES/INDEX.md`
+6. **Tier 6 — `MACHINES`:**
+   - Código: `az000_governance/machines/fsm.py` e `nano_machines.py` (FSM determinística, isolamento `NM-OBS-01` e `NM-EXEC-01`)
+   - Teste: `tests/test_machines_room.py` (6/6 PASS)
+   - Vault: `vault/MACHINES/INDEX.md`
+7. **Tier 7 — `INTELLIGENCE`:**
+   - Código: `az000_governance/intelligence/orchestrator.py` (10 papéis CHARs N01..N10 confinados com prova anti-alucinação)
+   - Teste: `tests/test_intelligence_room.py` (6/6 PASS)
+   - Vault: `vault/INTELLIGENCE/INDEX.md`
+8. **Tier 8 — `EXTERNAL`:**
+   - Código: `az000_governance/external/gateway.py` (HMAC SHA-256 constant-time, deduplicação anti-replay, fail-closed)
+   - Teste: `tests/test_external_room.py` (6/6 PASS)
+   - Vault: `vault/EXTERNAL/INDEX.md`
+9. **Tier 9 — `TRACE`:**
+   - Código: `az000_governance/trace/engine.py` (Ledger append-only encadeado por SHA-256)
+   - Teste: `tests/test_trace_room.py` (6/6 PASS)
+   - Vault: `vault/TRACE/INDEX.md`
+10. **Tier 10 — `COCKPITS`:**
+    - Código: `az000_governance/cockpits/controller.py` (Snapshot espacial unificado dos 11 cômodos e Teacher Mode)
+    - Teste: `tests/test_cockpits_room.py` (6/6 PASS)
+    - Vault: `vault/COCKPITS/INDEX.md`
+11. **Tier 11 — `PRODUCTS`:**
+    - Código: `az000_governance/products/manager.py` (Release notes dos 11 tiers v1.0.0 e manifesto com hash raiz)
+    - Teste: `tests/test_products_room.py` (6/6 PASS)
+    - Vault: `vault/PRODUCTS/INDEX.md`
+
+---
+
+## 5. MOTORES FORMAIS DE POLÍTICA (CEDAR & OPA)
+
+Implementados no commit `91ab681` para erradicar o controle frágil por prompt de texto:
 - **Motor Cedar (`az000_governance/policy/cedar_engine.py`):**
-  - Implementa controle de acesso RBAC/ABAC com semântica estrita *permit / forbid* e *fail-closed default-deny*.
-  - Garante o privilégio supremo do Proprietário, o monopólio de escrita do Executor N03 e o confinamento das Lentes (N04/N05/N06) a zero ferramentas de escrita/terminal.
+  - Modelo formal RBAC/ABAC com semântica estrita *permit / forbid* e *fail-closed default-deny*.
+  - Regra: Soberania irrestrita ao Proprietário, monopólio de escrita para o Executor (`N03`) e modo estrito *read-only* para Pareceristas (`N04/N05/N06`).
 - **Motor OPA (`az000_governance/policy/opa_engine.py`):**
-  - Avaliador de Quality Gates em Rego: só aprova envelopes com consenso entre Verifier e Security, lista de bloqueios rigorosamente vazia e hashes SHA-256 de 64 caracteres válidos.
+  - Quality gates estilo Rego avaliando envelopes de evidência, hashes SHA-256 válidos de 64 caracteres e consenso entre pareceres.
+- **Testes Unitários:** `tests/test_policy_engines.py` (6/6 PASS).
 
 ---
 
-## 4. APRENDIZADOS DA PONTE ASSÍNCRONA & AUTOMAÇÃO
+## 6. BARREIRAS DE CI/CD & COMANDOS DETERMINÍSTICOS
 
-1. **GitHub PR #1 como Barramento Universal:** A comunicação entre ChatGPT (nuvem) e Antigravity (máquina local) estabilizou-se através de envelopes tipados (`CALL` e `RESULT`) postados no PR #1.
-2. **O Desafio do Inbound Wake no ChatGPT Web:** Modelos na web não acordam sozinhos após a postagem no GitHub. Desenvolvemos uma **Extensão Manifest V3 local** (`bridge/extension`) conectada a um microservidor de sinalização (`127.0.0.1:8765`), injetando pulsos `v` automaticamente.
-3. **Decisão do Proprietário:** O envio contínuo do pulso `v` foi desativado a pedido de Manoel, garantindo que o Proprietário assuma o comando direto e dite o ritmo de trabalho sem automações atropeladas.
+Para verificar o estado de integridade de todo o Hangar V1, execute no terminal PowerShell:
 
----
+```powershell
+# Executar a suíte completa de 92 testes determinísticos, árvore documental e espelho Kanban:
+python scripts/git_enforcement.py check-all
 
-## 5. O ESTADO DO VAULT NO OBSIDIAN (`vault/GOVERNANCE/`)
+# Verificar estado do Git:
+git status
+```
 
-Para garantir transparência visual completa, a pasta `vault/GOVERNANCE/` foi estruturada com:
-- `Governance.canvas`: Canvas interativo representando graficamente todo o território de governança, regras da ARCA, motores de política, quality gates e roadtrace.
-- `INDEX.md`: Dashboard Mestre com links bidirecionais (`[[...]]`), tabelas de status dos 11 cômodos e dossiê probatório.
-- Notas dedicadas para cada subdomínio (`ARCA_SPEC_AND_ROOM_ORDER.md`, `CEDAR_AUTHORITY_ENGINE.md`, `OPA_QUALITY_GATES.md`, `OWNER_INTENT_CIRCUIT.md`, `QUALITY_GATES_AND_ENFORCEMENT.md`, `ROADTRACE_CONVERGENCIA.md`).
-
----
-
-## 6. STATUS FACTUAL NO GIT E ENFORCEMENT DE CI/CD
-
-- **Repositório:** `C:\Users\PICHAU\Hangar_v1`
-- **Branch:** `main` (100% sincronizada com `origin/main` no GitHub).
-- **Último Commit:** `69c0bb9` — *feat(governance): consolidar documentacao e canvas no Vault e gerar dossie executivo para GPT*.
-- **CI/CD Enforcement (`scripts/git_enforcement.py`):** **92 testes determinísticos 100% PASS** (código de saída 0).
-- **Kanban Hermes:** 148 cartões sincronizados entre a base SQLite (`kanban.db`) e o espelho Git (`kanban_state.json`): 36 concluídos, 109 arquivados e 3 em revisão para análise do Proprietário.
+**Resultado Canônico Atual:**
+- `status`: `PASS`
+- `eligible_for_merge`: `true`
+- `tests`: `92 testes determinísticos 100% PASS` (7 Sprint 01 + 85 em `tests/`)
+- `kanban`: `Espelho Kanban integro com 148 cards`
+- `doc_tree`: `Íntegra, zero arquivos soltos`
+- `git`: `nothing to commit, working tree clean` no commit `cef4977`.
 
 ---
 
-## 7. PONTO DE PARTIDA PARA A NOVA CONVERSA
+## 7. A PONTE INBOUND & DECISÃO DE SUSPENSÃO DO PULSO 'V'
 
-A infraestrutura técnica do Hangar V1 atingiu sua maturidade plena. Todos os 5 primeiros critérios técnicos do Roadtrace de Governança estão 100% exauridos e auditados.
+- Para contornar a dormência do ChatGPT na web, foi implementada uma extensão Manifest V3 em `bridge/extension` e um servidor em `http://127.0.0.1:8765`.
+- **Decisão Atual do Proprietário:** O watchdog e os pulsos automáticos `v` foram **completamente desligados** a pedido de Manoel.
+- O controle de ritmo e fluxo está 100% manual e soberano. O novo agente **NÃO DEVE** rearmar daemons ou disparar pulsos `v` sem ordem direta de Manoel.
 
-**O que está em pauta agora sob comando direto de Manoel:**
-1. **Homologação Soberana do Hangar V1 (Critério 6):** Avaliar o momento de emitir o despacho soberano de "Governança Plena".
-2. **Organização da Abordagem de Trabalho:** Definir os próximos passos de engenharia com calma, passo a passo, definindo se o foco será novos produtos, cockpits visuais ou novas fatias práticas.
+---
+
+## 8. PONTO ATUAL DE TRABALHO & PRÓXIMA ETAPA
+
+1. **Estado do Roadtrace:** Critérios 1 a 5 estão 100% cumpridos e auditados.
+2. **Critério 6 Pendente:** **Homologação Soberana Final do Proprietário**.
+3. **Missão da Nova Sessão:** Auxiliar Manoel na organização da nova abordagem de trabalho (seja emitir a homologação soberana da Governança Plena, iniciar novas fatias práticas de produtos ou refinar os Cockpits).

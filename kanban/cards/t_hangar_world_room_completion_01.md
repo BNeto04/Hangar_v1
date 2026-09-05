@@ -1,10 +1,10 @@
 # T-HANGAR-WORLD-ROOM-COMPLETION-01: Consolidacao da Ontologia de Mundo e Fechamento do Comodo WORLD (Tier 2)
 
 - **CARD_ID:** `t_hangar_world_room_completion_01`
-- **STATUS:** `in_progress`
+- **STATUS:** `done`
 - **PRIORITY:** `high`
 - **CREATED_AT:** `2026-09-04T23:32:13.486401-03:00`
-- **COMPLETED_AT:** `null`
+- **COMPLETED_AT:** `2026-09-04T23:33:25.558288-03:00`
 
 ## Descrição
 Consolidacao da Ontologia do Territorio, Sincronizacao do Vault e Fechamento do Comodo WORLD (Tier 2).
@@ -32,9 +32,10 @@ Diretrizes:
     "GOVERNANCE"
   ],
   "upstream_status": "COMPLETE",
-  "rules_applied": [
-    "R-DOM-005",
-    "R-DOM-006"
-  ]
+  "final_state": "DONE",
+  "closed_at": "2026-09-04T23:33:25.558288-03:00",
+  "room_status": "COMPLETE",
+  "closure_evidence": "Master_World.canvas com zero links quebrados (17 nos, 24 arestas); 40/40 testes globais PASS; vault/WORLD/INDEX.md e DOCS/22 consolidados.",
+  "next_room_eligible": "PLANT (Tier 3)"
 }
 ```
